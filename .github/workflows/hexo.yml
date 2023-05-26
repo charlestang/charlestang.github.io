@@ -33,30 +33,29 @@ jobs:
     #env:
     #  HUGO_VERSION: 0.108.0
     steps:
-      - name: Install Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: Checkout Code
+        uses: actions/checkout@v3
         with:
-          node-version: "16" 
+          submodules: recursive
+
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with: 
           path: node_modules
           key: ${{ runner.os }}-npm-cache
           restore-keys: |
             ${{ runner.os }}-npm-cache
-      - name: Checkout Code
-        uses: actions/checkout@v3
+
+      - name: Install Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          submodules: recursive
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      # ???????
+          node-version: 'latest' 
+      - run: npm install
+      - run: npm run build
+      # https://github.com/marketplace/actions/configure-github-pages
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-      # =======
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
