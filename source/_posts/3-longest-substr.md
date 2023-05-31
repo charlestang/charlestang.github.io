@@ -1,0 +1,98 @@
+---
+title: 3. 无重复字符的最长子串
+tags:
+  - algorithm
+  - dynamic programming
+  - recursion
+  - sliding window
+id: '1059'
+categories:
+  - - 算　　法
+date: 2021-05-11 17:32:21
+---
+
+这道题的意思比较简单，我就不在这里抄题目了，可以去[这里](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)查看。简单说，就是在给定字符串里，找到一个连续的子串，这个子串里所有的字符都不同，求这个其中长度最大的子串的长度。
+
+做这种题目，首先要关注一下题目的规模，底下提示，这个给定的字符串，长度范围在 0 到 50000。一般来说，如果是求一个子串的题目，首先想的是，怎么在一个字符串里唯一确定一个子串呢？那就是确定这个子串的开头和结尾位置。
+
+如果我们想穷举所有的子串的话，开头位置取值有 n 个可能，结尾位置取值也有 n 个可能，所以，整个搜索空间是 25 亿！所以，我们必然不能穷举。
+
+那么怎么去设计算法呢？我们可以试试数学归纳法。
+
+假设我们已经知道了如何求解以第 n 个字符结尾的最长子串，那么对于第 n + 1 个字符来说，怎么求解最长子串呢？如果我们知道以第 n 个字符结尾的子串，那么对于第 n + 1 个字符，有两种情况，第一，第 n + 1 个字符在最长子串中没出现过，那么，以第 n + 1 个字符为结尾的最长子串就是 substr + s[n + 1]，第二种情况，第 n + 1 个字符已经出现了，那么我们把它的位置算出来 pos，然后把 pos 及以前的字符删掉，然后把第 n + 1 个字符接在后面，就形成了以 第 n+1 个字符结尾的最长子串。
+
+怎么求整体的最长子串呢？就是遍历每个结尾位置即可。最大的那个长度就是答案。
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        @cache
+        def longestSubstr(idx: int) -> (str, int):
+            if idx == 0:
+                return s[idx], 1
+            sub, l = longestSubstr(idx - 1)
+            if s[idx] not in sub:
+                return sub + s[idx], l + 1
+            else:
+                pos = sub.index(s[idx])
+                return sub[pos + 1:] + s[idx], l - pos
+        ans = 0
+        for i in range(len(s)):
+            _, l = longestSubstr(i)
+            ans = max(ans, l)
+        return an
+```
+
+利用上面的原理，我设计了一个递归算法，计算以 idx 结尾的最长子串，就是计算 idx - 1 为结尾的子串，并进行两种情况而处理。
+
+然后，我们很容易意识到，例如，计算以 下标5 结尾的子串时，要先计算 下标4 结尾的子串。假如我们用一个缓存，记录所有的中间结果，那么遍历的时候，就可以节省大量而时间。上面我用了 Python 的修饰符 @cache。最平凡的情况就是 idx = 0 的时候，显然此时最长子串就是 1，因为里面只有一个字符。
+
+这个算法写出来后，我们就发现，动态规划的写法其实已经呼之欲出了。状态转移方程，就是 n 与 n - 1 之间的关系，前面也都说了：
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        curStr = ""
+        res = 0
+        n = len(s)
+
+        for i in range(n):
+            if s[i] in curStr:
+                pos = curStr.index(s[i])
+                curStr = curStr[pos + 1:] + s[i]
+            else:
+                curStr += s[i]
+            res = max(res, len(curStr))
+        return res
+```
+
+这个算法里，curStr 就是最长的无重复字符的子串。相当于我们一旦发现了重复字符，我们就把子串从重复字符开始的前缀给截掉。
+
+这个算法的时间复杂度，大框架上是 O(n) 的，因为我们只遍历了一次字符串，这里消耗时间的还有一个地方，就是我们用了字符串的 index 操作，这个操作本质上也应该是 O(n) 的复杂度，不过我们可以用 一个 hash 来优化这个查询的复杂度到 O(1)。
+
+从这个算法里，我们看到，遍历字符串结尾位置的时候，只要遍历一遍，那么子串开头的位置变化有什么特点呢？当我们没有截断子串的时候，开头的位置是不变的，当我们截断了的时候，开头位置往右移动（增大）。不难发现，子串的开始位置和结束位置，在遍历过程中，变化都是单调的。
+
+这个特点就提醒我们，我们可以用一个开始位置或结束位置一直往右移动的滑动窗口来实现算法。
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        freq = set()
+        ans = 0
+        n = len(s)
+
+        right = -1
+
+        for i in range(n):
+            if i:
+                freq.remove(s[i - 1])
+            
+            while right + 1 < n and s[right + 1] not in freq:
+                freq.add(s[right + 1])
+                right += 1
+            
+            ans = max(ans, right - i + 1)
+        return ans
+```
+
+在这里，我们用一个数据结构集合（set），来记录字符是否出现。然后我们遍历子串的起始位置，然后向右扩展结束位置，如果发现重复字符，就把起始位置右移，没重复，就把结束位置右移。也是 O(n) 的复杂度。

@@ -1,0 +1,93 @@
+---
+title: 29. 两数相除
+tags:
+  - binary search
+id: '1089'
+categories:
+  - - 算　　法
+date: 2021-10-12 16:53:19
+---
+
+[latexpage]今天的打卡题目，中等难度，我拼搏了 2，3 个小时吧，终于做出来了。
+
+> 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
+> 
+> 返回被除数 dividend 除以除数 divisor 得到的商。
+> 
+> 整数除法的结果应当截去（truncate）其小数部分，例如：truncate(8.345) = 8 以及 truncate(-2.7335) = -2
+> 
+> [29. 两数相除](https://leetcode-cn.com/problems/divide-two-integers/)
+
+其实，CPU 只能做逻辑运算，加减乘除都是模拟出来的，在高级语言里封装成算术运算的运算符或函数，供我们使用。这个题目要求不能用乘法，除法，取模，剩下能用的只有位运算，逻辑比较，加减法等。
+
+从最平凡的情况开始，从被除数 dividend 中减去若干个除数 divisor，直到不够减，就能求出商。依据这个原理，我们来写一个最简单的代码。
+
+```generic
+res = 0
+while dividend >= divisor:
+    dividend -= divisor
+    res += 1
+return res if not neg else -res # neg 是符号判定，省略了计算 neg 的代码
+```
+
+如果不考虑数字的取值范围，这就是正确的解法。题目中提到，被除数最大值可以达到 2^31，如果单纯用减法，可能计算 20 多亿次，必然超时。
+
+所以，必然要用到移位操作，假设 dividend ÷ divisor = quotient，那么本质上要寻找一个整数 Q，使得 Q × divisor ≤ dividend ＜ (Q + 1) × divisor，通过这个数量关系，我就把除法转换成了乘法。
+
+怎么寻找 Q 呢？因为 Q 也是单调的，所以，显然可以使用二分查找法。到这里，基本就剩下编码了。
+
+首先我们要求 Q × divisor 的值，怎么用加法模拟乘法呢？这其实是一个算法，叫快速乘法，不过我也背不出来，就从 0 推导一下好了。其实就是 Q 个 divisor 加起来，跟上面那个迭代的减法差不多，就是时间复杂度太高。要用到移位运算，可以先把 Q 表达成 2 进制。
+
+$Q = bit_n 2^n + bit_{n-1} 2^{n-1} + \dots + bit_0 2^0$
+
+正整数怎么转二进制，我想大家都应该会。所以，两者的积，可以写成：
+
+$Q \times divisor = bit_n 2^n divisor + bit_{n-1} 2^{n-1} divisor + \dots + bit_0 2^0 divisor$
+
+就得到了乘法的迭代算法。
+
+```python
+def quickAdd(q: int) -> int:
+    res, add = 0, divisor
+    while q > 0:
+        if q & 1 == 1:
+            res += add
+        add += add
+        q >>= 1
+    return res
+```
+
+这段算法认真阅读不难理解，怎么来记住这个算法呢？参考上面的公式，我们从二进制最低位开始，如果这个位是 1，那么就累加一个乘数，是 0，则不用处理，然后右移，要处理第二位，第二位上的 1，代表的是两倍的乘数，所以 add 翻倍一次 add += add，依此类推。
+
+抛开符号问题不看，商的取值范围是 0 到最大值 $2^{31}$，于是我们在这区间二分查找即可。注意我们要找到使乘积小于等于 dividend 的 Q值。
+
+```python
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        neg = dividend < 0 or divisor < 0
+        neg = neg and not (dividend < 0 and divisor < 0)
+        dividend = dividend if dividend >= 0 else - dividend
+        divisor = divisor if divisor >= 0 else - divisor
+
+        def quickAdd(q: int) -> int:
+            res, add = 0, divisor
+            while q > 0:
+                if q & 1 == 1:
+                    res += add
+                add += add
+                q >>= 1
+            return res
+
+        left, right = 0, 1 << 31
+        maxInt = right - 1
+        while left <= right:
+            mid = (left + right) >> 1
+            if quickAdd(mid) > dividend: # 注意：最终右边界会停在 <= dividend 的地方
+                right = mid - 1          #      我们的答案正是右边界
+            else:
+                left = mid + 1
+        res = -right if neg else right
+        return res if res < maxInt else maxInt
+```
+
+整体代码如上。这里要注意二分查找的写法，这个二分查找并不容易写，我自己是纠缠了好一会儿才写对的。而且，二分查找的各种写法也很容易忘记，一段时间不写，就会写错。没有好建议，就是每次都认真理解，总有一天能记住吧。

@@ -1,0 +1,51 @@
+---
+title: 插件开发全攻略（目录）
+tags:
+  - develop
+  - plugins
+  - translate
+  - WordPress
+id: '114'
+categories:
+  - - wp
+    - Plugins Develop
+  - - WordPress
+date: 2008-07-06 11:33:58
+---
+
+隔了这么久，终于将这个系列文章都翻译完了，这么一遍走下来，实在觉得自己很浅薄，技术和语言水平都十分有限。恐怕也没有全部传达原作者的意图。
+
+我打算陆续将该系列的文章校对一遍，并且打算将这个系列里面的例子改写成自己的例子，这样，我可以对文章有更准确的理解。
+<!-- more -->
+这里，我罗列一下这个系列文章的目录吧。英文名字就是原文，底下的中文名字就是译文。
+
+1.  [How to Write a WordPress Plugin - Introduction](http://www.devlounge.net/articles/how-to-write-a-wordpress-plugin-introduction)
+2.  [介绍](http://sexywp.com/how-to-write-a-wp-plugin-01.htm)
+3.  [Seven Reasons to Write a WordPress Plugin](http://www.devlounge.net/articles/seven-reasons-to-write-a-wordpress-plugin)
+4.  [编写插件的七个理由](http://sexywp.com/how-to-write-a-wp-plugin-02.htm)
+5.  [How to Get Ideas for Wordpress Plugins](http://www.devlounge.net/articles/how-to-get-ideas-for-wordpress-plugins)
+6.  [怎样获得WordPress插件的创意](http://sexywp.com/how-to-write-a-wp-plugin-03.htm)
+7.  [Structure of a Wordpress Plugin](http://www.devlounge.net/articles/structure-of-a-wordpress-plugin)
+8.  [WordPress插件的结构](http://sexywp.com/how-to-write-a-wp-plugin-04.htm)
+9.  [WordPress Plugin Actions](http://www.devlounge.net/articles/wordpress-plugin-actions)
+10.  [WordPress 插件Actions](http://sexywp.com/how-to-write-a-wp-plugin-05.htm)
+11.  [WordPress Plugin Filters](http://www.devlounge.net/articles/wordpress-plugin-filters)
+12.  [WordPress插件Filter](http://sexywp.com/how-to-write-a-wp-plugin-06.htm)
+13.  [Constructing a WordPress Plugin Admin Panel](http://www.devlounge.net/articles/constructing-an-wordpress-plugin-admin-panel)
+14.  [构造一个WordPress插件管理员面板](http://sexywp.com/how-to-write-a-wp-plugin-07.htm)
+15.  [Constructing a WordPress Plugin User’s Panel](http://www.devlounge.net/articles/constructing-a-wordpress-plugin-users-panel)
+16.  [构建一个WordPress插件用户面板](http://sexywp.com/how-to-write-a-wp-plugin-08.htm)
+17.  [WordPress Plugins and Database Interaction](http://www.devlounge.net/articles/wordpress-plugins-and-database-interaction)
+18.  [WordPress插件和数据库交互](http://sexywp.com/how-to-write-a-wp-plugin-09.htm)
+19.  [Using JavaScript and CSS with your WordPress Plugin](http://www.devlounge.net/articles/using-javascript-and-css-with-your-wordpress-plugin)
+20.  [在你的WordPress插件中使用Javascript和CSS](http://sexywp.com/how-to-write-a-wp-plugin-10.htm)
+21.  [Using AJAX with your WordPress Plugin](http://www.devlounge.net/articles/using-ajax-with-your-wordpress-plugin)
+22.  [在你的WP插件中使用AJAX](http://sexywp.com/how-to-write-a-wp-plugin-11.htm)
+23.  [Releasing and Promoting Your WordPress Plugin](http://www.devlounge.net/articles/releasing-and-promoting-your-wordpress-plugin)
+24.  [发布并推广你的WordPress插件](http://sexywp.com/how-to-write-a-wp-plugin-12.htm)
+
+原来的目录页面在：[这里](http://www.devlounge.net/extras/how-to-write-a-wordpress-plugin)
+
+还提供PDF版本的下载哦。
+
+[中文版PDF下载（2008年12月22日11:57:51）](http://www.box.net/shared/n7urk9zuxi)

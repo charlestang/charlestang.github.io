@@ -1,0 +1,56 @@
+---
+title: 插件开发全攻略（01）---介绍
+tags:
+  - develop
+  - plugins
+  - translate
+  - WordPress
+id: '53'
+categories:
+  - - wp
+    - Plugins Develop
+  - - WordPress
+date: 2008-05-28 15:15:11
+---
+
+对于许多[WordPress](http://wordpress.org)用户来说，插件是必须的。[WordPress 插件](http://wordpress.org/extend/plugins/)使得那些只有很少或者没有编程能力的用户可以扩展他们博客的功能。插件的形式多种多样，在WordPress中，插件几乎可以做任何事情。
+
+即便是WordPress这样一个优秀的独立应用程序，仍旧有许多方面有缺憾。用户所要求的越来越多的WordPress所应该具有的特性，都很可能被开发成插件。此外，还有很多没有实现的创意，而且，每一天还有更多的创意被提出。
+
+在已经发布了三款插件之后（不包括我自己写给自己用的那些），我意识到了一些WordPress的局限性，我希望能够分享一些我已经学到的（我仍旧在学）关于创建WordPress插件的一些经验。最终，我将会开始写一个系列，专门讨论编写你自己的WordPress插件的过程中遇到的各种各样的问题。这个系列将会从非常基础的话题开始，并且假设你的插件知识是零基础。
+
+### 这个系列是为谁准备的？
+
+这个系列是为了任何一个好奇或者想要学习怎样编写他们自己的WordPress插件的用户撰写的。这个系列的读者应该有中级程度的PHP知识，知道一点点JavaScript，并且有相当的CSS知识。
+
+这个插件系列将会使主题模板设计者受益，还有那些想要修补插件代码的人，还有那些想从零开始编写自己的插件的人。
+<!-- more -->
+### 完成工作必备利器
+
+使用任何文本编辑器都可以写插件。这里是一些我个人使用的创建插件的工具。
+
+*   Dreamweaver
+*   Firefox
+*   [Firebug（Firefox的插件）](http://www.joehewitt.com/software/firebug/)
+*   [Web Developer（Firefox的插件）](http://chrispederick.com/work/web-developer/)
+*   [XAMPP](http://sourceforge.net/projects/xampp/)和一个本地安装的[WordPress](http://wordpress.org)
+
+这个系列假设你使用的是WordPress 2.1.x或者更新的版本。
+
+### 代码范例
+
+我所使用的所有的代码在每篇文章的结论一节都提供下载。我会随着内容推进，逐步完善我的代码，所以每一份下载都会不同。我将会创建一个实际上什么都做不了的插件，但是足够向你展示一个插件工作的基础了。
+
+由于这个系列里的每篇文章都是在上一篇的基础之上，所以推荐按照顺序来阅读这个系列里面的文章。
+
+我极力建议你使用本地WordPress来安装调试测试插件，而不是在一个你用来发表你的文章的正规的WordPress上。
+
+### 话题
+
+我计划从非常基础的内容开始，然后快速推进到更加核心的WordPress插件函数的内容。这个系列不会关注插件开发中太过细节的东西，但是希望能够给你一个很好的开始开发你自己的插件的基础。如果你有任何问题或者建议，请留言，或者使用[Devlounge Contact Form](http://www.devlounge.net/contact)插件给我发送Email（译者：也可以给我留言）。我请你不要依赖[Devlounge](http://www.devlounge.net/)或者支持，而是使用[WordPress支持论坛](http://wordpress.org/support/)。
+
+### 技术
+
+我在我的代码范例中使用的某些技术可能不是最好的代码表达方式。你可能会对我没有使用许多的便捷写法而有所微词。我在这里提前抱歉。每个人有不同的编码风格。
+
+只要是插件技术，结构，行为，或者其他讨厌的东西，如果有更好的方式被我忽略了，那么我非常乐意倾听。

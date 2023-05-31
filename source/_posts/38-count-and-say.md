@@ -1,0 +1,39 @@
+---
+title: 38. 外观数列
+tags:
+  - algorithm
+id: '941'
+categories:
+  - - 算　　法
+date: 2021-02-21 14:07:52
+---
+
+这个原题目可以去 LC 看。我看到这个题目的想法就是硬做，无非是数相同的数字有几个的问题，然后用两个数字描述：
+
+```python
+class Solution:
+    def countAndSay(self, n: int) -> str:
+        if n == 1:
+            return "1"
+        say, i, new = "1", 1, ""
+        while i < n:
+            num = say[0]
+            count = 0
+            for j in range(len(say)):
+                if num == say[j]:
+                    count += 1
+                else:
+                    new += str(count) + num
+                    count = 1
+                    num = say[j]
+            new += str(count) + num
+            say, new = new, ""
+            i += 1
+        return say
+```
+
+这是我写的代码，就是迭代的去逐个计算。
+
+我看了一下题解，有提到查表法的，这个当然是正确的解法，这个题目，有非常小的问题空间 1 <= n <= 30 一共才30个，当然，生成 30 个答案，还是要靠算法去计算，用查表法，只是增加了喜剧效果和真的很省时间，可以 Beats 100%。
+
+另外，值得一提的是，有不少人提到了递归法，这个题目显然具备了递归的结构，比如，计算第 n 个串，本质上就是对第 n - 1 个串的描述。所以，可以用递归法，不过这个题目的特殊之处在于，用递归写，也并没有简单多少，反倒增加了栈的成本。没什么意思，其实栈里只是存储了 n - 1 个串的表达而已，用一个变量就可以存了。像我上面写的代码一样。

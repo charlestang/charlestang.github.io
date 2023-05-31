@@ -1,0 +1,65 @@
+---
+title: 7. 整数反转
+tags:
+  - algorithm
+id: '931'
+categories:
+  - - 算　　法
+date: 2020-08-19 14:41:30
+---
+
+今天这道题目真是简单，把一个整数反转了，要考虑负数的情况，如果反转过来溢出了，返回 0，假设的整数是 32位 有符号整数。我写了这样的代码：
+
+```python
+class Solution:
+    def reverse(self, x: int) -> int:
+        flag = -1 if x < 0 else 1
+        x = -x if x < 0 else x
+        res = 0
+        while x > 0:
+            res = res * 10 + (x % 10)
+            x = x // 10
+        return res * flag
+```
+<!-- more -->
+我写了这样的代码，发现没能通过，主要因为 Python 3 的整型可以容纳超过 32 位，所以，给出一个反转后超过 2 ^ 31 - 1 的数字后，我的算法返回了反转的结果，但是应该返回 0。
+
+然后我把代码改成了这样：
+
+```python
+class Solution:
+    def reverse(self, x: int) -> int:
+        flag = -1 if x < 0 else 1
+        x = -x if x < 0 else x
+        res = 0
+        while x > 0:
+            res, x = res * 10 + (x % 10), x // 10
+        if (flag > 0 and res > 2 ** 31 - 1) or ( flag < 0 and res > 2 ** 31):
+            res = 0
+        return res * flag
+```
+
+超过了，给干掉就行了嘛，果然 Accept 了。用 Python 的话，这个就比较简洁了。主要是 Python 的整数本身位数够。其他语言我看了 C/C++ 似乎还有点麻烦，需要注意一下。
+
+其实，这个题目吧，显然有个解法就是转换成字符串，然后逆序后看看是不是相同。但是，题目有一句提示，就是能不能不要转成字符串给做出来呢？
+
+其实这里就没有什么数据结构的知识了，就是数学或者抖机灵的成分比较大了，我们用 10 取模后，构造反过来的那个数字，如果完整构建出来，可能会溢出，所以，我们可以只构建一半，因为回文数是对称的嘛，看完这个答案，我又写了个，正好官方答案里没有 Python 版本的：
+
+```python
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x > 0 and x % 10 == 0):
+            return False
+        if x == 0 or x < 10:
+            return True
+        
+        reverse = 0
+        while x > reverse :
+            reverse = reverse * 10 + x % 10
+            x //= 10
+        return x == reverse or reverse // 10 == x
+```
+
+知识点：
+
+1.  复习了 Python 的整数除法；

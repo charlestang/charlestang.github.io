@@ -1,0 +1,85 @@
+---
+title: 28. 实现 strStr()
+tags:
+  - algorithm
+id: '939'
+categories:
+  - - 算　　法
+date: 2021-02-24 09:57:40
+---
+
+这是一个非常经典的库函数吧，在一个长字符串（haystack）中，搜索一个字符串（needle），如果包含了就返回起始的位置，如果没有包含，就返回 -1。
+
+看了这个题目，我想到的唯一办法就是暴力算，先做一头对齐，然后逐个比较，找到了返回下标，没找到就移动一格重复这个过程，直到无法移动为止：
+
+```python
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        i, j = len(haystack), len(needle)
+        if j == 0:
+            return 0
+        x, y = 0, 0
+        while x <= i - j:
+            for y in range(j):
+                if haystack[x + y] != needle[y]:
+                    break
+            if needle[y] == haystack[x + y]:
+                return x
+            else:
+                x += 1
+        return -1
+       
+```
+
+其实没啥难的，就是很多边界条件，很难写，我提交错了 5 回才写对。（泪奔……
+
+然后我看了题解，暴力算是比较普遍的解法，我的也不算太偏。看到了一个让我皱眉头的算法，叫 KMP，大学时候我学过，完全没有学会过。这次我就认真学学。
+
+自然而然写的那个算法，里面其实存在重复，因为目标字符串，每次搜索失败，我们只移动一个位置，其实，搜索过程中，可能已经比较了好几个字符了，都白比较了。所以，类似 KMP 这样的算法，本质上，就是希望已经比较过的部分，希望能利用起来，减少重复的运算，从而提高了效率。
+
+自然而然写的算法，复杂度大概是 O(M(N-M))，但是 KMP 算法，通过预处理，时间换空间，可以做到 O(N) 的时间复杂度。
+
+它的原理，简单来说，就是已经扫描过的被搜索串，应该是完整的目标搜索串的子串，这个子串的后缀同时也是这个子串的前缀的话，那么我们就可以节省移动的距离。这么说是非常绕的，我是看了很久很久才看懂的。
+
+《[字符串匹配的KMP算法](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)》阮一峰
+
+《[KMP算法详解](https://leetcode-cn.com/problems/implement-strstr/solution/kmp-suan-fa-xiang-jie-by-labuladong/)》 labuladong
+
+《[如何更好的理解 KMP 算法](http://如何更好地理解和掌握 KMP 算法? - 海纳的回答 - 知乎 https://www.zhihu.com/question/21923021/answer/281346746)》知乎
+
+上面两篇是我认真看了的网络文章，此外我还翻阅了《算法导论》，多种材料混合下，还是看懂了一点的。我估计过个不久就还是会忘记的，所以，我打算，按照自己已经理解的部分来实现一下 KMP 算法，如果能写对，我估计印象可以久一点。
+
+```python
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if len(needle) == 0:
+            return 0
+        i, j = 0, 0
+        pie = self.pie(needle)
+
+        while i < len(haystack) and j < len(needle):
+            if j == -1 or haystack[i] == needle[j]:
+                i += 1
+                j += 1
+            else:
+                j = pie[j]
+        if j == len(needle):
+            return i - j
+        return -1
+    
+    def pie(self, needle: str) -> List[int]:
+        pie = [0] * len(needle)
+        pie[0] = -1
+        i, j = 0, -1
+        while i < len(needle) :
+            if j == -1 or needle[i] == needle[j]:
+                i += 1
+                j += 1
+                if i < len(needle):
+                    pie[i] = j
+            else:
+                j = pie[j]
+        return pie
+```
+
+看了很久，我最后还是没写出来，这是从[知乎上一个回答](https://www.zhihu.com/question/21923021/answer/281346746)里面拷贝过来的。我自己还是没有掰明白的，我决定还是放一放先。先不要纠结了，后面回过头来再说吧。

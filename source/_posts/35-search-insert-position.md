@@ -1,0 +1,46 @@
+---
+title: 35. 搜索插入位置
+tags:
+  - algorithm
+  - binary search
+id: '940'
+categories:
+  - - 算　　法
+date: 2021-02-23 00:30:08
+---
+
+在一个给定的排序数组里，找到一个目标数字的位置，如果没有，就给出插入的位置。
+
+这个题目，一看就是二分查找法的应用，但是我写了两次没写对，二分查找法主要是处理边界的问题，还是有很多细节的，我先写了一个 O(N) 的搜索法：
+
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for i in range(len(nums)):
+            if target <= nums[i]:
+                return 0 if i == 0 else i
+        return len(nums)
+```
+
+很短，很容易写，一下就写对了。然后，我看了题解，还是借机会练习一下二分查找法比较好一点。
+
+所谓的插入位置是什么意思呢？
+
+一般来说，我们把一个数字放入数组的第 0 个位置，则原来在 0 这个下标的数字，会往右移，下标变为 1。所以，这道题，我们真正要找的那个下标是，该下标位置的数字，大于或者等于 target 目标值。
+
+这个在 Python 类库里，其实就是 bisect_left 这个方法。
+
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            mid = (left + right) >> 1
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return left
+```
+
+这是一个二分法的实现。这里比较 tricky 的部分，就是处理边界移动和最终返回值的地方。注意看这句 `nums[mid] < target` ，满足这个条件的时候，我们把左边界往右移了一格，移动后，`nums[left] ≥ target` ，所以，left 就是我们要找的解。

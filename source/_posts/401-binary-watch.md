@@ -1,0 +1,92 @@
+---
+title: 401. 二进制手表
+tags:
+  - algorithm
+  - backtracking
+id: '1021'
+categories:
+  - - 算　　法
+date: 2021-03-16 11:32:48
+---
+
+这道题目，展示了一款二进制手表，然后问，给定点亮的灯的数量，计算可能展示出来的所有时间。这个题目，一看就知道可能要用回溯法了。
+
+回溯法，其实就是穷举法的一种，只不过穷举得比较有章法而已，有时候我们说回溯法是深度优先搜索。回溯法的关键是，第一步，确认目标达成条件，作为回溯停止的点；第二步，找出状态空间，确认扩展下一步的方法；第三步，确认所有需要保存的状态；最后，写出递归算法。
+
+对于这道手表的题目，题目要求点亮 num 盏灯，然后计算可能的时间数量。所以，我们可以把所有 num 盏灯都点亮，作为达成了目标的条件。第二，手表上，有代表小时的灯，1，2，4，8，四盏，以及代表分钟的灯1，2，4…… 等六盏灯，其实就相当于一共有 10 个位置，每次可以点亮一个。这么看，总状态空间，也就 2^10 个，就算都遍历了，也没多少……第三，我们要保存的状态，就是，点到第 i 盏灯的时候，表盘上所有的灯的亮灭情况。可以开动了：
+
+```python
+class Solution:
+    def __init__(self):
+        self.result = []
+        self.possible = [1,2,4,8,1,2,4,8,16,32]
+        self.visited = [0] * 10
+
+    def readBinaryWatch(self, num: int) -> List[str]:
+        self.num = num
+        self.dfs(0, 0)
+        return self.result
+
+    
+    def dfs(self, step: int, start: int):
+        if step == self.num:
+            self.result.append( self.time_to_str() )
+        else:
+            for i in range( start, 10 ):
+                self.visited[i] = 1
+                if not self.valid():
+                    self.visited[i] = 0
+                    continue
+                self.dfs(step + 1, i + 1)
+                self.visited[i] = 0
+    
+    def valid(self) -> bool:
+        h, m = self.cur_time()
+        return h < 12 and m < 60
+    
+    def cur_time(self) -> ( int, int ):
+        h = 0
+        m = 0
+        for i in range(10):
+            if self.visited[i]:
+                if i < 4:
+                    h += self.possible[i]
+                else:
+                    m += self.possible[i]
+        return h, m
+    
+    def time_to_str(self) -> str: 
+        h, m = self.cur_time()
+        return str(h) + ":" + ( "0" if m < 10 else "" ) + str(m)ç
+
+```
+
+上面的算法，用 visited 记住了每盏灯的亮灭情况。然后，把所有灯做了一个数组，逐盏去点亮，尝试每盏灯的亮灭组合。所有 num 盏灯点亮后，就算达成条件。剩下的就是剪枝了，对于不可能的时间（小时超过 11，分钟超过 59），可以直接跳过。
+
+使用位图记录访问过的状态，是一个比较通用的做法，想不出来怎么记录状态的时候，这种“好记性不如烂笔头”的思维，很容易奏效。但是未必是最好的方法，不过好的方法总是需要灵光一现的。题解里，有个 C++ 的同学，提供了一个写法，他的不同在于，他用 dfs 方法的参数来记住状态，方法的参数也具有局部性，只在调用的时候有效，调用结束后，就天然可以回退。我们注意一下我们的做法，我们把 10 盏灯顺序排列了。从左往右去遍历，这个时候这个行为本身是有序的。而 visited 数组也是有序的，就是顺序这件事情我们记录了两次。其实其中一次是可以省略的。所以，这个同学用 hour 来记住小时，用 minute 来记住分钟，下标本身已经带有了顺序，就不用额外记录了：
+
+```python
+class Solution:
+    def __init__(self):
+        self.result = []
+        self.possible = [1,2,4,8,1,2,4,8,16,32]
+
+    def readBinaryWatch(self, num: int) -> List[str]:
+        self.num = num
+        self.dfs(0, 0, 0, 0)
+        return self.result
+
+    
+    def dfs(self, step: int, start: int, hour: int, minute: int):
+        if step == self.num:
+            time = str(hour) + ":" + ("0" if minute < 10 else "") + str(minute)
+            self.result.append( time )
+        else:
+            for i in range( start, 10 ):
+                if i < 4 and self.possible[i] + hour < 12:
+                    self.dfs(step+1, i+1, hour + self.possible[i], minute)
+                if i > 3 and self.possible[i] + minute < 60:
+                    self.dfs(step+1, i+1, hour, minute + self.possible[i])
+```
+
+换种说法，上面第一种算法使用 visited 无法就是为了用于推算 hour 和 minute 的值，现在我直接记住 hour 和 minute 的时间就可以了，也做到可以正确回退，visited 就没用了。于是，写出了更简短的算法。不过在复杂度上是一样的。

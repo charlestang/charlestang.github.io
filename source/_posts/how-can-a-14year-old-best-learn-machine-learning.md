@@ -1,0 +1,36 @@
+---
+title: 一个14岁的人怎样学习机器学习最好？
+tags: []
+id: '646'
+categories:
+  - - 工作相关
+date: 2014-10-02 14:35:06
+---
+
+如果你正在斯坦福、Coursera或者可汗学院学习在线课程，那么这种开始方式，已经很好了。
+
+你可能还需要尽可能多地去学习数学（包括统计），因为数学是机器学习的基础。
+
+我非常推荐的一本书是Programming Collective Intelligence。这本书的数学很浅，只需要基本理解Python就可以通读此书而没有什么障碍。如果你已经在学习大学级别的机器学习课程，你可能会觉得这本书对你来说太过基础了一点。
+
+Programming Collective Intelligence: Building Smart Web 2.0 Applications: Toby Segaran
+
+对于一些更高级的话题，你可以试试如下的书，基本按照需要数学知识的多少来排序：
+
+Amazon.com: Risk Assessment and Decision Analysis with Bayesian Networks (9781439809105): Norman Fenton, Martin Neil: Books
+
+Artificial Intelligence: A Modern Approach (3rd Edition): Stuart Russell, Peter Norvig: 9780136042594: Amazon.com: Books
+
+Learning Bayesian Networks: Richard E. Neapolitan: 9780130125347: Amazon.com: BooksEdit
+
+[Quoar原帖](http://www.quora.com/How-can-a-14-year-old-best-learn-machine-learning "Quora原帖")
+
+Updated:
+
+另一个回帖的人，认为学习Machine Learning没那么简单，并提出该学科是一个高度交叉学科，想要深入，需要准备好很多先修课程的知识，包括但是不限于：
+
+1. 微积分。最好所有的知识都具备，极限（Limits），differentiation，integration。
+2. 线性代数。甚至要理解最简单的回归模型，都需要它的知识。通常是机器学习课程最先教的东西。
+3. 统计学。超级重要。机器学习其实是一族统计分析的方法，所以它是在统计学的根基上发展起来的。对所有的统计分析方法，有一个很好的掌握，是绝对必须的。
+4. 计算机科学基本知识。具体说，算法，包括数值算法（从牛顿法，到蒙特卡洛模拟技术）。这与机器学习在很多地方是重合的，而且经常被用于机器学习的一些基础算法。
+5. 编程。机器学习是一个应用学科，你需要掌握一门编程语言来运行算法。Python学习简单，在机器学习专家中，应用广泛。

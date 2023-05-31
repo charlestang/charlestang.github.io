@@ -1,0 +1,41 @@
+---
+title: 867. 转置矩阵
+tags:
+  - algorithm
+id: '1008'
+categories:
+  - - 算　　法
+date: 2021-03-08 18:08:36
+---
+
+今天的题目是矩阵的转置。题目懒得抄了，帖个图吧。
+
+[![](https://sexywp.com/wp-content/uploads/2021/02/hint_transpose.png)](https://sexywp.com/wp-content/uploads/2021/02/hint_transpose.png)
+
+矩阵转置示意图
+
+其实，例子里这个图给得不是很好的，因为这正好是一个特殊的矩阵，叫方阵，行和列是一样多的，实际上，我们遇到的矩阵未必是方形的。
+
+其实矩阵转置根据直觉做就可以了，没什么难点。核心就一句话：
+
+`result[j][i] = matrix[i][j]`
+
+什么意思呢？就是把某个元素的二维下标两个下标交换一下位置。所以，我写了下面这样的代码：
+
+```python
+class Solution:
+    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+        m = len( matrix )
+        n = len( matrix[0] )
+        result = []
+        for i in range( n ):
+            result.append( [0] * m )
+        
+        for i in range( m ):
+            for j in range( n ):
+                result[j][i] = matrix[i][j]
+        
+        return result
+```
+
+先测量长度，然后生成结果矩阵，然后逐一遍历，然后交换下标。打完收工。时间复杂度是 O(m・n)。
