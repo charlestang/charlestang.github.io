@@ -650,6 +650,16 @@ hexo-log@^4.0.1:
   dependencies:
     picocolors "^1.0.0"
 
+"hexo-migrator-wordpress@file:../hexo-migrator-wordpress":
+  version "2.1.2"
+  resolved "file:../hexo-migrator-wordpress"
+  dependencies:
+    camaro "^6.0.2"
+    got "^11.3.0"
+    hexo-fs "^3.1.0"
+    hexo-util "^2.1.0"
+    turndown "^7.1.1"
+
 hexo-pagination@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/hexo-pagination/-/hexo-pagination-3.0.0.tgz"
