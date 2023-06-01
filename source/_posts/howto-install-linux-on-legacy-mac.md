@@ -17,7 +17,7 @@ date: 2020-06-21 21:48:03
 <!-- more -->
 因为现在系统是 MacOS，所以还是要重头来过，首先需要制作一块安装盘。我选用了一个 ADATA 32GB USB3.0 的优盘一块，从一个叫 [https://www.balena.io/etcher/](https://www.balena.io/etcher/) 的网站，下载一款软件叫 etcher，专门用来制作 USB 安装盘的。
 
-![Etcher 软件的截图](https://sexywp.com/wp-content/uploads/2020/06/etcher2x-1024x614.png)
+![Etcher 软件的截图](../images/2020/06/etcher2x-1024x614.png)
 
 etcher
 

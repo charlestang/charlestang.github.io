@@ -40,7 +40,7 @@ date: 2021-10-25 15:05:48
 
 其实有个数学家说过。如果你解不出一道题目，一定是你还没有充份利用好已知条件。好像认真看已知条件就一定能找到破解之法，但是没那么简单。比如这道题目，我们想出二分法，就是利用了有序，这个条件。但是，显然这题目给出了两个有序。从左到右，从上到下都是有序的。
 
-[![](https://sexywp.com/wp-content/uploads/2021/10/searchgrid2.jpeg)](https://sexywp.com/wp-content/uploads/2021/10/searchgrid2.jpeg)
+![](../images/2021/10/searchgrid2.jpeg)
 
 二维矩阵的例子
 

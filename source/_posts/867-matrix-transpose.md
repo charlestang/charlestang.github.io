@@ -10,7 +10,7 @@ date: 2021-03-08 18:08:36
 
 今天的题目是矩阵的转置。题目懒得抄了，帖个图吧。
 
-[![](https://sexywp.com/wp-content/uploads/2021/02/hint_transpose.png)](https://sexywp.com/wp-content/uploads/2021/02/hint_transpose.png)
+![](../images/2021/02/hint_transpose.png)
 
 矩阵转置示意图
 

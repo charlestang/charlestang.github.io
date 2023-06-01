@@ -27,7 +27,7 @@ date: 2021-02-26 11:15:39
 
 当我们对一类流程进行抽象后，本质上就是我们找到了这类事情的共性，排除了这些共性，得到的就是这类事物的抽象，这个时候，就出现了框架，所以我觉得框架就是这么一回事情。
 
-[![](https://sexywp.com/wp-content/uploads/2021/02/request-lifecycle-1024x784.png)](https://sexywp.com/wp-content/uploads/2021/02/request-lifecycle.png)
+![](../images/2021/02/request-lifecycle-1024x784.png)
 
 Yii 框架请求处理生命周期，程序员主要实现好自己的 MVC 就可以快速开发应用
 
@@ -51,7 +51,7 @@ Yii 框架请求处理生命周期，程序员主要实现好自己的 MVC 就�
 
 组装其实要面临很多的问题，首先，组装点不可能只有一个，因为业务有大小，不可能每个业务点都组装所有的组件，最好要按需去组装，组装完后。刚才说过，我们要使组装的点尽可能少，以减少耦合，但是这里又说，各个不同的大小业务，要按需分别组装，两者几乎是矛盾的，一个是少，一个是多。
 
-[![](https://sexywp.com/wp-content/uploads/2021/02/abstract-factory-1024x479.jpeg)](https://sexywp.com/wp-content/uploads/2021/02/abstract-factory.jpeg)
+![](../images/2021/02/abstract-factory-1024x479.jpeg)
 
 Abstract Factory 模式，体现了 IoC 思想
 

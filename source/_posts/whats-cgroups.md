@@ -23,7 +23,7 @@ CGroups 是 **Control Groups** 的缩写，是 Linux 内核的一种机制，可
 
 CGroups 提供了一个虚拟文件系统 /proc/cgroup，作为交互的接口，用于设置和管理各个子系统。本质上来说，CGroups 是内核附加在程序上的一系列钩子（Hooks），通过程序运行时对资源的调度触发相应的钩子以达到资源追踪和限制的目的。[7]
 
-![](https://sexywp.com/wp-content/uploads/2019/06/cgroups-timeline.png)
+![](../images/2019/06/cgroups-timeline.png)
 
 CGroups 发展的时间线
 
@@ -36,19 +36,19 @@ CGroups 发展的时间线
 
 ### 几个概念间的关系
 
-![](https://sexywp.com/wp-content/uploads/2019/06/RMG-rule1.png)
+![](../images/2019/06/RMG-rule1.png)
 
 一个层次结构，可以附着一个或者多个子系统（来源 RedHat）
 
-![](https://sexywp.com/wp-content/uploads/2019/06/RMG-rule2.png)
+![](../images/2019/06/RMG-rule2.png)
 
 一个子系统不能附着第二个已经附着过子系统的层次结构
 
-![](https://sexywp.com/wp-content/uploads/2019/06/RMG-rule3.png)
+![](../images/2019/06/RMG-rule3.png)
 
 一个任务不能是同一个层次结构下的不同控制组的成员
 
-![](https://sexywp.com/wp-content/uploads/2019/06/RMG-rule4.png)
+![](../images/2019/06/RMG-rule4.png)
 
 fork 出来的进程严格继承父进程的控制组
 
@@ -65,7 +65,7 @@ fork 出来的进程严格继承父进程的控制组
 
 ## CGroups 的实现方式
 
-![](https://sexywp.com/wp-content/uploads/2019/06/cgroups-source-graph-1024x686.png)
+![](../images/2019/06/cgroups-source-graph-1024x686.png)
 
 Linux 内核中关于 CGroups 的源码结构示意图[7]
 
@@ -75,7 +75,7 @@ cgroup 里面有 sibling，children，parent 指针，显示 cgroup 结构体，
 
 cgroup_subsys 就是我们说的“子系统”的数据结构。这是一个抽象数据结构，需要被各个子系统去分别实现，所以这里包含了很多函数指针（如 attach）。cgroup_subsys_state 存储了一些各个子系统共用的元数据。各个子系统各自的结构体，按照自己的特点再来定义各自的控制信息结构体。参考[7]
 
-![](https://sexywp.com/wp-content/uploads/2019/06/cgroups-logic-graph-984x1024.png)
+![](../images/2019/06/cgroups-logic-graph-984x1024.png)
 
 从逻辑层面看 CGroups 的内核数据结构[10]
 

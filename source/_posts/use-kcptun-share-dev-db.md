@@ -14,7 +14,7 @@ categories:
 date: 2020-03-06 03:11:09
 ---
 
-![](https://sexywp.com/wp-content/uploads/2020/03/KCP-隧道搭建开发环境数据库-1-1024x707.png)
+![](../images/2020/03/KCP-隧道搭建开发环境数据库-1-1024x707.png)
 
 使用隧道搭建开发环境数据库
 

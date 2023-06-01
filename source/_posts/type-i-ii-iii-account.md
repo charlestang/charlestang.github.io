@@ -89,7 +89,7 @@ III 类户
 
 在微众银行的手机 App 中，每个人可以申请一张虚拟银行卡。其实这张卡，就是上文提到的 II 类户，这个账户的开户过程，不需要用户亲自到银行柜面核验，但是开设过程中，需要绑定一个 I 类户才能进行身份验证。
 
-[![](https://sexywp.com/wp-content/uploads/2021/02/webank-1024x562.png)](https://sexywp.com/wp-content/uploads/2021/02/webank.png)
+![](../images/2021/02/webank-1024x562.png)
 
 微众银行的储蓄卡，上面有II类户标记
 

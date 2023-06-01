@@ -84,7 +84,7 @@ broker 字典里是经纪人的意思，其实也可以叫中介，或者中间�
 
 消息队列中间件，就像是一种专门处理系统间消息的中间商或者说中介。RabbitMQ 就是这样一种中间件。它实现了很多消息队列的协议，最重要的一种就是 AMQP，也就是高级消息队列协议。这种协议的概念模型关注三种实体，队列，绑定，和交换。
 
-![](https://sexywp.com/wp-content/uploads/2019/06/amqp-model.png)
+![](../images/2019/06/amqp-model.png)
 
 AMQP Models
 

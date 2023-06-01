@@ -38,7 +38,7 @@ def serialize(self, root):
 
 我使用了一个内部函数，用一个变量 `res` 来存储结果数组，然后内部函数是一个递归前序遍历算法。这里注意的主要就是根节点被表示成了 None，也可以是别的，等会儿反正反序列化的时候，你照着反解就行了，这其实就是所谓的“协议”了。
 
-[![](https://sexywp.com/wp-content/uploads/2021/10/serdeser.jpeg)](https://sexywp.com/wp-content/uploads/2021/10/serdeser.jpeg)
+![](../images/2021/10/serdeser.jpeg)
 
 二叉树的例子
 

@@ -85,7 +85,7 @@ ssh-keygen -b 4096 -t rsa
 # 这个命令会在你的 ～/.ssh/ 目录创建 id_rsa 和 id_rsa.pub（公钥）文件
 ```
 
-![](https://sexywp.com/wp-content/uploads/2019/02/password-strength-1024x351.png)
+![](../images/2019/02/password-strength-1024x351.png)
 
 插图节选自《HTTPS权威指南》
 

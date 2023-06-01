@@ -12,7 +12,7 @@ categories:
 date: 2020-03-01 17:11:34
 ---
 
-![](https://sexywp.com/wp-content/uploads/2020/03/commit_verify_screenshot-1024x464.png)
+![](../images/2020/03/commit_verify_screenshot-1024x464.png)
 
 好久没有写代码提交 GitHub 了，真是惭愧！回到正题，今天提交了一个代码，冷不丁发现，在我的 Commit 记录里面，有一条被打上了 Verified 标记。原来 GitHub 的 Commit 支持签名验证了，我可以对每一个我的 Commit 进行签名（Commit Signature），这样，GitHub 的其他用户就知道这个“提交”来自一个可以信任的来源。我举个例子，如果有人设定了我的头像，我的名字，往我的版本库里 Push 了一个 Commit（我的 WordPress 插件官方仓库，被黑客提交过恶意代码，因为我不小心被钓鱼了，自爆一下黑历史），那么，有没有 Verified 就成为一个识别真伪的依据（虽然，我位微言轻，可能不太会有人假冒我，我也知道，杠头请退散）。
 

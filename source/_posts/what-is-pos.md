@@ -13,7 +13,7 @@ date: 2020-05-28 14:29:49
 
 POS 的英文是 Point of Sales，字面意思是销售点，百度百科也说是“销售点情报管理系统”，本质上来说，是一套系统，有很多的组成部分。
 
-![](https://sexywp.com/wp-content/uploads/2020/05/retail-pos-system-1200x650px-1024x555.jpg)
+![](../images/2020/05/retail-pos-system-1200x650px-1024x555.jpg)
 
 POS 系统
 
@@ -45,7 +45,7 @@ POS 机的持有者，专业上叫特约商户，一般来说，是一个零售�
 
 以上知识，主要来自搜索、知乎，不确保准确无误。下面附上一幅图解释一次 POS 机刷卡的业务流程，原图来自网络，不清楚，进行了重绘。
 
-![](https://sexywp.com/wp-content/uploads/2020/06/银行卡POS收单支付流程.png)
+![](../images/2020/06/银行卡POS收单支付流程.png)
 
 一次完整的POS机刷卡流程
 

@@ -139,4 +139,4 @@ Web 服务实现了客户端证书验证后，所有需要访问受保护网站�
 
 他引用的插图不错，很好地阐释了整个 mtls 的过程。我就也贴过来好了。
 
-[![how mutual authentication works](https://sexywp.com/wp-content/uploads/2023/05/how-mutual-auth-works.webp)](https://sexywp.com/wp-content/uploads/2023/05/how-mutual-auth-works.webp)
+![how mutual authentication works](../images/2023/05/how-mutual-auth-works.webp)
