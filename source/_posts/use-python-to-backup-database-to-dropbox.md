@@ -15,7 +15,7 @@ date: 2017-02-06 00:32:32
 <!-- more -->
 正好，老婆最近正在学习 Python 编程，我在教她，其实，我是 PHP 程序员，一点也不喜欢 Python，但是说实在，一个外行学编程的话，Python 确实比 PHP 友好太多了，只能推荐她学 Python 了。正好，借着这个机会，我决定自己也学学 Python 编程吧，于是，我决定要用 Python 做一个数据库的自动备份脚本。备份的位置，就用 Dropbox 来做吧，因为我的服务器是 Linode 提供的，美国 fremont 机房，选择美国的存储服务，比较合适。以下是我写得代码，Python 小白，敬请指教：
 
-```null
+```python
 #!/usr/bin/python
 #coding:utf-8
 
@@ -105,7 +105,7 @@ for db in conf['databases'] :
 
 整个代码完成后，我发现，写代码一共也没花多少时间，而且，我学会的 Python 的方式，我以前一直抱怨 Python 的文档难用，我发现，其实，最好的方式其实是在交互式的 Shell 里，用 help 来查询 API，再辅佐以官方文档，才是比较正确的方式。这是刷新了一个我以前的认识的地方。实践下来感觉还不错的。Python 的包管理器 pip 也很好用。
 
-```null
+```shell
 pip install PyYAML
 pip install dropbox
 ```

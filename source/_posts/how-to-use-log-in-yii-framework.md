@@ -21,7 +21,7 @@ date: 2011-03-31 01:00:21
 
 言归正传，左下角的类CLogger，是在开发过程中，打log时候，真正调用的类，这个类作为所有应用最最基础的组件，被包含在了YiiBase中，任何时候，在代码中调用Yii::getLogger()函数，会得到一个CLogger类的实例，这里用的是一个单件模式（Singleton）。打印log，只要调用其log()方法即可，这个方法有三个参数，第一个是log的内容，第二个是级别（warning，debug，fatal等），第三个category，可以叫类别，也可以视作是一种标识符，可以用于log的过滤。
 
-```null
+```php
 Yii::getLogger()->log("here is a debug info.", 'debug', 'app.siteController');
 
 ```
@@ -30,7 +30,7 @@ Yii::getLogger()->log("here is a debug info.", 'debug', 'app.siteController');
 
 在框架中这个log系统里，负责打log，和负责记录log的是两个对象，他们被很好的解耦合了。CLogger扮演了一个专门生产log的角色，其任务就是将用户使用log()函数记录的log放到一个数组里，可以认为是一个内存buffer，长度可配置。在buffer满了的时候，会激发flush（如果配置了autoFlush）的话，flush就是冲掉的意思，如果内存buffer满了，则清空之，继续接受log信息。在清空log buffer之前，这个类对象会触发一个事件，就是onFlush事件，后续其他的类hook到这个onFlush事件上，就可以在log信息被清空之前，有所动作了。
 
-```null
+```php
 public function log($message,$level='info',$category='application')
 {//$this->_logs就是一个数组，也即存放log信息的内存缓冲，默认10000行
     $this->_logs[]=array($message,$level,$category,microtime(true));
@@ -52,7 +52,7 @@ public function flush()
 
 log的生产者是系统中必然存在的，但是log的消费者不是，是通过配置文件配置到系统中的，打开位于/protected/config/main.php的配置文件，在components段，我们可以看到关于log组件的配置，如下所示：
 
-```null
+```php
 'log'=>array(
     'class'=>'CLogRouter',
     'routes'=>array(
@@ -75,7 +75,7 @@ log的生产者是系统中必然存在的，但是log的消费者不是，是�
 
 对log的各种处理方法，都继承自一个叫CLogRoute的抽象类，提供了统一的调用接口，CLogRouter就是这些route的管理者，它主要负责的就是在onFlush事件发生的时候，把CLogger生产的log都接过来，然后，逐一地交付给自己旗下的Route们，分别处理。从上面的配置信息里，我们可以看到，LogRouter管理多少个Route也是通过配置文件配置的，也即route是router所依赖的组件。在具体开发过程中，你可以只配置一个，也可以配置一群。这种行为特征，真的有点像路由，怪不得叫router和route，我猜就这么个解释。
 
-```null
+```php
 public function collectLogs($event)
 {
     $logger=Yii::getLogger();

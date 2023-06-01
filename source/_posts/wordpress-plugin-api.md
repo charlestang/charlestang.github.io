@@ -58,7 +58,7 @@ Action由[WordPress](http://sexywp.com/tags/wordpress "Becoming Charles-WP")中�
 
 当您定义好您的函数后，下一步就是将您的函数Hook或者注册到WordPress中。在您的插件文件中的全局空间中调用函数 add_action()就可以了：
 
-```null
+```php
 add_action(’hook_name’, ‘your_filter’, [priority], [accepted_args]);
 
 ```
@@ -72,9 +72,8 @@ add_action(’hook_name’, ‘your_filter’, [priority], [accepted_args]);
 
 继续前文的例子，我们可以将下面一行代码加入到插件的文件中：
 
-```null
+```php
 add_filter(’comment_text’,'filter_profanity’);
-
 ```
 
 相似的，您也可以将一个函数从Action中移除。你可以参考移除Action来获得详细的信息。

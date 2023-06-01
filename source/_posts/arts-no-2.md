@@ -16,7 +16,7 @@ date: 2019-06-11 00:22:29
 
 例如，给出 _n_ = 3，生成结果为：
 
-```null
+```python
 [
   "((()))",
   "(()())",
@@ -28,7 +28,7 @@ date: 2019-06-11 00:22:29
 
 以下是我的解法：
 
-```generic
+```golang
 func generateParenthesis(num int) []string {
 
     result := []string{}

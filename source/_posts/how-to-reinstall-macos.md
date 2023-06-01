@@ -33,38 +33,38 @@ date: 2020-06-09 14:04:04
 
 For macOS Catalina:
 
-```null
+```shell
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller
 
 ```
 
 For macOS Mojave:
 
-```null
+```shell
 sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller
 ```
 
 For macOS High Sierra:
 
-```null
+```shell
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller
 ```
 
 For OS X El Capitan
 
-```null
+```shell
 sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
 ```
 
 For OS X Yosemite:
 
-```null
+```shell
 sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller --applicationpath /Applications/Install\ OS\ X\ Yosemite.app --nointeraction
 ```
 
 For OS X Mavericks:
 
-```null
+```shell
 sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/FlashInstaller --applicationpath /Applications/Install\ OS\ X\ Mavericks.app --nointeraction
 ```
 

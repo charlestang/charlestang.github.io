@@ -25,7 +25,7 @@ date: 2009-03-31 00:12:59
 
 一般性地读取XML文件，在dom4j中操作起来将非常简单。
 
-```null
+```java
 public void readXMLSimple(File file) throws DocumentException{
     //使用SAXReader读取XML文件
     SAXReader sr = new SAXReader();
@@ -43,7 +43,7 @@ public void readXMLSimple(File file) throws DocumentException{
 
 创建一个XML文件，并将其写到磁盘上，也可以使用非常简介的代码来完成，假设我们将上一个代码范例中得到的entry节点的列表，插入到一个新建的XML文档中，然后使用优美的缩进格式保存在磁盘上，我们可以像下面这样编码：
 
-```null
+```java
 public void createXMLSimple(List entries, File f)
         throws FileNotFoundException, 
                UnsupportedEncodingException,
@@ -68,7 +68,7 @@ public void createXMLSimple(List entries, File f)
 
 如果我们刚才的代码范例读取的是符合Atom1.0标准的Feed，那么，根节点带有default namespace的http://www.w3.org/2005/Atom。读取这样的XML文档稍微有点麻烦，网上的代码很多，但是很多都不好用，我总结下来，基本上没有办法像你想的那么干净。
 
-```null
+```java
 public void treatDefaultNamespace(File f) 
         throws DocumentException{
     SAXReader sr = new SAXReader();
@@ -93,7 +93,7 @@ public void treatDefaultNamespace(File f)
 
 创建一个带有default namespace的XML的方法，相当的tricky，因为你创建一个Element的方法有很多种，可以通过add方法，默认的建，也可以使用DocumentHelper对象来创建，不过，每种方法给你的结果都不同，往往让你大吃一惊。其他的那些方法，和得到的多种结果，大家可以在网上看，很多。我就提供一个能创建“干净”的XML的代码范例。
 
-```null
+```java
 public void createXMLWithDefaultNamespace(List entries){
     Document d = DocumentHelper.createDocument();
     d.addElement("feed","http://www.w3.org/2005/Atom");
@@ -109,7 +109,7 @@ public void createXMLWithDefaultNamespace(List entries){
 
 最后，罗列一下上文中用到的所有对象所在的包，没有列出的在J2SE内。
 
-```null
+```java
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;

@@ -23,7 +23,7 @@ Mac 的主机名，在 Preference -> Sharing 面板上面的 Computer Name 格�
 
 例如，你的主机名叫 MyComputer，那么你的 host 应该如下：
 
-```null
+```txt
 127.0.0.1 MyComputer.local
 :::1      MyComputer.local
 

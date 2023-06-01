@@ -25,7 +25,7 @@ Go 语言提供一系列的基本类型：
 
 可以使用 `type` 关键字来创建用户自定义类型，可以使用 `struct` 关键字来创建一个结构类型。
 
-```null
+```golang
 type user struct {
    name   string
    email  string
@@ -34,7 +34,7 @@ type user struct {
 
 也可以使用已经存在的类型，包括自定义类型，来创建一个新类型。
 
-```null
+```golang
 type Duration int64
 ```
 
@@ -44,7 +44,7 @@ type Duration int64
 
 可以使用 `var` 关键字来声明一个自定义类型的变量，变量会被 0 值初始化。更常见的是使用结构体字面量来初始化结构类型。
 
-```null
+```golang
 bill := user{
     name:  "Bill",
     email: "bill@email.com",
@@ -57,7 +57,7 @@ bill := user{"Bill", "bill@email.com"}
 
 Go 语言通过给用户自定义类型添加方法来支持面向对象。其实，自定义类型的方法，其实就是普通的方法，只是每个方法强制多添加了一个参数，称作“接收者”，这个参数写在方法名前面，更像是一种语法糖。编译器只允许为命名的用户定义的类型声明方法。
 
-```null
+```golang
 type user struct {
     name     string
     email    string
@@ -91,7 +91,7 @@ func (u *user) changeEmail(email string) {
 
 接口类型的值是一个两个字长的数据结构，第一个字包含一个指向内部表（iTable）的指针，第二个指针指向接口类型值存储的实体类型值的地址。
 
-```null
+```golang
 var n notifier
 n = user{"Bill"}
 
@@ -126,7 +126,7 @@ Go 语言允许用户扩展或者修改已有类型的行为，从而实现代�
 
 嵌入类型后，内部类型的相关标识符会提升到外部类型上。这样外部类型就“继承”了内部类型的所有标识符。也可以自己添加新的方法和字段，还可以通过声明与内部类型相同的标识符来覆盖内部类型的方法。
 
-```null
+```golang
 // 内部类型定义
 type user struct {
     name  string

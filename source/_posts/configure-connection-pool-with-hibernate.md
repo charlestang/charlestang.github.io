@@ -15,7 +15,7 @@ date: 2009-07-14 15:22:37
 <!-- more -->
 在hibernate.cfg.xml中加入:
 
-```null
+```xml
 <property name="hibernate.proxool.pool_alias">pool1</property>
 <property name="hibernate.proxool.xml">proxoolconf.xml</property>
 <property name="hibernate.connection.provider_class">org.hibernate.connection.ProxoolConnectionProvider</property>
@@ -23,7 +23,7 @@ date: 2009-07-14 15:22:37
 
 然后，再在classpath下面放一个proxoolconf.xml的配置文件，里面的内容为：
 
-```null
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- the proxool configuration can be embedded within your own application's.
 Anything outside the "proxool" tag is ignored. -->

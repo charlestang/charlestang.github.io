@@ -21,7 +21,7 @@ inotify的API接口非常少，只有5个函数，inotify_init，inotifiy_read�
 
 inotify能够监控的文件系统事件罗列如下，基本上涵盖了linux server上的所有的文件事件。根据PHP官方文档和我实际测试，inotify不支持目录递归遍历，所以，如果要监控目录的变化，需要把每一个子目录都加入到watch的列表中去。除此之外，因为我在虚拟机上测试，还发现了一点，就是宿主机编辑共享文件，guest系统中的inotify无法监控到文件的变化。
 
-```null
+```php
 
 IN_ACCESS           :1
 IN_MODIFY           :2
@@ -54,9 +54,6 @@ IN_ONESHOT          :-2147483648
  
 
 ```php
-
-
- */
 class DirWatcher {
 
  private $_callbacks = array();
@@ -64,87 +61,87 @@ class DirWatcher {
  private $_inotify = null;
 
  public function __construct() {
- $this->_inotify = inotify_init();
+   $this->_inotify = inotify_init();
  }
 
  public function addDirectory($path, $mask = DIRWATCHER_CHANGED) {
- $key = md5($path);
- if (!isset($this->_directories[$key])) {
- $wd = inotify_add_watch($this->_inotify, $path, $mask);
- $this->_directories[$key] = array(
- 'wd' => $wd,
- 'path' => $path,
- 'mask' => $mask,
- );
- }
+     $key = md5($path);
+     if (!isset($this->_directories[$key])) {
+         $wd = inotify_add_watch($this->_inotify, $path, $mask);
+         $this->_directories[$key] = array(
+             'wd' => $wd,
+             'path' => $path,
+             'mask' => $mask,
+         );
+     }
  }
 
  public function removeDirectory($path) {
- $key = md5($path);
- if (isset($this->_directories[$key])) {
- $wd = $this->_directories[$key]['wd'];
- if (inotify_rm_watch($this->_inotify, $wd)) {
- unset($this->_directories[$key]);
- }
- }
+     $key = md5($path);
+     if (isset($this->_directories[$key])) {
+         $wd = $this->_directories[$key]['wd'];
+         if (inotify_rm_watch($this->_inotify, $wd)) {
+             unset($this->_directories[$key]);
+         }
+     }
  }
 
  public function addDirectories($directories) {
- foreach ($directories as $dir) {
- if (!is_array($dir)) {
- $this->addDirectory($dir);
- } else {
- $this->addDirectory($dir['path'], $dir['mask']);
- }
- }
+     foreach ($directories as $dir) {
+         if (!is_array($dir)) {
+             $this->addDirectory($dir);
+         } else {
+             $this->addDirectory($dir['path'], $dir['mask']);
+         }
+     }
  }
 
  public function addCallback($callback, $params = array(), $priority = 9) {
- $key = md5(var_export($callback, true));
- if (!isset($this->_callbacks[$key])) {
- $this->_callbacks[$key] = array(
- 'callable' => $callback,
- 'params' => $params,
- 'priority' => $priority,
- );
+     $key = md5(var_export($callback, true));
+     if (!isset($this->_callbacks[$key])) {
+         $this->_callbacks[$key] = array(
+             'callable' => $callback,
+             'params' => $params,
+             'priority' => $priority,
+         );
 
- usort($this->_callbacks, create_function('$a, $b', 'return $a["priority"] > $b["priority"];'));
- }
+         usort($this->_callbacks, create_function('$a, $b', 'return $a["priority"] > $b["priority"];'));
+     }
  }
 
  public function removeCallback($callback) {
- $key = md5(var_export($callback, true));
- if (isset($this->_callbacks[$key])) {
- unset($this->_callbacks[$key]);
- }
+     $key = md5(var_export($callback, true));
+     if (isset($this->_callbacks[$key])) {
+         unset($this->_callbacks[$key]);
+     }
  }
 
  public function addCallbacks($callbacks) {
- foreach ($callbacks as $callable) {
- if (is_callable($callable)) {
- $callable = array(
- 'callable' => $callable,
- 'params' => array(),
- 'priority' => 9,
- );
- }
+     foreach ($callbacks as $callable) {
+         if (is_callable($callable)) {
+             $callable = array(
+             'callable' => $callable,
+             'params' => array(),
+             'priority' => 9,
+             );
+         }
 
- $this->addCallback($callable['callable'], $callable['params'], $callable['priority']);
- }
+         $this->addCallback($callable['callable'], $callable['params'], $callable['priority']);
+     }
  }
 
  public function startWatch() {
- while (TRUE) { //启动一个常驻进程，监视目录的变化，事件触发回调函数
- $event = inotify_read($this->_inotify);
+     while (TRUE) { //启动一个常驻进程，监视目录的变化，事件触发回调函数
+         $event = inotify_read($this->_inotify);
 
- if (defined('DIRWATCHER_DEBUG') && DIRWATCHER_DEBUG) {
- error_log(vsprintf("[wd:%d][mask:%d][cookie:%s]%s", $event[0]));
- }
+         if (defined('DIRWATCHER_DEBUG') && DIRWATCHER_DEBUG) {
+             error_log(vsprintf("[wd:%d][mask:%d][cookie:%s]%s", $event[0]));
+         }
 
- foreach ($this->_callbacks as $callable) {
- call_user_func_array($callable['callable'], array_merge($event, $callable['params']));
- }
- }
+         foreach ($this->_callbacks as $callable) {
+             call_user_func_array($callable['callable'], array_merge($event, $callable['params']));
+         }
+     }
  }
 
  public function stopWatch() {

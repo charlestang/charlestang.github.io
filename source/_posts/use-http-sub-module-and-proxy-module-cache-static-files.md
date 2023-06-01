@@ -12,11 +12,9 @@ date: 2015-12-25 12:22:07
 <!-- more -->
 我发现，不知因为什么原因，我博客里引用的 Google API 提供的静态类库和字体样式，是没法正确加载的。比如：
 
-```null
-
-https:/ /fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&subset=latin%2Clatin-ext
-https:/ /ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js
-
+```txt
+https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&subset=latin%2Clatin-ext
+https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js
 ```
 
 类似这样的网址，很多时候都没法正确加载，这会导致我博客（WordPress 4.4+）的一些功能异常，后台打开非常缓慢。
@@ -26,13 +24,11 @@ https:/ /ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js
 
     
 
-```null
-
+```conf
     sub_filter_types text/xml text/css text/javascript;
     sub_filter 'https:/ /fonts.googleapis.com' 'http://ajax.useso.com';
     sub_filter 'https:/ /ajax.googleapis.com'  'http://fonts.useso.com';
     sub_filter_once off;
-
 ```
 
 这样，就可以轻松解决问题了。上面的范例里，用的是数字公司提供的 CDN，真是帮了大忙。

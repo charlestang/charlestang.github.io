@@ -22,7 +22,7 @@ date: 2017-08-18 04:36:03
 
 目前最新版本的 OpenResty 是 [v1.11.2.4](http://openresty.org/en/download.html) 发布于 2017/07/31 真是新鲜得发烫。一般，我使用 Debian 作为自己使用的操作系统环境，有比较方便的包管理器和比较稳定的服务器环境。Ubuntu 也是不错的选择。以下，我都会使用 Debian（jessie）。首先安装依赖的软件包，然后编译安装 OpenResty。
 
-```null
+```shell
 apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential curl
 
 wget "https://openresty.org/download/openresty-1.11.2.4.tar.gz"
@@ -40,7 +40,7 @@ sudo make install
 
 Python 有 pip，PHP 有 Composer，Lua 有 LuaRocks，还真是酷呢。LuaRocks 在 Linux 环境默认只有编译安装的方式，依赖本机的 Lua 环境。虽然 OpenResty 里面带有了 LuaJIT，但是我试了一下，并不能简单代替原生 Lua 环境。所以，还是建议再安装 Lua 环境，避免踩坑和麻烦。
 
-```null
+```shell
 #一个命令安装 Lua 5.1 环境，以及依赖软件包
 apt-get install lua5.1 liblua5.1-dev unzip
 
@@ -59,7 +59,7 @@ make install
 
 有了 LuaRocks，安装 Lapis 会非常简单，如下单个命令就能完成安装，一共会安装 12 个软件包，一个是 Lapis 自己，以及其依赖。
 
-```null
+```shell
 root@deb8➜  ~  luarocks install lapis
 Installing https://luarocks.org/lapis-1.6.0-1.src.rock
 Missing dependencies for lapis 1.6.0-1:
@@ -91,7 +91,7 @@ Missing dependencies for lapis 1.6.0-1:
 
 首先，我们来建立一个最简单的项目，先建立一个项目文件夹叫 mobile-search，然后在该目录下，用 lapis 命令创建项目基础文件：
 
-```null
+```shell
 root@deb8➜  Projects  mkdir mobile-search
 root@deb8➜  Projects  cd mobile-search
 root@deb8➜  mobile-search  lapis new
@@ -106,7 +106,7 @@ wrotemodels.moon
 
 同样使用 LuaRocks 我们来安装 MoonScript 的软件包，然后使用编译器编译 MoonScropt：
 
-```null
+```shell
 root@deb8➜  mobile-search  luarocks install moonscript
 Warning: falling back to curl - install luasec to get native HTTPS support
 Installing https://luarocks.org/moonscript-0.5.0-1.src.rock
@@ -132,7 +132,7 @@ moonc -w .
 
 首先，我们来看看我们要做的 Demo 的表结构。我去淘宝上 2 块钱买了一个用于查询手机号码归属地的数据库，用来完成这次的 Demo。以下是这个数据的表结构：
 
-```null
+```sql
 CREATE TABLE `phonenumber_info` (
   `id` int(11) NOT NULL COMMENT '条目ID',
   `prefix` varchar(6) DEFAULT NULL COMMENT '号码前缀',
@@ -151,7 +151,7 @@ CREATE TABLE `phonenumber_info` (
 
 首先，我们来创建一个配置文件，进入到 `mobile-search` 目录，创建一个名为 `config.moon` 的文件：
 
-```null
+```lua
 -- config.moon
 config = require "lapis.config"
 
@@ -166,7 +166,7 @@ config "development", ->
 
 然后，我们可以测试一下，配置文件是否有效。我们打开 `app.moon` 来编辑一下：
 
-```null
+```lua
 -- app.moon
 lapis = require "lapis"
 
@@ -183,7 +183,7 @@ class extends lapis.Application
 
 然后，我们访问 `http://localhost:8080` ，又看到了：Welcome to Lapis 1.6.0! 并且，我们在 shell 的 log 里看到：
 
-```null
+```shell
 2017/08/17 23:55:17 [notice] 5429#0: *6 [lua] [C]:-1: [200] GET / - {  }, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
 2017/08/17 23:55:17 [notice] 5429#0: *8 [lua] mysql.lua:104: query(): SQL: select * from phonenumber_info where phone_header like '1851623', client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
 2017/08/17 23:55:17 [notice] 5429#0: *8 [lua] [C]:-1: [200] GET / - {  }, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1:8080"
@@ -192,7 +192,7 @@ class extends lapis.Application
 
 这些迹象表明，我们的数据库连接已经通了。我们把代码优化一下：
 
-```null
+```lua
 class extends lapis.Application
   "/": =>
     res = db.query "select * from phonenumber_info where phone_header like ?", '1851623'
@@ -207,9 +207,7 @@ class extends lapis.Application
 
 改完，我们刷新页面，发现了乱码，把编码格式改成 utf-8 后，我们看到：
 
-```null
-
-
+```shell
   Lapis Page
   
     index: province, value: 上海
@@ -220,8 +218,6 @@ class extends lapis.Application
     index: area_code, value: 021
     index: city, value: 上海
     index: mobile_type, value: 联通185卡
-  
-
 
 
 ```
@@ -234,7 +230,7 @@ Lapis 框架是提供 Model 这个抽象形式的。跟一般的 Web 框架区�
 
 定义一个 Model 最简单的办法是使用约定。数据库表用下划线分割的小写单词的话，Model 名字用对应的驼峰命名法。
 
-```null
+```lua
 lapis = require "lapis"
 -- Model 的基类
 import Model from require "lapis.db.model"
@@ -265,7 +261,7 @@ Lapis 的 Model 封装了一系列的单行变量的操作方法。insert，sele
 
 我们在 `mobile-search` 目录下，创建一个目录叫 views，这也是一种约定。在里面放一个模板文件，叫 `result.etlua`：
 
-```null
+```shell
 
     号码类型：<%= mtype %>
     归属地：<%= province %> <%= city %>
@@ -277,7 +273,7 @@ Lapis 的 Model 封装了一系列的单行变量的操作方法。insert，sele
 
 然后，我们把 app.moon 改成：
 
-```null
+```lua
 lapis = require "lapis"
 import Model from require "lapis.db.model"
 
@@ -309,7 +305,7 @@ class extends lapis.Application
 
 创建一个目录叫 applications ，然后，在里面创建一个文件叫 search.moon 用来把逻辑组织在一个单独文件，然后分出去，然后再建个目录叫 models，把刚才的 Model 也挪出去。
 
-```null
+```shell
 root@deb8➜  mobile-search  tree .
 .
 ├── applications
@@ -338,7 +334,7 @@ root@deb8➜  mobile-search  tree .
 
 目录布局就是上面这个样子。
 
-```null
+```lua
 -- --------------------
 -- app.moon 变为
 -- --------------------
@@ -385,7 +381,7 @@ class PhonenumberInfo extends Model
 
 还是很好奇这个东西的性能的吧，哈哈哈
 
-```null
+```shell
 ~  ab -n 10000 -c 10 http://172.16.57.128:8080/mobile-search/18516231234
 This is ApacheBench, Version 2.3 <$Revision: 1757674 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -445,7 +441,7 @@ Percentage of the requests served within a certain time (ms)
 
 对比一下同一台机器上的 PHP + Apache 
 
-```null
+```php
 $mobile = $_GET['phone'];
 //持久连接
 $link = mysqli_connect("p:127.0.0.1", "root", "root", "mobile");
@@ -457,7 +453,7 @@ var_dump($data);
 
 结果，才跑完2000，我有点舍不得跑了，风扇那个吹啊，改成2并发，100请求：
 
-```null
+```shell
 ab -n 100 -c 2 "http://local.karl.com/mobile.php?phone=1851623"
 This is ApacheBench, Version 2.3 <$Revision: 1757674 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/

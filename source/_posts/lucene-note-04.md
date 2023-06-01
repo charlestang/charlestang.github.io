@@ -37,7 +37,7 @@ date: 2009-04-14 00:34:17
 
 现在的Field构造函数原型是如下样子的：
 
-```null
+```java
 public Field(String name, String value, Store store, Index index) 
 ```
 

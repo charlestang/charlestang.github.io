@@ -24,7 +24,7 @@ date: 2019-07-11 17:49:42
 
 netstat 有许多许多参数，我一般就用一种组合，以至于后来已经想不起来为什么是这几个参数了：
 
-```null
+```shell
 netstat -npl
 ```
 
@@ -66,7 +66,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     33512    1270/systemd         
 
 上面介绍了 netstat 的最最基本的一种用法，其他用法当然还有很多，但是先略过不表，如果想使用 ss 命令来代替 netstat 的话，我们怎样达到类似的效果呢？
 
-```null
+```shell
 ss -atlp
 ```
 

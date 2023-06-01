@@ -9,45 +9,51 @@ categories:
 date: 2022-09-27 12:21:34
 ---
 
+Docker 一旦设置好了环境，日常就只要使用简单命令就可以运行和停止。
+
+于是，我每次用的时候，都想不起来一些关键性的命令到底怎么用，特此记录。
+
+<!--more-->
+
 从公有仓库拉取镜像：
 
-```null
+```shell
 docker pull redis:7.0.5-alpine3.16 --platform linux/amd64
 ```
 
 查看本地的镜像：
 
-```null
+```shell
 docker images
 ```
 
 删除一个本地镜像：
 
-```null
+```shell
 docker image rm <REPOSITORY>:<TAG>
 ```
 
 查看本地的所有容器：
 
-```null
+```shell
 docker container ls --all
 ```
 
 给本地镜像打上一个 tag：
 
-```null
+```shell
 docker tag redis:7.0.5-alpine3.16 registry.selfhost.com/redis:7.0.5-alpine3.16
 ```
 
 将镜像推送到私有仓库：
 
-```null
+```shell
 docker push registry.selfhost.com/redis:7.0.5-alpine3.16
 ```
 
 连接一个正在运行的 container：
 
-```null
+```shell
 docker exec -it <CONTAINER-ID> /bin/sh
 ```
 

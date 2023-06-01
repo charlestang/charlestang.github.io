@@ -15,6 +15,8 @@ date: 2023-04-21 12:32:09
 
 后来手机普及后，出现了很多软件实现的 OTP，比如 QQ 安全中心，微软的 Authenticator，以及 Google Authenticator。这些验证器和一次性密码，成为两步验证一种比较流行的方式。我个人也很喜欢，至少我觉得比短信验证码体验要好一些。
 
+<!--more-->
+
 ## 什么是 OTP？
 
 OTP (One-Time Password)，翻译成中文为一次性密码，是一种加强网络安全的方法。在使用传统的用户名和密码进行登录时，由于密码可能被泄露或者猜测，因此使用 OTP 能够在一定程度上防止网络攻击和不法分子的破坏。
@@ -53,7 +55,7 @@ OTP 常见的实现方式有 HOTP 和 TOTP。而HOTP (HMAC-based One-Time Passwo
 
 使用 Flutter 来实现这个功能是非常简单的。下面规范文档介绍了一些实现的细节。
 
-```null
+```txt
 Extensions to Salted Challenge Response (SCRAM) for 2 factor authentication
 ```
 
@@ -90,7 +92,7 @@ Extensions to Salted Challenge Response (SCRAM) for 2 factor authentication
 
 其实真正耗费我一些时间去摸索的是，到底怎么填写这个参数。用户通过扫码二维码，会得到服务器分配给用户的一个秘钥，其格式是这样的：
 
-```null
+```txt
 otpauth://totp/{label}?secret={secret}&issuer={issuer}
 ```
 

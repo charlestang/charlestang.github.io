@@ -74,10 +74,8 @@ make install
 
 然后编辑配置文件，添加：
 
-```null
-
+```conf
 zend_extension=opcache.so
-
 ```
 
 =====

@@ -18,14 +18,14 @@ date: 2017-02-04 12:24:30
 
 打开官网的下载页面，再平台选择框里，选择 Debian 或者 Ubuntu，你就会看到一个 APT 安装源的广告 banner，[点击链接过去](https://dev.mysql.com/downloads/repo/apt/)，就会看到一个 deb 包的下载，下载好这个包到你的服务器，执行：
 
-```null
+```shell
 sudo dpkg -i mysql-apt-config_0.8.1-1_all.deb
 
 ```
 
 其实是使用手动方式部署安装了一个 deb 包到你的服务器，作用是配置好 MySQL 的安装源，按下回车，会出现一个字符图形界面，在里面选择 MySQL 5.7 版的 Server，然后 OK，就算配置完毕了 MySQL 安装源。
 
-```null
+```shell
 sudo aptitude update
 sudo aptitude safe-upgrade
 
@@ -39,7 +39,7 @@ sudo aptitude safe-upgrade
 
 原来，在 MySQL 数据库升级以后 performance_schema 表会出问题，接下来要执行：
 
-```null
+```shell
 mysql_upgrade -uroot -p --force
 sudo service mysql restart
 

@@ -19,7 +19,7 @@ CentOS 是使用最普遍的服务器端 Linux 发行版，其主要原因还是
 
 于是我 yum remove python27 甚至我把 python 2.6 的包也 remove，然后执行了一下 python 命令，竟然还有，我就知道，遇到硬点子了。放狗一搜，感情在 CentOS 里，python 是深度耦合的系统组件，难怪卸载不了，而且，也不能用普通的方法升级。
 
-```null
+```shell
 sudo yum update # update yum
 sudo yum install centos-release-scl # install SCL 
 sudo yum install python27 # install Python 2.7

@@ -27,7 +27,7 @@ var_dump($obj);
 
 执行结果如下：
 
-```null
+```php
 
 object(A)#1 (2) {
   ["a"]=>

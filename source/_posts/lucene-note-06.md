@@ -25,7 +25,7 @@ date: 2009-04-14 19:36:41
 
 上面已经提到了，IndexSearcher中有很多重载的search方法，不过我仔细看了一下，建议使用的并不多。
 
-```null
+```java
 public TopFieldDocs search(Query query, Filter filter, int n, Sort sort)
 public TopDocs search(Query query, Filter filter, int n)
 public TopDocs search(Query query, int n)
@@ -39,7 +39,7 @@ Filter是一个抽象类，就像其名字标识的一样，该对象将会过�
 
 HitCollector是一个抽象类，其子类的对象，都要提供一个collect方法，IndexSearcher会将每个文档的id和其原始得分传递给该方法。在这里，就可以自定义对最后结果的排序算法了。这里，可以看一下默认的TopDocCollector的collect方法实现：
 
-```null
+```java
   public void collect(int doc, float score) {
     if (score > 0.0f) {
       totalHits++;

@@ -21,7 +21,11 @@ Simple Tags是一款非常优秀的插件，在WordPress原生支持tags后，Si
 
 好了，闲话已毕，我们来看正题，首先我就把那三行代码贴在这里吧，全部采用默认设置输出相关日志的话，看到这里就可以大功告成了！在你自己的模板文件的single.php（如果使用K2，那么是theloop.php）中的合适位置，加入下面的代码即可输出10篇相关日志列表，如本站效果。
 
-` ```null <?php if (is_single() && function_exists('st_related_posts')) { st_related_posts('number=10&include_page=false&order=data-asc'); } ?> ``` `
+```php
+if (is_single() && function_exists('st_related_posts')) { 
+    st_related_posts('number=10&include_page=false&order=data-asc'); 
+} 
+```
 
 简单解释一下，`st_related_posts()`是Simple Tags插件提供的公用函数，可以直接输出相关日志列表。
 

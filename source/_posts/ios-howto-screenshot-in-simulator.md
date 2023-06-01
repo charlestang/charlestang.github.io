@@ -11,7 +11,7 @@ date: 2021-06-09 17:26:04
 
 在命令行执行：
 
-```null
+```shell
 xcrun simctl io booted recordVideo filename.mov
 ```
 

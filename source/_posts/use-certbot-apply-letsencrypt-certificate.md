@@ -18,7 +18,7 @@ date: 2017-02-01 00:25:55
 <!-- more -->
 [certbot](https://certbot.eff.org/) 就是上篇文章说的 EFF 推出的一个客户端软件，使用 Ptyhon 写成的，在特定的软件环境下，基本可以做到全自动申请和部署 SSL 证书。首先是安装，如果有包管理器，可以尝试搜索 certbot，认准 EFF 出品，如果没有的话，可以用 wget 下载安装：
 
-```null
+```shell
 wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 
@@ -26,7 +26,7 @@ chmod a+x certbot-auto
 
 建议安装到 /usr/local/bin 或者 ~/bin 目录下，这样以后执行的时候可以不用打完整路径。如果 Web Server 用的是 Apache 的话，基本上不用任何参数，可以完成全部的申请、配置、重启了，但是我没试过，因为我用的是 Nginx，不过也一样很好用了。使用的 Nginx 的时候，要加一个指令，叫 certonly，就是只申请证书，不进行自动部署。
 
-```null
+```shell
 ./path/to/certbot-auto certonly --webroot -w /var/www/example -d example.com -d www.example.com -w /var/www/thing -d thing.is -d m.thing.is
 
 ```
@@ -37,7 +37,7 @@ chmod a+x certbot-auto
 
 光是申请证书方便的话，我觉得也没什么了不起了，证书只有三个月有效期，使用 certbot 进行证书续期也超级方便的。竟然提供了一个测试续期的执行方式，和真正续期的执行方式。
 
-```null
+```shell
 # 测试续期功能是否正常
 ./path/to/certbot-auto renew --dry-run
 
@@ -50,7 +50,7 @@ chmod a+x certbot-auto
 
 可以创建一个这样的脚本，并且把脚本放到 /etc/cron.monthly 文件夹下，就可以实现每月一次续期证书：
 
-```null
+```shell
 #!/bin/bash
 /root/bin/certbot-auto renew --quiet --no-self-upgrade
 

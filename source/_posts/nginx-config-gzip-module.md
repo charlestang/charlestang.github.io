@@ -15,7 +15,7 @@ date: 2017-10-26 01:16:01
 
 官方建议我们创建一个叫 conf.d 的文件夹，使用 include 语句，将 gzip 的配置文件插入到 http 区段。
 <!-- more -->
-```null
+```conf
 # 打开gzip 功能
 gzip on;
 
