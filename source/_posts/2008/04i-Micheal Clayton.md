@@ -6,7 +6,7 @@ tags:
   - Warner Bros. Entertainment
 id: '44'
 categories:
-  -   - 看 电 影
+  - 看 电 影
 date: 2008-04-07 10:56:12
 permalink: micheal-clayton/
 ---

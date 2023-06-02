@@ -5,7 +5,7 @@ tags:
   - WordPress
 id: '111'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-07-14 12:34:04
 permalink: inside-wordpress-08/
 ---

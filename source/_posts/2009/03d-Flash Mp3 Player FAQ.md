@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '326'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-03-13 12:05:09
 permalink: flash-mp3-player-faq/
 ---

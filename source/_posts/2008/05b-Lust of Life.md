@@ -5,7 +5,7 @@ tags:
   - movie
 id: '82'
 categories:
-  -   - 看 电 影
+  - 看 电 影
 date: 2008-05-23 17:04:38
 permalink: lust-of-life/
 ---

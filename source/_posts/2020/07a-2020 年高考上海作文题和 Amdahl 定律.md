@@ -4,7 +4,7 @@ tags:
   - opinion
 id: '924'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2020-07-08 17:56:50
 permalink: 2020-chinese-exam-and-amdahl-law/
 ---

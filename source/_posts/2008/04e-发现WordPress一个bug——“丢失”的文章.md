@@ -5,7 +5,7 @@ tags:
   - WordPress
 id: '36'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-04-01 08:02:47
 permalink: a-bug-of-wordpres/
 ---

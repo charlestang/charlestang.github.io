@@ -5,7 +5,7 @@ tags:
   - web design
 id: '348'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-06-03 21:54:27
 permalink: flash-float-on-topest-layer/
 ---

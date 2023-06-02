@@ -7,7 +7,7 @@ tags:
   - user experience
 id: '350'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2009-06-26 17:59:39
 permalink: what-is-push-mail/
 ---

@@ -5,7 +5,7 @@ tags:
   - object oriented
 id: '1005'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2021-02-26 11:15:39
 permalink: why-need-inversion-of-control-ioc/
 ---

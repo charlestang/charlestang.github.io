@@ -7,7 +7,7 @@ tags:
   - themes
 id: '294'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-07 02:51:22
 permalink: something-about-sandbox/
 ---

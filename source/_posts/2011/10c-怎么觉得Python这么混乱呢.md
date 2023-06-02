@@ -5,7 +5,7 @@ tags:
   - python
 id: '461'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2011-10-04 00:49:09
 permalink: why-python-code-mess/
 ---

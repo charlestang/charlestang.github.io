@@ -6,7 +6,7 @@ tags:
   - usage
 id: '353'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-07-21 20:47:49
 permalink: how-to-make-a-easy-svn-server/
 ---

@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '233'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-09-04 11:27:02
 permalink: show-your-comments-counter/
 ---

@@ -6,7 +6,7 @@ tags:
   - socks
 id: '795'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2019-02-19 14:19:02
 permalink: socks-protocol/
 ---

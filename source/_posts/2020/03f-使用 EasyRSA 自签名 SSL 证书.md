@@ -6,8 +6,8 @@ tags:
   - 安全
 id: '896'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2020-03-09 02:04:30
 permalink: use-easyrsa-create-self-signed-cert/
 ---

@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '248'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-10-10 00:37:19
 permalink: wp-structure-and-best-practice/
 ---

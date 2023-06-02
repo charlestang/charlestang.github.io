@@ -4,7 +4,7 @@ tags:
   - eff
 id: '762'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2017-01-31 16:56:54
 permalink: eff/
 ---

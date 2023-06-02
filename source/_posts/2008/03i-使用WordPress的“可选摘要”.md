@@ -5,7 +5,7 @@ tags:
   - WordPress
 id: '26'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-03-23 08:21:38
 permalink: use-excerpt/
 ---

@@ -4,7 +4,7 @@ tags:
   - notice
 id: '290'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2009-01-27 14:27:16
 permalink: change-domain/
 ---

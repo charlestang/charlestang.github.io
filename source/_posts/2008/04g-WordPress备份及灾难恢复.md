@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '62'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-04-30 08:23:01
 permalink: wordpress-backup-restore/
 ---

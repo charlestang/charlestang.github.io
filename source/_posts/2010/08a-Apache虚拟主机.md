@@ -5,7 +5,7 @@ tags:
   - configuration
 id: '380'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2010-08-01 20:55:51
 permalink: apache-virtual-host-1/
 ---

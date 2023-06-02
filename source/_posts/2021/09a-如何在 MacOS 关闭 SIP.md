@@ -4,8 +4,8 @@ tags:
   - mac
 id: '1079'
 categories:
-  -   - 小窍门
-  -   - 日　　记
+  - [小窍门]
+  - [日　　记]
 date: 2021-09-04 16:16:47
 permalink: howto-disable-sip-on-macos/
 ---

@@ -6,7 +6,7 @@ tags:
   - video-streaming
 id: '39'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2008-04-03 08:02:51
 permalink: anysee/
 ---

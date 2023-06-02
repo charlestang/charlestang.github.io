@@ -5,7 +5,7 @@ tags:
   - 缺点
 id: '426'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2011-04-30 13:28:11
 permalink: nexus-s-exp/
 ---

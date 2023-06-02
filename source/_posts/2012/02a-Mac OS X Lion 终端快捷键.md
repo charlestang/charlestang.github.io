@@ -4,7 +4,7 @@ tags:
   - Mac terminal shortcut
 id: '473'
 categories:
-  -   - Mac
+  - Mac
 date: 2012-02-12 14:15:33
 permalink: mac-os-x-lion-terminal-shortcut/
 ---

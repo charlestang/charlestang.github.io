@@ -6,7 +6,7 @@ tags:
   - programming
 id: '972'
 categories:
-  - - 工作相关
+  - 工作相关
 ---
 
 ## 前言

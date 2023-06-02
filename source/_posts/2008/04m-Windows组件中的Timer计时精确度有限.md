@@ -7,7 +7,7 @@ tags:
   - science
 id: '45'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2008-04-08 20:49:46
 permalink: the-timer-is-not-accurate/
 ---

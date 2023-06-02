@@ -5,7 +5,7 @@ tags:
   - object oriented
 id: '1006'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2021-02-28 11:24:34
 permalink: ioc-implementation/
 ---

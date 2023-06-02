@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '254'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-11-02 00:18:15
 permalink: how-to-get-a-cat-id/
 ---

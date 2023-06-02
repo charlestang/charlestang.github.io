@@ -9,7 +9,7 @@ tags:
   - web
 id: '428'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2011-05-02 09:17:01
 permalink: page-speed-family/
 ---

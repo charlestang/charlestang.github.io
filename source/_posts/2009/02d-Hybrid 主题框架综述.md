@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '297'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-15 13:44:55
 permalink: introduction-to-hybrid/
 ---

@@ -4,7 +4,7 @@ tags:
   - oauth
 id: '619'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2014-05-14 20:42:38
 permalink: oauth-1-intro/
 ---

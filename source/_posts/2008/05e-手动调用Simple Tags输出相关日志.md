@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '55'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-05-13 16:42:44
 permalink: use-simple-tags-mannually-to-output-related-posts/
 ---

@@ -5,7 +5,7 @@ tags:
   - opinion
 id: '77'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-04-26 16:53:45
 permalink: gmail-updated/
 ---

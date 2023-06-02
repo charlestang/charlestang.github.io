@@ -4,7 +4,7 @@ tags:
   - algorithm
 id: '814'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2019-06-11 00:22:29
 permalink: arts-no-2/
 ---

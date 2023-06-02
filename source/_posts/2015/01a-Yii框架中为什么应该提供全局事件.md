@@ -5,7 +5,7 @@ tags:
   - yii
 id: '666'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2015-01-30 18:24:09
 permalink: why-yii-need-global-events/
 ---

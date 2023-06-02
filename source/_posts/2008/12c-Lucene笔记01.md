@@ -6,7 +6,7 @@ tags:
   - note
 id: '272'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-12-10 16:24:30
 permalink: lucene-note-01/
 ---

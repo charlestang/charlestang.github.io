@@ -5,7 +5,7 @@ tags:
   - python
 id: '1062'
 categories:
-  -   - 算　　法
+  - 算　　法
 date: 2021-05-18 18:07:00
 permalink: python-347-most-frequent-k/
 ---

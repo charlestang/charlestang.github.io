@@ -5,8 +5,8 @@ tags:
   - usage
 id: '685'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2015-06-25 15:44:56
 permalink: how-to-bulk-delete-tags-local-and-remote/
 ---

@@ -5,7 +5,7 @@ tags:
   - nexus s
 id: '415'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2011-03-14 20:11:08
 permalink: nexus-s-sucks/
 ---

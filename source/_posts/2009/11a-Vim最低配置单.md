@@ -4,7 +4,7 @@ tags:
   - vim
 id: '356'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-11-10 22:54:56
 permalink: the-absolute-bare-minimum-vimrc/
 ---

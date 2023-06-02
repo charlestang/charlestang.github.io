@@ -5,7 +5,7 @@ tags:
   - usage
 id: '1010'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2021-03-08 19:53:34
 permalink: git-summary/
 ---

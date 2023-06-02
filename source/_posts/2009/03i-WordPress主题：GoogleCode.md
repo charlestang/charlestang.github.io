@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '329'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-03-28 15:59:28
 permalink: wordpress-theme-googlecode/
 ---

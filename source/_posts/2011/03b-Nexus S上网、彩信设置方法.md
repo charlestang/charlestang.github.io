@@ -6,7 +6,7 @@ tags:
   - 设置
 id: '416'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2011-03-19 02:28:17
 permalink: how-to-set-nexus-s-net/
 ---

@@ -6,7 +6,7 @@ tags:
   - usage
 id: '543'
 categories:
-  -   - Mac
+  - Mac
 date: 2013-03-18 23:23:41
 permalink: the-launchd-on-macos/
 ---

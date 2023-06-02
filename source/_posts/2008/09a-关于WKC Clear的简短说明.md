@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '241'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-09-19 23:42:33
 permalink: something-about-wkc-clear/
 ---

@@ -6,7 +6,7 @@ tags:
   - user experience
 id: '225'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-08-25 18:39:36
 permalink: delicious-and-gbookmarks/
 ---

@@ -6,7 +6,7 @@ tags:
   - opinion
 id: '240'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-09-19 10:54:02
 permalink: google-code/
 ---

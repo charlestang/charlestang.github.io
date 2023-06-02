@@ -4,7 +4,7 @@ tags:
   - Architecture
 id: '600'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2018-03-08 16:32:14
 permalink: why-not-yii/
 ---

@@ -6,7 +6,7 @@ tags:
   - video-streaming
 id: '37'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2008-04-02 08:50:50
 permalink: narada-protocol/
 ---

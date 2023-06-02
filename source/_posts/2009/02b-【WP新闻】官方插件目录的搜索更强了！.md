@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '299'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-19 14:40:06
 permalink: a-better-search-engine-of-wporg/
 ---

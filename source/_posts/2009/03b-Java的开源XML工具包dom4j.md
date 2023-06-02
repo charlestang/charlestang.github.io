@@ -7,7 +7,7 @@ tags:
   - tools
 id: '310'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-03-31 00:12:59
 permalink: dom4j-xml-toolkit-java/
 ---

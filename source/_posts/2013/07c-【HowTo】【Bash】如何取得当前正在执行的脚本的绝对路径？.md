@@ -5,7 +5,7 @@ tags:
   - code examples
 id: '577'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2013-07-15 19:37:18
 permalink: bash-how-to-get-the-basepath-of-current-running-script/
 ---

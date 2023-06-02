@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '264'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-11-20 13:20:31
 permalink: different-posts-per-page/
 ---

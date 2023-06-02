@@ -6,7 +6,7 @@ tags:
   - jQuery
 id: '93'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-06-14 16:19:20
 permalink: how-to-use-ajax-correctly/
 ---

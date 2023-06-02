@@ -5,7 +5,7 @@ tags:
   - zsh
 id: '717'
 categories:
-  -   - 小窍门
+  - 小窍门
 date: 2016-03-17 01:18:11
 permalink: use-zsh-as-my-default-shell/
 ---

@@ -6,8 +6,8 @@ tags:
   - PHP
 id: '655'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2014-11-17 15:34:37
 permalink: brew-install-php54-failed/
 ---

@@ -3,7 +3,7 @@ title: 【HowTo】在Mac下使用MAMP Pro环境
 tags: []
 id: '679'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2015-05-06 01:20:38
 permalink: howto-use-mamp-env-on-macos/
 ---

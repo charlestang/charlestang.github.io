@@ -9,7 +9,7 @@ tags:
   - WordPress
 id: '266'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-11-21 11:32:22
 permalink: let-wptc-compatible-with-wp27/
 ---

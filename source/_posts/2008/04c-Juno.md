@@ -7,7 +7,7 @@ tags:
   - moving
 id: '46'
 categories:
-  -   - 看 电 影
+  - 看 电 影
 date: 2008-04-09 23:52:09
 permalink: juno/
 ---

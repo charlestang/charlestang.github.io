@@ -7,7 +7,7 @@ tags:
   - 版本控制
 id: '385'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2010-10-10 17:07:50
 permalink: introduce-git-1/
 ---

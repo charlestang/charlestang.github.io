@@ -5,7 +5,7 @@ tags:
   - usage
 id: '1154'
 categories:
-  -   - Mac
+  - Mac
 date: 2022-09-29 11:16:16
 permalink: popclip-not-coming-back-after-unchecking-show-in-menu-bar/
 ---

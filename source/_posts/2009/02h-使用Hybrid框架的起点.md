@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '298'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-18 23:16:07
 permalink: use-hybrid-to-build-child-theme/
 ---

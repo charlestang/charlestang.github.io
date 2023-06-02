@@ -5,7 +5,7 @@ tags:
   - usage
 id: '534'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2013-01-27 20:11:33
 permalink: how-to-use-git-to-revert-local-changes/
 ---

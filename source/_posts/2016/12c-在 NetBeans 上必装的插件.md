@@ -5,7 +5,7 @@ tags:
   - plugins
 id: '756'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2016-12-26 16:19:41
 permalink: useful-netbeans-plugins/
 ---

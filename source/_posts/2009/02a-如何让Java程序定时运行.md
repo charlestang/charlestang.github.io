@@ -7,7 +7,7 @@ tags:
   - thread
 id: '302'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-02-23 23:13:59
 permalink: how-to-make-java-task-scheduled-excecute/
 ---

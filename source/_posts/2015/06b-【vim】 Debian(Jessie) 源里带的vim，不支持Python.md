@@ -5,8 +5,8 @@ tags:
   - vim
 id: '683'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2015-06-16 23:19:31
 permalink: debian-jessie-does-not-support-python/
 ---

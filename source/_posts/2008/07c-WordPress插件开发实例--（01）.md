@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '150'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-07-25 12:47:10
 permalink: real-wp-plugins-01/
 ---

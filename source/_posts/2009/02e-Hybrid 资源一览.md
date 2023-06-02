@@ -9,7 +9,7 @@ tags:
   - WordPress
 id: '300'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-22 13:12:19
 permalink: all-resources-developers-can-use/
 ---

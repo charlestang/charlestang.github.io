@@ -7,7 +7,7 @@ tags:
   - web design
 id: '307'
 categories:
-  -   - Firefox
+  - Firefox
 date: 2009-02-26 18:36:27
 permalink: screen-shot-gun-for-firefox/
 ---

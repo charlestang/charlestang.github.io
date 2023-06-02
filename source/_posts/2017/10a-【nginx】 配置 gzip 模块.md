@@ -6,8 +6,8 @@ tags:
   - usage
 id: '789'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2017-10-26 01:16:01
 permalink: nginx-config-gzip-module/
 ---

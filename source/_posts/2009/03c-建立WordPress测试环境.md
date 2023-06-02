@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '328'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-03-25 14:07:25
 permalink: build-wp-test-env/
 ---

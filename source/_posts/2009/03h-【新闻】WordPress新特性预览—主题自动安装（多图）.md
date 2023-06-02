@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '316'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-03-03 00:07:14
 permalink: wordpress-new-features-theme-install/
 ---

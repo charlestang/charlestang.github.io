@@ -4,7 +4,7 @@ tags:
   - arts
 id: '808'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2019-05-29 19:48:48
 permalink: arts-no-1/
 ---

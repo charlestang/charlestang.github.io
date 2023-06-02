@@ -3,7 +3,7 @@ title: 在Mac上使用Homebrew的时候调整PATH顺序
 tags: []
 id: '635'
 categories:
-  -   - 小窍门
+  - 小窍门
 date: 2014-06-27 10:36:34
 permalink: change-the-path-order-on-mac-to-use-brew/
 ---

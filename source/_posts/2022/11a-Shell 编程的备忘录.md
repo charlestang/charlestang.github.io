@@ -5,7 +5,7 @@ tags:
   - shell
 id: '1178'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2022-11-10 18:32:33
 permalink: shell-programming-notes/
 ---

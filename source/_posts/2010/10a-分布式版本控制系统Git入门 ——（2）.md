@@ -3,7 +3,7 @@ title: 分布式版本控制系统Git入门 ——（2）
 tags: []
 id: '386'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2010-10-10 17:08:02
 permalink: introduce-git-2/
 ---

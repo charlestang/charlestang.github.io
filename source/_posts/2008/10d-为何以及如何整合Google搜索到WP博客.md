@@ -9,7 +9,7 @@ tags:
   - WordPress
 id: '253'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-10-30 01:51:28
 permalink: why-and-how-to-integrate-google-to-blog/
 ---

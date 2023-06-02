@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '237'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-09-09 21:32:48
 permalink: something-about-sidebar/
 ---

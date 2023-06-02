@@ -6,7 +6,7 @@ tags:
   - usage
 id: '87'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-06-06 00:35:16
 permalink: the-difference-between-trackback-and-pingback/
 ---

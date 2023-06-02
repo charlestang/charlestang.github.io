@@ -6,7 +6,7 @@ tags:
   - protocol
 id: '801'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2019-02-26 13:34:50
 permalink: introduction-of-arq/
 ---

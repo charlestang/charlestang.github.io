@@ -5,7 +5,7 @@ tags:
   - tips
 id: '388'
 categories:
-  -   - Mac
+  - Mac
 date: 2010-11-01 23:50:41
 permalink: no-home-and-end-key-on-mbp/
 ---

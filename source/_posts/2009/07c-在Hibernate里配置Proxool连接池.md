@@ -5,7 +5,7 @@ tags:
   - programming
 id: '352'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-07-14 15:22:37
 permalink: configure-connection-pool-with-hibernate/
 ---

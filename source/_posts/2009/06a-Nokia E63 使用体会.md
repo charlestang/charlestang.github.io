@@ -7,7 +7,7 @@ tags:
   - user experience
 id: '349'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2009-06-24 21:29:00
 permalink: impression-on-nokia-e63/
 ---

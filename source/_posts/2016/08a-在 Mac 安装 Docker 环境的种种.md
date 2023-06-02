@@ -4,7 +4,7 @@ tags:
   - docker
 id: '738'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2016-08-21 14:27:14
 permalink: docker-installation/
 ---

@@ -6,8 +6,8 @@ tags:
   - usage
 id: '649'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2014-10-08 23:02:55
 permalink: howto-rollback-changes-in-git/
 ---

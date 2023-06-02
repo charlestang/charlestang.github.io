@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '341'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-04-16 11:56:58
 permalink: new-widgets-admin/
 ---

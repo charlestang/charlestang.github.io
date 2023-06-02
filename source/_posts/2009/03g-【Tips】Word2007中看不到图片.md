@@ -6,7 +6,7 @@ tags:
   - word
 id: '314'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-03-01 15:23:13
 permalink: word2007-doesnot-show-pics/
 ---

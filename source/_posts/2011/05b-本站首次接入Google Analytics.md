@@ -6,7 +6,7 @@ tags:
   - statistic
 id: '432'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2011-05-14 21:28:28
 permalink: first-time-use-google-analytics/
 ---

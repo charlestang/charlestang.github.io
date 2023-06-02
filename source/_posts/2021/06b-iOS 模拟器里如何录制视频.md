@@ -4,8 +4,8 @@ tags:
   - usage
 id: '1066'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2021-06-09 17:26:04
 permalink: ios-howto-screenshot-in-simulator/
 ---

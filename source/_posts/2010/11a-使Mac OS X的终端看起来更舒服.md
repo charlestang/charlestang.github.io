@@ -7,7 +7,7 @@ tags:
   - tips
 id: '405'
 categories:
-  -   - Mac
+  - Mac
 date: 2010-11-14 12:55:49
 permalink: custom-mac-os-x-terminal/
 ---

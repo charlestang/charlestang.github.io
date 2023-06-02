@@ -1,5 +1,5 @@
 ---
-title: 【印度】 一些缩写：RBI/IBA/NPCI……
+title: "【印度】 一些缩写：RBI、IBA、NPCI……"
 tags:
   - India
   - Payment

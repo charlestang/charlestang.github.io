@@ -6,7 +6,7 @@ tags:
   - maintain
 id: '1004'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2021-02-22 21:22:50
 permalink: yum-update-rpmdb-open-faild/
 ---

@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '224'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-08-24 11:52:28
 permalink: inside-wordpress-special-01/
 ---

@@ -5,7 +5,7 @@ tags:
   - python
 id: '525'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2012-12-08 15:31:28
 permalink: python-date-time/
 ---

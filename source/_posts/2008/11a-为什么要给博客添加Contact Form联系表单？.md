@@ -6,7 +6,7 @@ tags:
   - user experience
 id: '260'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-11-07 11:26:35
 permalink: why-i-need-contact-form/
 ---

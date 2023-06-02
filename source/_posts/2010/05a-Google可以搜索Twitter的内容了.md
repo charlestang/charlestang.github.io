@@ -5,7 +5,7 @@ tags:
   - twitter
 id: '370'
 categories:
-  -   - 趣　　闻
+  - 趣　　闻
 date: 2010-05-31 13:44:03
 permalink: google-search-twitter-content/
 ---

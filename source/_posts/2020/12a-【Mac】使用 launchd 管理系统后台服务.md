@@ -5,8 +5,8 @@ tags:
   - mac
 id: '574'
 categories:
-  -   - Mac
-  -   - 小窍门
+  - [Mac]
+  - [小窍门]
 date: 2020-12-17 00:09:54
 permalink: use-launchd-to-manage-system-services/
 ---

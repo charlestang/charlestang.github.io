@@ -7,7 +7,7 @@ tags:
   - user experience
 id: '351'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2009-07-05 00:46:28
 permalink: softwares-on-symbian-s60iii/
 ---

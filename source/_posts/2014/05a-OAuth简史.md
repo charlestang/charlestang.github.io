@@ -5,7 +5,7 @@ tags:
   - oauth
 id: '617'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2014-05-13 21:11:34
 permalink: oauth-history/
 ---

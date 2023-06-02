@@ -5,7 +5,7 @@ tags:
   - html
 id: '271'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2008-12-09 23:46:50
 permalink: the-behavior-of-checkbox-in-html/
 ---

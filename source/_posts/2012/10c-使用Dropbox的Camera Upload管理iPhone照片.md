@@ -6,7 +6,7 @@ tags:
   - usage
 id: '511'
 categories:
-  -   - 手　　机
+  - 手　　机
 date: 2012-10-06 16:30:49
 permalink: use-dropbox-camera-upload-to-manage-photos/
 ---

@@ -5,7 +5,7 @@ tags:
   - Node.js
 id: '571'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2013-07-09 01:30:20
 permalink: node-js-first-loo/
 ---

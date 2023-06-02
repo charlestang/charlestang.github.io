@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '228'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-08-28 16:48:32
 permalink: how-to-choose-a-theme/
 ---

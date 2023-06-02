@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '232'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-09-03 23:31:31
 permalink: create-your-own-filter/
 ---

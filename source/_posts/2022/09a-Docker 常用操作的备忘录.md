@@ -5,7 +5,7 @@ tags:
   - usage
 id: '1147'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2022-09-27 12:21:34
 permalink: docker-memo/
 ---

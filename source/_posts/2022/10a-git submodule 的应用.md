@@ -5,7 +5,7 @@ tags:
   - submodule
 id: '1145'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2022-10-13 10:31:28
 permalink: git-submodule-application/
 ---

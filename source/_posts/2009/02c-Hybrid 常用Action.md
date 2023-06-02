@@ -9,7 +9,7 @@ tags:
   - WordPress
 id: '309'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2009-02-26 00:08:20
 permalink: hybrid-references/
 ---

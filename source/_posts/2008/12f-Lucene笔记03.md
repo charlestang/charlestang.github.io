@@ -5,7 +5,7 @@ tags:
   - note
 id: '280'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2008-12-18 09:40:03
 permalink: lucene-note-03/
 ---

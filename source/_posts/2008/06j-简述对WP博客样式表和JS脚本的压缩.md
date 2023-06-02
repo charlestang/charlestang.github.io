@@ -6,7 +6,7 @@ tags:
   - WordPress
 id: '96'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-06-18 13:40:15
 permalink: simple-guide-to-css-js-compress/
 ---

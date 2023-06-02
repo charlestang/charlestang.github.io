@@ -7,7 +7,7 @@ tags:
   - WordPress
 id: '242'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2008-09-22 18:14:41
 permalink: wordcamp-2008-shanghai/
 ---

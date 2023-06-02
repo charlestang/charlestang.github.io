@@ -8,7 +8,7 @@ tags:
   - WordPress
 id: '239'
 categories:
-  -   - WordPress
+  - WordPress
 date: 2008-09-13 16:56:45
 permalink: css-cache-buster/
 ---

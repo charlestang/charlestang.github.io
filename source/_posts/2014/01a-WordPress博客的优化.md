@@ -3,7 +3,7 @@ title: WordPress博客的优化
 tags: []
 id: '609'
 categories:
-  -   - 日　　记
+  - 日　　记
 date: 2014-01-28 01:25:33
 permalink: wordpress-optimize/
 ---

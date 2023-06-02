@@ -6,7 +6,7 @@ tags:
   - MySQL
 id: '764'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2017-02-04 12:24:30
 permalink: update-mysql-server-5-7-with-apt/
 ---

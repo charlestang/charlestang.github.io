@@ -3,8 +3,8 @@ title: 使用 Nginx 的 http_sub_module 和 proxy_module 解决 Google APIs 问�
 tags: []
 id: '710'
 categories:
-  -   - WordPress
-  -   - 小窍门
+  - [WordPress]
+  - [小窍门]
 date: 2015-12-25 12:22:07
 permalink: use-http-sub-module-and-proxy-module-cache-static-files/
 ---

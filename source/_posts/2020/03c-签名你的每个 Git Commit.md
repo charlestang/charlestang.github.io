@@ -7,8 +7,8 @@ tags:
   - vcs
 id: '886'
 categories:
-  -   - 小窍门
-  -   - 工作相关
+  - [小窍门]
+  - [工作相关]
 date: 2020-03-01 17:11:34
 permalink: sign-your-every-git-commit/
 ---

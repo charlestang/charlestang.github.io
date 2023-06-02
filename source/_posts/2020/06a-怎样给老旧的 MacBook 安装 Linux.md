@@ -5,7 +5,7 @@ tags:
   - mac
 id: '919'
 categories:
-  -   - 小窍门
+  - 小窍门
 date: 2020-06-21 21:48:03
 permalink: howto-install-linux-on-legacy-mac/
 ---

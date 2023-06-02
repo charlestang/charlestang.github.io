@@ -5,7 +5,7 @@ tags:
   - principle
 id: '537'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2013-02-01 01:07:50
 permalink: what-is-nat/
 ---

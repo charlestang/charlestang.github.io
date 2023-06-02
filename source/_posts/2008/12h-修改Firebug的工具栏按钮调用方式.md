@@ -7,7 +7,7 @@ tags:
   - Firefox
 id: '269'
 categories:
-  -   - Firefox
+  - Firefox
 date: 2008-12-02 14:22:30
 permalink: modify-the-firebug-call-way/
 ---

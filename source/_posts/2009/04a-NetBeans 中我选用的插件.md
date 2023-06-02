@@ -6,7 +6,7 @@ tags:
   - usage
 id: '346'
 categories:
-  -   - 工作相关
+  - 工作相关
 date: 2009-04-29 23:31:29
 permalink: netbeans-plugins-i-used/
 ---
