@@ -5,9 +5,9 @@ tags:
   - python
 id: '1057'
 categories:
-  - - something-about-daily-work
-    - Python
-  - - 小窍门
+  - [工作相关, Python]
+  - [ 小窍门]
+date: 2021-05-25 13:08:15
 ---
 
 学习 Python 有几个月时间了，此前，也间或写过几个 Python 的脚本，都是单个文件，批处理式地命令堆砌，倒是也非常爽快，不过从没有正儿八经做过项目，为了形成对这一块内容的认识，我找一篇《[最佳实践](https://sourcery.ai/blog/python-best-practices/)》来看看，先不管对错，进行一番实践，也好有个感性认识。

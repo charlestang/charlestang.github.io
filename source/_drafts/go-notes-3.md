@@ -4,8 +4,7 @@ tags:
   - Go
 id: '1127'
 categories:
-  - - something-about-daily-work
-    - Go
+  - [工作相关, Go]
 ---
 
 Go 语言提供三种用于处理集合数据的结构：数组、切片和映射。

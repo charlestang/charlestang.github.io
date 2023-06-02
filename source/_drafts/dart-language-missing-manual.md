@@ -6,9 +6,7 @@ tags:
   - usage
 id: '1069'
 categories:
-  - - something-about-daily-work
-    - Flutter
-  - - 工作相关
+  - [工作相关, Flutter]
 ---
 
 ## Dart 里面无法探知一个 late 变量是否已经初始化

@@ -4,8 +4,7 @@ tags:
   - Go
 id: '1128'
 categories:
-  - - something-about-daily-work
-    - Go
+  - [工作相关, Go]
 ---
 
 Go 语言提供一系列的基本类型：

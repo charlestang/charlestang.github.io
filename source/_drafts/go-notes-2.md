@@ -4,8 +4,7 @@ tags:
   - Go
 id: '1126'
 categories:
-  - - something-about-daily-work
-    - Go
+  - [工作相关, Go]
 ---
 
 ## 包
