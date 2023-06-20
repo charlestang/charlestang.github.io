@@ -10,7 +10,7 @@ date: 2023-06-05 17:02:08
 permalink: how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
 ---
 
-
+![hexo_github_actions](../images/2023/06/hexo_github_actions.png)
 
 前两天试用了 Hugo 作为个人博客系统来使用，安装部署的体验不错，不过，当我将全部系统搭建完毕后，我想找一个美观大方，符合我自己这种老派审美的主题时，我犯难了，因为 Hugo 的主题实在是太难找了。虽然主题看起来也比较多，不过，符合我审美的主题，少之又少。
 
