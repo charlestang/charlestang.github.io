@@ -4,8 +4,8 @@ tags:
   - Metabase
 categories:
   - [工作相关]
-date: 2023-07-07 15:15:08
-permalink: metabase-basics/
+date: 2023-08-03 12:27:08
+permalink: 2023/metabase-basics/
 ---
 
 因为工作的关系，必须学习使用 Metabase，所以，开辟此文，记录一些我的学习笔记。
@@ -33,7 +33,7 @@ Metabase 是一个**开源**的 BI 工具，它允许通过“提问”（Questi
 
 ### 问题 Question
 
-![Query builder](../images/2023/08/metabase-query-builder.png)
+![Query builder](../../images/2023/08/metabase-query-builder.png)
 
 Metabase 里，Question，中文可能翻译成“问题”，是一个集合，包含了：一个查询、查询结果的数据、数据的可视化，三种合并在一起，称为一个 Question。
 
