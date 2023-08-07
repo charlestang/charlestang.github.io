@@ -7,7 +7,7 @@ categories:
   - [工作相关, 心得体会]
   - [WordPress]
 date: 2021-01-22 11:27:13
-permalink: wordpress-more-than-blog/
+permalink: 2021/wordpress-more-than-blog/
 ---
 
 玩 WordPress 年头已经长到记不起最初的记忆了，但是，今天我才发现我对其是何其陌生。
@@ -22,7 +22,7 @@ permalink: wordpress-more-than-blog/
 
 我用我插件的名字和关键词，搜索插件目录，看看同类品里，做得最好的插件，提供了怎样的功能，以及如何设计交互界面，这才给我打开了一个全新的世界。我发现有些插件的安装量，超过了 500万，这太惊人了，完全超乎了我的想象。虽然我觉得插件的世界是个长尾的世界，但是也没想过有插件能超过 500万安装量。
 
-![](../images/2021/01/gutenberg-hub-template-library.png)
+![](../../images/2021/01/gutenberg-hub-template-library.png)
 
 Gutenberg 古腾堡区块布局
 
