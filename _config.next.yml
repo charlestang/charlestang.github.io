@@ -71,3 +71,7 @@ codeblock:
 
 local_search:
   enable: true
+
+google_analytics:
+  tracking_id: G-LJKX5X3SP3
+  only_pageview: false
