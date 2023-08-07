@@ -68,3 +68,6 @@ codeblock:
     show_result: false
     # Available values: default | flat | mac
     style:
+
+local_search:
+  enable: true
