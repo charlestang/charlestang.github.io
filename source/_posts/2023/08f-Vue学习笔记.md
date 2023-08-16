@@ -23,3 +23,20 @@ vue 作为扩展名的文件是 Vue 组件，有三个部分组成：
 
 Vue Language Features 是 Vue 的语言支持扩展。
 
+#### TypeScript Vue Plugin
+
+#### Vue Language Feature
+
+### Stylelint
+
+### WindiCSS IntelliSense
+
+### Prettier - Code formatter
+
+### Iconify IntelliSense
+
+### ESLint
+
+### Auto Close Tag
+
+### Auto Rename Tag
