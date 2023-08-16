@@ -12,6 +12,8 @@ permalink: 2023/config-your-obsidian-comfertable/
 
 于是需要一个更舒适友好的 Obsidian 环境。
 
+<!--more-->
+
 ## 字体
 
 一款好看的字体，可以让长时间地阅读和写作都不会疲劳，还能产生赏心悦目的美感。
