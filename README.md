@@ -15,3 +15,10 @@ Sometimes when executing hexo commands, there may be inexplicable error messages
 When a build error occurs, try executing the `hexo clean` command, then delete the `node_modules` directory, re-execute `npm install`, and then execute the `hexo g` command to rebuild.
 
 This blog uses a famous theme called 'next' and references it using git submodules. When you need to update the theme, execute the `git pull --rebase` command in the theme's subdirectory.
+
+```shell
+# list installed node packages.
+npm list
+```
+
+
