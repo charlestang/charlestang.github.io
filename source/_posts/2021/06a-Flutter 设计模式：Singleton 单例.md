@@ -14,6 +14,8 @@ permalink: flutter-singleton/
 
 候选人来公司面试，我要求必须考察代码功力，一般我自己喜欢考个简单的算法题，有个同事，他喜欢考候选人写一个单例模式。单例模式可能是所有设计模式里，最最常用和常见的一个模式了。
 
+<!--more-->
+
 单例模式的目的是保证在整个系统里，对象实例唯一，主要是一些昂贵的资源，或者唯一性的资源，构建成本高或者不允许被复制。所以，需要利用语言特性来保证对象实例的唯一性。
 
 单例模式有几个特点：
@@ -25,7 +27,7 @@ permalink: flutter-singleton/
 
 在 Dart 里如何实现单例模式：
 
-```generic
+```dart
 class Singleton {
   // 静态变量指向自身
   static final Singleton _instance = Singleton._();
