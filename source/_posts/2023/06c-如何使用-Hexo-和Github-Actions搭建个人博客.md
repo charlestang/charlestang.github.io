@@ -228,7 +228,7 @@ npm install hexo-generator-searchdb
 
 ### 3. 评论
 
-```
+```shell
 npm install hexo-next-giscus@1.0.3
 ```
 
@@ -238,11 +238,21 @@ npm install hexo-next-giscus@1.0.3
 
 ### 4. 优化
 
-```
+```shell
 npm install hexo-optimize
 ```
 
 这是一个优化博客引用的静态文件 CSS，JS 文件的插件，可以将静态文件进行压缩，优化站点的载入时间。
+
+### 5. 数学公式
+
+```shell
+npm install hexo-filter-mathjax
+```
+这个插件是一个服务器端公式渲染的工具。是 Next 这款主题上推荐的[插件](https://github.com/next-theme/hexo-filter-mathjax)。
+
+插件的官网上，有如何配置和使用的文档，在 matters 里增加一个 key 说明本页使用数学公式即可。如何配置的信息也有。
+
 
 ## 日常管理
 
