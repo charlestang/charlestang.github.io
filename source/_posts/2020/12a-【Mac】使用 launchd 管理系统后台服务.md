@@ -10,12 +10,12 @@ categories:
 date: 2020-12-17 00:09:54
 permalink: use-launchd-to-manage-system-services/
 ---
-
 在 Mac 上安装了 Adobe Photoshop 2021 后，我发现一个代表 Adobe Creative Cloud 服务的图标，出现在 Mac 系统右上角的菜单栏（Menu Bar）上。如果点击这个图标，就会弹出一个窗口，展示 Adobe 的登录表单。这个图标很容易误点，在图标上点击右键，菜单里也没有“退出”选项。打开“系统偏好设置”，“用户与群组”，在“登录项”选项卡上，也没有看到 Adobe 注册什么登录项。到底怎么才能退出这个恼人的程序呢？唯有了解了 launchd 这个系统服务管理机制，才能做到。
 
 ![Image result for adobe creative cloud icon](https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Creative_Cloud-512.png)
 
 Adobe Creative Cloud 的图标
+
 <!-- more -->
 ## 基本概念
 
@@ -27,37 +27,21 @@ Adobe Creative Cloud 的图标
 
 `launchd` 的管理对象都是后台进程，这些后台进程使用一种特定格式的配置文件叫 `launchd.plist` 来描述被管理的对象。这种文件是 `XML` 格式的，根据不同的运行权限，放在不同的目录里面，请看下面的表格。
 
-目录
+| 目录 | 说明 |
+| ------- | ------ |
+| `~/Library/LaunchAgents` | 用户自己提供的用户级 Agent。|
+| `/Library/LaunchAgents` |  管理员提供的用户级 Agent。 |
+| `/Library/LaunchDaemons` | 管理员提供的系统级 Daemon。 |
+| `/System/Library/LaunchAgents` | 苹果官方提供的用户级 Agent。 |
+| `/System/Library/LaunchDaemons` |  苹果官方提供的系统级 Daemon。 |
 
-说明
-
-`~/Library/LaunchAgents`
-
-用户自己提供的用户级 Agent。
-
-`/Library/LaunchAgents`
-
-管理员提供的用户级 Agent。
-
-`/Library/LaunchDaemons`
-
-管理员提供的系统级 Daemon。
-
-`/System/Library/LaunchAgents`
-
-苹果官方提供的用户级 Agent。
-
-`/System/Library/LaunchDaemons`
-
-苹果官方提供的系统级 Daemon。
-
-存放 launchd 配置文件的常用目录
+以上是存放 launchd 配置文件的常用目录
 
 通过 `launchd` 管理的进程，人为被分为了几个种类：
 
-*   服务（Services）—— 在后台运行，用以支持图形界面应用（GUI App）运行的服务进程，比如响应系统全局快捷键，或者进行网络通信等；
-*   守护进程（Daemons）—— 理论上，不属于服务的后台进程，都归为守护进程一类，不过这里特指运行在后台，且不能与用户交互图形界面产生联系的进程；
-*   代理（Agents）—— 以用户的名义，在后台运行的进程，可以和用户图形界面产生联系，比如呼起一个软件的界面，不过官方不推荐这么用。
+* **服务（Services）** —— 在后台运行，用以支持图形界面应用（GUI App）运行的服务进程，比如响应系统全局快捷键，或者进行网络通信等；
+* **守护进程（Daemons）** —— 理论上，不属于服务的后台进程，都归为守护进程一类，不过这里特指运行在后台，且不能与用户交互图形界面产生联系的进程；
+* **代理（Agents）** —— 以用户的名义，在后台运行的进程，可以和用户图形界面产生联系，比如呼起一个软件的界面，不过官方不推荐这么用。
 
 ## 基本操作
 

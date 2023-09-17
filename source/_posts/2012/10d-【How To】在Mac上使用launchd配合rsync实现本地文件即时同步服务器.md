@@ -52,7 +52,21 @@ rsync --rsh=ssh -avz SRC user@host:/path/to/DST
 
 ```xml
 <!--?xml version="1.0" encoding="UTF-8"?-->
-<br><br>Label<br>logger<br>ProgramArguments<br><br>/usr/bin/rsync<br>-avz<br>--rsh=ssh<br>SRC<br>user@host:/path/to/DST<br><br>WatchPaths<br><br>/path/to/SRC/<br><br>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>logger</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/rsync</string>
+      <string>-avz</string>
+      <string>--rsh=ssh SRC user@host:/path/to/DST</string>
+    </array>
+    <key>WatchPaths</key>
+    <string>/path/to/SRC/</string>
+  <dict>
+</plist>
 ```
 
 放到~/Library/LaunchAgents/rsync.plist文件中，然后执行：
