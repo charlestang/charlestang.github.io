@@ -75,3 +75,34 @@ launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
 ```
 
 找到那个 `com.adobe.AdobeCreativeCloud` 所在的 plist 配置文件的路径后，我们就可以用 `launchctl unload <plist_path>` 来卸载这个服务了。以后也不会开机自动启动了。注意，上面的例子里用了 `-w` 参数，如果不用此参数的话，你会发现一旦系统重启，那个恼人的小图标就又会出现。因为另有别的服务进程，或者应用程序，重新注册了这个系统服务。而使用 `-w` 参数，就是为了杜绝此种情况，使 `unload` 命令被持久化，让我们意图注销的“流氓”服务无法被重新加载。
+
+## 自己创建一个
+
+同理，自己也可以利用 `launchd` 来创建守护进程，这里我给出一个例子：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.sexywp.shadowsocks</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/sslocal</string>
+        <string>-c</string>
+        <string>/Users/charles/.shadowsocks/config.json</string>
+    </array>
+    <key>KeepAlive</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>UserName</key>
+    <string>charles</string>
+    <key>GroupName</key>
+    <string>staff</string>
+</dict>
+</plist>
+```
+
+将个文件放到 `/Library/LaunchAgents` 目录，然后用 `launchctl load` 命令就可以加入到守护的列表里，系统发现没有这个进程，就会自动启动一个。可以代替 `cronjob` 或者 `supervisord` 等的功能。
