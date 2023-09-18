@@ -3,7 +3,7 @@ title: 写给程序员的真正 0 基础 Vue 入门
 tags:
   - Vue
 categories:
-  - - 工作相关
+  - 工作相关
 date: 2023-08-13 20:57:00
 permalink: 2023/vue-notes/
 ---
@@ -57,6 +57,10 @@ permalink: 2023/vue-notes/
 
 通过阅读[官方快速上手](https://cn.vuejs.org/guide/quick-start.html)，运行起一个项目的结构，真是不能再简单了，我只能称赞，Vue 的外围辅助设施和工具链，真是完善！简简单单就直接搭建好了框架，而且能够顺利运行。
 
+```shell
+npm create vue@latest
+```
+
 然而，就像大多数人学习技术止步于 HelloWorld 一样，我也止步于此了，从这个环节，我看了很多的教程，视频也不少，都是教 Vue 的原理了，比如插值语法，双向绑定，比如单文件组件，选项式和组合式API，看了不少了。还使用[互动式教程](https://cn.vuejs.org/tutorial/)，体验了整套的 Vue 之旅，过程十分愉快！推荐！
 
 然后，我就不知道该怎么办了。
@@ -71,7 +75,12 @@ permalink: 2023/vue-notes/
 
 如果你不是只想做个网站的话，可以稍微看一下 Electron 的官方入门文档，将一个 Web 应用包装成一个桌面应用，使用 Electron 的话会非常简单。
 
-[这篇文档](https://learnvue.co/articles/vue-and-electron-desktop-apps)介绍了如何手动吧 Vite + Vue3 生成的脚手架和 Electron 结合起来，我照着操作发现很简单。到这一步，我们实现了把前一章的 HelloWorld 转化成了一个桌面应用的办法。
+[这篇文档](https://learnvue.co/articles/vue-and-electron-desktop-apps)介绍了如何手动吧 Vite + Vue3 生成的脚手架和 Electron 结合起来，我照着操作发现很简单。
+
+1. 将`electron`添加到依赖；`npm install -D electron`
+2. 设定构建目录到 `dist`，执行构建 `npm run build`；
+3. 生成 `index.html`，这是后面要加载到 `electron` 的应用；
+4. [创建](https://www.electronjs.org/docs/latest/tutorial/quick-start) `electron` 需要的几个文件 `main.js`，`preload.js`；
 
 1. 安装 electron，`npm install --save-dev electron`；
 2. 修改`vite.config.ts`，将`base`属性修改为`dist`文件夹，作为 electron 启动的根文件夹；
@@ -126,7 +135,25 @@ npm install -D unplugin-vue-components unplugin-auto-import
 
 ## 页面布局
 
-现在你要开始真正编写你的 App 了，第一步，你需要引入的组件是页面布局，至少你需要把页面划分成两个部分，一个是导航（Nav），另一个是主要区域（Main Content）。
+终于可以开始制作一个 App 的界面了，先有了界面交互的原型，才能逐步叠加功能上去。虽然，根据广为流传的教程，你已经学会了如何做一个局部区域。但是，做一个网站或者一个 App，第一步恰恰不是从那种细枝末节的地方开始，而是先要搭一个架子。
+
+这个环节，你需要掌握一些基本的 CSS 布局知识，怎么利用 div，以及 margin 之类的属性，搭建一个框架，把页面分成 aside，main，header，footer 之类的区域。然后才能逐个区域去开发。
+
+在 element-plus 组件库里，提供了 Container 这个组件，里面有几个元素，可以用来组织页面的结构。可以直接使用。
+
+除了页面框架的问题，可能还有一个就是 layout，这个翻译成中文也叫布局，在我以前学习 Bootstrap 的时候，这个叫 Grid System，就是网格系统，将一块区域，分成 12 份，然后设定宽高来排布页面上的元素。这也算是页面布局的一部分吧，整个页面的布局也可以用这个。不过这个一般都是相对的，将一个区域进行 12 等分。所以想做一个固定的边栏，可能也需要特定的写法。
+
+深入到布局的原理和细节的话，可能内容很多。这里就不展开了。
+
+## 制作原型
+
+现在终于可以一个区域一个区域的小块实现页面的原型了，当然仍然还只是原型，我建议不要一边做原型一边做功能。
+
+当然，你可能没有想好你的原型做成什么样子，这样的话，我建议你一定要，哪怕是，在纸上把原型画出来。否则，你会一边做一边改变主意，在这个过程中，还会被无穷的细节给牵扯，导致很久都做不出来一个合心意的原型。
+
+如果你在做原型的过程中，再结合功能的实现，那就更糟糕了。不管后续还有多少困难，原型只是一个最终界面的模拟和假数据填充。抛开功能后，耦合并不高。这里可以利用各种 SFC 的优势，对界面进行一些切割，也帮助你在实现的过程中，想好页面各部分数据的耦合方式和模块划分。
+
+这个环节，可能是整个流程里，文档和教程最丰富的部分，一般点开一个视频，开始交怎么使用 Vue 的时候，都是讲怎么去做一个 SFC，往往就很适合这个环节。
 
 -- 未完待续 --
 
