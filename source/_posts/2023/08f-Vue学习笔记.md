@@ -45,10 +45,10 @@ permalink: 2023/vue-notes/
 ### IDE：Visual Studio Code
 
 就使用 VS Code 作为开发 Vue 应用的开发环境即可，官方文档也这么说，需要安装的插件列表：
- * Volar - Vue Language Features 是 Vue 的语言支持扩展。
+ * Volar - Vue Language Features 是 Vue 的语言支持扩展，根据脚手架项目的 Readme 文件内容，使用 Take Over Mode 可以提高性能；
  * Stylelint
  * WindiCSS IntelliSense
- * Prettier - Code formatter
+ * Prettier - Code formatter 将 Vue 文件，ts 文件等的 formatter 都指向该插件，并且，在 Vue 文件类型里，配置 `editor.formatOnSave`，如不这么配，我自己遇到 save 时候的格式化和 format 的时候格式化竟然是冲突的；
  * Iconify IntelliSense
  * ESLint
  * Auto Close Tag
@@ -73,6 +73,20 @@ permalink: 2023/vue-notes/
 
 [这篇文档](https://learnvue.co/articles/vue-and-electron-desktop-apps)介绍了如何手动吧 Vite + Vue3 生成的脚手架和 Electron 结合起来，我照着操作发现很简单。到这一步，我们实现了把前一章的 HelloWorld 转化成了一个桌面应用的办法。
 
+1. 安装 electron，`npm install --save-dev electron`；
+2. 修改`vite.config.ts`，将`base`属性修改为`dist`文件夹，作为 electron 启动的根文件夹；
+3. 修改`package.json`，增加 `main` 字段，设定为 `main.js`；
+4. 从 electron 官网的 Quick Start，抄一个 `main.js` 过来，注意 `index.html` 的路径；
+5. 再抄一个 `preload.js` 过来；
+6. 如果使用 eslint，注意在 config 文件里 ignore 掉上述两个 js，不然会报错，因为上面两个 js 不是在 web 环境运行的，引用 node 的模块；
+7. 在 `package.json` 的 `scripts` 中增加 electron 启动命令；
+
+在尝试 Electron 的时候，我发现 Electron 默认加载 index.html 后，就会停在这里，但是 Web 加载完 index.html 后，会自动访问一下根目录。 原因，是使用
+```shell
+npm create vue@latest
+```
+创建的基于 vite 的应用，默认是在 web 环境运行，router 的配置文件里，用的是 `createWebHistory`，但是运行在 electron 环境里的 App，需要使用 `createWebHashHistory`。
+
 如果你只想做一个 Web 网站，那么，就没有必要关注本节提到的内容，因为它只是一个壳子。它提供了一个桌面 App 的脚手架和开始的地方。
 
 ## UI 组件
@@ -93,7 +107,13 @@ npm install element-plus --save
 ```
 这里有必要仔细看一看 Element Plus 的[指南](https://element-plus.org/zh-CN/guide/design)，很短，却介绍了至关重要的内容，比如如何按需加载框架组件这样的话题。
 
+按需导入功能：
 
+```shell
+npm install -D unplugin-vue-components unplugin-auto-import
+```
+
+然后，还要修改 `vite.config.ts`，增加相应的配置，[参考这里](https://element-plus.org/zh-CN/guide/quickstart.html#%E6%8C%89%E9%9C%80%E5%AF%BC%E5%85%A5)。
 ## Vue-Router
 
 现在，你已经通过 Vite 或者 Vue-Cli（已经淘汰了似乎）搭建了一个项目的脚手架，就是上面的 Hello World 已经跑起来了，可以开始做一个 App 了，在这个脚手架上，你去实现一些文档里的简单例子，应该已经毫无阻碍了，但是想要写一个 App，却还不知道如何开始。
