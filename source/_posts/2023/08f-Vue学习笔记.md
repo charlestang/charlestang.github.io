@@ -53,6 +53,7 @@ permalink: 2023/vue-notes/
  * ESLint
  * Auto Close Tag
  * Auto Rename Tag
+ * i18n Ally - [国际化的解决方案](/2023/vue-i18n-solution/)用到的插件，可以在 VS Code 里提供很好的体验；
 ## Hello World！
 
 通过阅读[官方快速上手](https://cn.vuejs.org/guide/quick-start.html)，运行起一个项目的结构，真是不能再简单了，我只能称赞，Vue 的外围辅助设施和工具链，真是完善！简简单单就直接搭建好了框架，而且能够顺利运行。
