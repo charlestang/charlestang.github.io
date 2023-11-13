@@ -3,7 +3,12 @@ title: Vue 的多语言解决方案
 tags:
   - Vue
   - i18n
-categories: 工作相关
+categories:
+  - - 工作相关
+  - - 工作相关
+    - Vue
+  - - 工作相关
+    - 心得体会
 permalink: 2023/vue-i18n-solution/
 date: 2023-10-30 15:03:00
 ---

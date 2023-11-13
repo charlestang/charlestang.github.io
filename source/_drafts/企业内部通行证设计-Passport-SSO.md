@@ -4,9 +4,11 @@ tags:
   - Architecture
 id: '844'
 categories:
-  - - 日　　记
+  - - 工作相关
+  - - 工作相关
+    - 心得体会
+permalink: 2023/how-to-design-passport/
 ---
-
 本文主要介绍一个企业内部通行证（Passport）系统需求演化和设计的过程和总结。
 
 ## 需求背景
