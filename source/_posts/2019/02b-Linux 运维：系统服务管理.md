@@ -10,7 +10,6 @@ categories:
 date: 2019-02-28 01:49:30
 permalink: linux-management-sys/
 ---
-
 我发现，每隔一段时间，运维 Linux 服务器的方法，就会变迁一次，害得我总是要重复学习这件事情，真是太不友好了。Linux 服务器运维的方法不是一种半衰期很长的技巧么？世道都变了啊……
 
 ## Ubuntu 桌面系统初始化
@@ -25,10 +24,9 @@ apt install aptitude
 aptitude remove vim-tiny
 aptitude install vim
 # 3. 桌面版连个 netstat 命令也没有，装一下（推荐使用 ss 命令代替）
-#     不是梯子的 ss，我没写错，就是 ss 命令
+#    不是梯子的 ss，我没写错，就是 ss 命令
 aptitude install net-tools
 ```
-
 ## CentOS 检查系统已注册服务
 
 ```shell
@@ -55,9 +53,7 @@ rm /usr/sbin/aliyun-service.backup
 systemctl reset-failed
 systemctl list-units --type service
 # 执行上述两个命令，发现没有残留了
-
 ```
-
 ## CentOS 上安装支持 BBR 的 kernel
 
 *   [什么是BBR？](https://github.com/google/bbr)
@@ -88,9 +84,7 @@ echo 'net.ipv4.tcp_congestion_control=bbr'  tee -a /etc/sysctl.conf
 sysctl -p
 # 确认 BBR 是否启动
 lsmod  grep bbr
-
 ```
-
 ## 在 Linode 上申请了一台 CentOS 7
 
 最近，腾讯云审核非常严格，于是我又购买了一台 Linode 的服务器来玩，以防万一，按照以前我的性格，我会选 Debian 9 发型版的，但是最近比较偏爱 CentOS，就选择了 CentOS 7，其实，CentOS 8 也出来了，不过真的鬼使神差还是选了 7。
@@ -229,3 +223,24 @@ rm /swapfile
 不过 nginx 伺服静态文件要好一点，所以，现在流行 LNMP 多一点，你可能不想安装 apache 2，那么你就应该安装 php-fpm 这个包。
 
 使用 apt 的好处是，以后升级的时候，简单一点。如果没有逼到非要自己编译，最好不要自己编译，实在麻烦而且无趣，当然并不难。
+
+## 首次在 CentOS 服务器上安装 MySQL
+
+安装服务器比较简单：
+```shell
+yum install mysql-server.x86_64
+```
+装完服务器后，服务器默认是不启动的，使用 systemctl 命令进行启动
+```shell
+systemctl start mysqld.service
+```
+然后，root 的初始密码是什么呢？
+```shell
+mysql -uroot -p
+```
+你会发现，MySQL 初始并未设置密码，比较安全的方式是，你登录成功后，马上设置一个新的密码，使用命令：
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的密码';
+FLUSH PRIVILEGES;
+```
+即可完成 root 密码的设定。
