@@ -211,7 +211,23 @@ rm /swapfile
 其实毫无难度的，就是用 apt install mysql-server 就可以了。我这里想说的是，装完了以后，怎么登录进去呢？整个安装过程是没有交互式的。
 
 你可以 sudo mysql，直接用 root 权限调用客户端，就会以 root 身份登录了，不需要密码。
+```shell
+mysql -uroot -p
+```
+首次安装好数据库后，不需要密码，直接按回车就可以登录进去了。值得一提的是，现在创建用户和密码的方法变了。
+```mysql
+create user admin@localhost identified by '123@qwe';
+```
+上面的用户定义了一个本地用户，密码是 `123@qwe`，我以前喜欢用`Grant`语句直接授权和创建用户和密码，现在似乎是不行了。
+```mysql
+grant all privileges on db_name.* to admin@localhost;
+```
+上面的语句是授权用户访问一个数据库的语句，`privileges` 关键字不是必须的，可以省略。
 
+然后需要执行：
+```mysql
+flush privileges;
+```
 关于这一点，腾讯有一片文章介绍得不错：
 
 [《如何在 Ubuntu 20.04 上安装 MySQL》](https://cloud.tencent.com/developer/article/1622599)
