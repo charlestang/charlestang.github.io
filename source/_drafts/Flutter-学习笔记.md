@@ -4,11 +4,12 @@ tags:
   - flutter
 id: '1065'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, Flutter]
-  - [日　　记]
+  - - 工作相关
+    - 心得体会
+  - - 工作相关
+    - Flutter
+  - - 日　　记
 ---
-
 作为一个多年经验的 Web 后台开发程序员，我还有少数一些前端的经验（有 Bootstrap，jQuery 之类框架的使用经验），最近因为公司的项目，想要着手一款客户端软件的开发，这些年其实一直很想开发一款自己的手机 App，不过一直都执行力不足，之前尝试的是 iOS，始终没有成效，这回大家都一口推荐 Flutter，所以，我再做一次尝试。
 
 ## 安装
@@ -21,11 +22,15 @@ Flutter 的安装，真是一个不错的体验，登录英文官网，照着指
 
 学习每种技术，第一个项目，无疑都是“你好，世界！”，感觉 Flutter 作为一个移动端的开发框架来说，真的做得无以伦比。只要在命令行执行：
 
-`flutter create my_app`
+```shell
+flutter create my_app
+```
 
 然后，进入目录后，执行
 
-`flutter run`
+```shell
+flutter run
+```
 
 就可以轻松地跑起来了。如果没有事先启动模拟器，就会在 Chrome 浏览器里，启动一个 Web 版的实例，启动 iPhone 模拟器后，就会自动链接 iPhone 模拟器，启动一个 App 版本。简直太棒了。对于我这种首次开始客户端开发的小白来说，编译、模拟之类的工作正是最大的难点。但是这些都省略了，可以直接进入到框架学习和代码编写阶段，简直完美无缺。这个环节，我给打 100 分，完美。
 
@@ -41,7 +46,7 @@ Flutter 的安装，真是一个不错的体验，登录英文官网，照着指
 
 `const` 很容易理解，代表的意思是一个常量。既可以修饰变量（也就是等号左边的），也可以修饰值（等号右边的）。
 
-```generic
+```dart
 const a = const [];
 const a = [];       // 与第 1 行效果完全一样
 var a = const [];   // 与第 1，2 行意思不一样，a 可以重新赋值
@@ -49,7 +54,7 @@ var a = const [];   // 与第 1，2 行意思不一样，a 可以重新赋值
 
 `const` 在 Dart 里，还可以用来修饰类（Class） 的构造函数。而且，这个用法也是非常常见，在创建一个 `Widget` 的时候，尤其是 `StatelessWidget` 的时候，官方推荐的 `Snippet` 就使用 `const` 来修饰构造函数。其含义是，该类的成员不可更改（immutable）。
 
-```generic
+```dart
 class SearchButton extends StatelessWidget {
   const SearchButton({Key? key}) : super(key: key);
 }
@@ -59,7 +64,7 @@ Dart 的 IDE 环境（Android Studio、Visual Studio Code）里，都有很强�
 
 `final` 保留字，用来修饰一个变量，声明这个变量不可修改（immutable），似乎官方也推荐尽可能把变量声明为 `final`，似乎这样可以优化性能或者内存之类的。同样是 immutable，那么与 `const` 到底什么区别呢，有时候免不了要迷惑。区别就在于，`const` 是在编译阶段就确定了是常量的，而 `final` 可以在运行时才确定其值。
 
-```generic
+```dart
 final today = DateTime.now();
 // const today = DateTime.now(); // 这行无法编译通过
 ```
@@ -78,7 +83,7 @@ Dart 提供了一个特殊的类型叫 dynamic，可以适配各种不同的类�
 
 Dart 里的函数是一等公民，所以，也可以支持函数式编程泛型，感觉已经是现代编程语言的标配了。我所不熟悉的就是 Dart 里的函数参数定义，有所不同，支持位置参数，也支持命名参数两种定义方式。并且，还支持位置可选参数和命名可选参数。不过在定义可选参数的时候，只可以使用其中一种。举个例子：
 
-```generic
+```dart
 void helloWorld( String name, [int times] ) {
     print("Hello" + name);
 }
