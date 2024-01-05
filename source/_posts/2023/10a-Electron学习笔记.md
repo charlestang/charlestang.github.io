@@ -1,14 +1,16 @@
 ---
 title: Electron 学习笔记
-date: 2023-10-10 10:36:00
 tags:
   - electron
 categories: 工作相关
 permalink: 2023/electron-notes/
+date: 2023-10-10 10:36:00
 ---
 最近在学习桌面 App 开发，技术选中了 Electron + Vue3，因为我本身是 Web 开发，虽然是后台开发，但是对 HTML + JS + CSS 的技术栈有所了解，另外对 Web 的原理了解也比较多，算是有一定基础。
 
 通过阅读 Vue 3 的文档，以及实战演练了一些简单代码，已经渐渐可以上手写一点简单的代码。但是我发现，要实现一款客户端应用，不得不掌握一些 Electron 的知识。好在 Electron 是一个很易学的解决方案或者说框架。
+
+<!--more-->
 
 ## 什么是 Electron？
 
