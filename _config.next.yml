@@ -60,7 +60,9 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: solarized dark
+  theme:
+    light: base16/solarized-light
+    dark: tomorrow-night-bright
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -75,3 +77,17 @@ local_search:
 google_analytics:
   tracking_id: G-LJKX5X3SP3
   only_pageview: false
+
+reading_progress:
+  enable: true
+  # Available values: left | right
+  start_at: left
+  # Available values: top | bottom
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 2px
+back2top:
+  enable: true
+  sidebar: true
+  scrollpercent: true
