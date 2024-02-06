@@ -8,7 +8,7 @@ tags:
   - electron
   - usage
 date: 2024-02-06 16:42:55
-updated: 2024-02-06 17:13:26
+updated: 2024-02-06 17:27:48
 ---
 使用 Electron 开发的时候，因为其原理是 Node.js + Chrome 内核，所以在 Chrome 能用的开发工具，在 Electron 开发的时候也可以用，这就带来了很好的开发体验。
 
@@ -124,6 +124,25 @@ function createWindow() {
 上面代码里的路径是我的电脑上的实际路径，注意最后的版本号。同样用环境变量条件引入一下，这样在生产环境不会引入这个。
 
 注意，值得一提的是，electron 毕竟还不是完整的 Chrome，所以并不是支持所有的扩展加载，只支持那些只使用 `Chrome.*` API的扩展，我们常用的 react，vue，jquery，backbone 等扩展都是支持的，但并不是任意的。参见[官方文档](https://www.electronjs.org/zh/docs/latest/tutorial/devtools-extension)。
+
+注意2，我在实际开发的过程中，发现一个很奇怪的现象：
+
+```js
+const setupAll = async () => {
+
+  const app = createApp(App)
+
+  await setupI18n(app)
+
+  setupRouter(app)
+
+  setupStore(app)
+
+  app.mount('#app')
+
+}
+```
+注意上面的各种模块的引入顺序，这个竟然是重要的，一开始我先引入 setupStore 然后是 setupRouter，结果我的 DevTools 里，只有跟组件有关的 Tab，没有 I18n，Routes 和 Pinia，然后我调整了引入顺序，把 setupStore 调整到最后，发现 DevTools 的各个 tab 都正常了。这个原因是不知道的，不过这么用体验更好。[参见](https://github.com/vuejs/devtools/issues/1839)
 
 总结，在 Electron 开发的时候，可以启动 DevTools 并且也可以安装扩展，大幅提升开发体验。
 
