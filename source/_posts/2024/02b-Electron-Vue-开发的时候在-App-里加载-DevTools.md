@@ -1,10 +1,14 @@
 ---
 title: Electron + Vue 开发的时候，在 App 里加载 DevTools
 permalink: 2024/electron-vue-load-devtools/
-categories: []
-tags: []
+categories:
+  - - 工作相关
+    - Vue
+tags:
+  - electron
+  - usage
 date: 2024-02-06 16:42:55
-updated: 2024-02-06 17:09:13
+updated: 2024-02-06 17:13:26
 ---
 使用 Electron 开发的时候，因为其原理是 Node.js + Chrome 内核，所以在 Chrome 能用的开发工具，在 Electron 开发的时候也可以用，这就带来了很好的开发体验。
 
@@ -118,6 +122,8 @@ function createWindow() {
 ```
 
 上面代码里的路径是我的电脑上的实际路径，注意最后的版本号。同样用环境变量条件引入一下，这样在生产环境不会引入这个。
+
+注意，值得一提的是，electron 毕竟还不是完整的 Chrome，所以并不是支持所有的扩展加载，只支持那些只使用 `Chrome.*` API的扩展，我们常用的 react，vue，jquery，backbone 等扩展都是支持的，但并不是任意的。参见[官方文档](https://www.electronjs.org/zh/docs/latest/tutorial/devtools-extension)。
 
 总结，在 Electron 开发的时候，可以启动 DevTools 并且也可以安装扩展，大幅提升开发体验。
 
