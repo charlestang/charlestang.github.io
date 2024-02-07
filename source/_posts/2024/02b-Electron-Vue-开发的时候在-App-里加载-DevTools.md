@@ -7,8 +7,9 @@ categories:
 tags:
   - electron
   - usage
+  - vue
 date: 2024-02-06 16:42:55
-updated: 2024-02-06 17:27:48
+updated: 2024-02-07 16:13:27
 ---
 使用 Electron 开发的时候，因为其原理是 Node.js + Chrome 内核，所以在 Chrome 能用的开发工具，在 Electron 开发的时候也可以用，这就带来了很好的开发体验。
 
