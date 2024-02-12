@@ -9,7 +9,7 @@ tags:
   - usage
   - vue
 date: 2024-02-06 16:42:55
-updated: 2024-02-07 16:13:27
+updated: 2024-02-13 00:38:13
 ---
 使用 Electron 开发的时候，因为其原理是 Node.js + Chrome 内核，所以在 Chrome 能用的开发工具，在 Electron 开发的时候也可以用，这就带来了很好的开发体验。
 
@@ -63,7 +63,7 @@ win.loadFile('dist/index.html')
 改成这样：
 
 ```js
-win.loadURL('http://localhost:5173/Users/charles/Projects/HexoPress/dist')
+win.loadURL('http://localhost:5173/')
 ```
 
 当然，这里还有一点小技巧，就是我们要让 Vue 启动后，再让 Electron 也启动，然后 Electron 加载动态的 Vue 网页，就可以了。打开 package.json 在 scripts 区段，增加：
@@ -95,7 +95,7 @@ function createWindow() {
   })
 
   if (process.env.NODE_ENV === 'dev') {
-    win.loadURL('http://localhost:5173/Users/charles/Projects/HexoPress/dist')
+    win.loadURL('http://localhost:5173/')
     win.webContents.openDevTools()
   } else {
     win.loadFile('dist/index.html')
@@ -117,6 +117,7 @@ function createWindow() {
 
 ```js
   if (process.env.NODE_ENV === 'dev') {
+    // 注意⚠️：这是 Mac 上的路径
     const vueDevToolsPath = join(homedir() , '/Library/Application Support/Google/Chrome/Profile 1/Extensions/nhdogjmejiglipccpnnnanhbledajbpd/6.5.1_0')
     await session.defaultSession.loadExtension(vueDevToolsPath)
   }
