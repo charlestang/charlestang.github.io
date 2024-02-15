@@ -6,10 +6,10 @@ tags:
 categories:
   - 日　　记
 id: '1239'
-date: 2023-06-05 17:02:08
 permalink: 2023/how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
+date: 2023-06-05 17:02:08
+updated: 2024-02-15 12:41:16
 ---
-
 ![hexo_github_actions](../../images/2023/06/hexo_github_actions.png)
 
 ## 缘起
@@ -42,7 +42,7 @@ permalink: 2023/how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
 
 前两天，试用了 Hugo 静态网站生成器来搭建博客，安装部署的体验不错。不过，当全部系统搭建完毕后，想找一个功能完善，又符合我偏爱的老派审美的主题时，我犯难了。因为 Hugo 的主题实在是太难找了，虽然主题看起来很多，但是，就像它官网宣传的那样，它主打的是构建通用的静态网站，博客只是其中一个功能，所以专门为博客定制的主题数量就不多。
 
-此外，官方皮肤主题目录，竟然不能按照热门程度、更新频度等关键评估指标进行排序，就算是想知道每个皮肤的全部特性，也显得万分困难。我得去知乎帖子，V2EX帖子等等网友推荐列表里寻找主题，而找到的主题多数良莠不齐，比起 WordPress 世界强大完善的主题和插件生态，真是令人失望。
+此外，官方皮肤主题目录，竟然不能按照热门程度、更新频度等关键评估指标进行排序，就算是想知道每个皮肤的全部特性，也显得万分困难。我得去知乎帖子，V2EX 帖子等等网友推荐列表里寻找主题，而找到的主题多数良莠不齐，比起 WordPress 世界强大完善的主题和插件生态，真是令人失望。
 
 另外，也不知道是否是错觉，我总觉得，Hugo 配套的最好的主题，也都显得稀松平常，甚至跟一些网友怀疑的一样，我也觉得是不是搞后台 Go 语言开发的这帮人，做网页终究还是不大行。于是，我萌生了尝试一下 Hexo 的想法，Hexo 同样也是一个静态网站生成器，但官网主打的就是”博客框架“，主要区别在于，其使用 nodeJS 开发，生态里也多数都是前端程序员。预览了一些博客，发现确实更加美观，功能也齐全，这点要平均优于 Hugo 的各种主题。
 
@@ -118,16 +118,16 @@ jobs:
 
       - name: Cache NPM dependencies
         uses: actions/cache@v3
-        with: 
+        with:
           path: node_modules
           key: ${{ runner.os }}-npm-cache
-          restore-keys: 
+          restore-keys:
             ${{ runner.os }}-npm-cache
 
       - name: Install Node.js 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: 'latest' 
+          node-version: 'latest'
       - run: npm install
       - run: npm run build
       # https://github.com/marketplace/actions/configure-github-pages
@@ -167,7 +167,7 @@ npm install hexo-migrator-wordpress
 ```
 
 即可安装成功，然后，在 WordPress 博客选择导出功能，将全部内容导出成一个 XML 文件，然后，根据文档，使用命令：
-  
+
 ```bash
 hexo migrate wordpress <source> --save
 ```
@@ -249,10 +249,10 @@ npm install hexo-optimize
 ```shell
 npm install hexo-filter-mathjax
 ```
+
 这个插件是一个服务器端公式渲染的工具。是 Next 这款主题上推荐的[插件](https://github.com/next-theme/hexo-filter-mathjax)。
 
 插件的官网上，有如何配置和使用的文档，在 matters 里增加一个 key 说明本页使用数学公式即可。如何配置的信息也有。
-
 
 ## 日常管理
 
@@ -270,7 +270,7 @@ npm install hexo-filter-mathjax
 
 1. 设定一个规则，文件命名采用文章标题的中文，然后将原来的 post_slug 设定为每篇文章的网址，用 permalink 这个 front matter 字段来设定，写在文章头部。进行此项设定后，生成的静态站点，会用 front matter 中设定的 permalink 作为网址，不会用中文标题做网址。
 2. 文章都放入发表年份 4 位数字的文件夹里归档。
-3. 为了方便索引，文章的文件名，用两位数字的发表月份 + 26进制后缀（小写字母）来做前缀。
+3. 为了方便索引，文章的文件名，用两位数字的发表月份 + 26 进制后缀（小写字母）来做前缀。
 
 这样按照我每年输出十几到几十篇文章的频度，完全够用了。每月写文章超过 26 篇，我这个编号体系就会爆掉。不过幸好我没那么高产。
 
@@ -299,6 +299,7 @@ npm install hexo-filter-mathjax
 ```yaml
 permalink: how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
 ```
+
 是本文的永久链接，文章的源文件是放在：
 
 ```
@@ -328,7 +329,8 @@ source/images/2023/06/hexo_github_actions.png
 ```
 /how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
 ```
-（注意，真实文章是上面那个路径后面的 /index.html 被隐去了，所以上面的路径实际上是一个文件夹）图片的相对路径里 ```../``` 只有一层。所以，要想在写作的时候和发布的时候，同时都能正确引用图片，就要保证在写作时候和发布后，文章与图片的相对路径不变。这是花了很多时间才体会到的问题和解决方案。
+
+（注意，真实文章是上面那个路径后面的 /index.html 被隐去了，所以上面的路径实际上是一个文件夹）图片的相对路径里 `../` 只有一层。所以，要想在写作的时候和发布的时候，同时都能正确引用图片，就要保证在写作时候和发布后，文章与图片的相对路径不变。这是花了很多时间才体会到的问题和解决方案。
 
 之前就是因为我只能保证发布后的展示效果，就导致我不能保证写作时的预览，害得我用各种工具都很不舒服。现在我想通了这个问题后，我预计 VS Code 也好，Obsidian 也好，应该会都比较好用了。
 
@@ -339,3 +341,7 @@ source/images/2023/06/hexo_github_actions.png
 就不难想象为什么这么美观的一个网站框架流行不起来了。天下有几个人能像我这样搞定这一切呢？能搞定的都高度集中在程序员群体中。
 
 就算对程序员来说，搞定技术问题不难，但是每次写作都要重复搞定相同的技术问题，也成为写作的巨大阻碍。现在我主要是为了享受静态网站可以长久不维护能正常运转这个优势。看来还要有个工具，能降低写作时候的心智负担，才更完美。
+
+## 更新
+
+对于写作时候造成的心智负担，我想到的解决方案就是，编写一个客户端软件，将分类信息、标签信息等读取出来，集成到文章的编辑界面上，实现分类和标签的提示。于是我构建了 [HexoPress](https://github.com/charlestang/HexoPress)。我已经开源到了 GitHub。
