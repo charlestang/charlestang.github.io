@@ -73,10 +73,25 @@ codeblock:
 
 local_search:
   enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: manual
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false
 
 google_analytics:
   tracking_id: G-LJKX5X3SP3
   only_pageview: false
+
+busuanzi_count:
+  post_views: true
+  post_views_icon: far fa-eye
+  total_views: true
+  total_views_icon: fa fa-eye
 
 reading_progress:
   enable: true
