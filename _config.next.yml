@@ -88,6 +88,7 @@ google_analytics:
   only_pageview: false
 
 busuanzi_count:
+  enable: true
   post_views: true
   post_views_icon: far fa-eye
   total_views: true
@@ -102,6 +103,7 @@ reading_progress:
   reversed: false
   color: "#37c6c0"
   height: 2px
+
 back2top:
   enable: true
   sidebar: true
