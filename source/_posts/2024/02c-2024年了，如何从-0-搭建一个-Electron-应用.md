@@ -92,6 +92,8 @@ yarn config list                       #显示所有配置，检查确认
 
 再次执行刚才的 init 试试。这次我们看到项目初始化成功了。
 
+**UPDATE**：这里给大家认个错，**上面的解决方法是错误的。虽然也能绕开问题往下走，但是，是一种很坏的习惯。** 请看 [这篇文章](/2024/why-certificate-error-using-npm/) ，详细解释了原因。正确解决方法是，检查自己是否使用了过期的 registry 镜像，更换为有效的镜像 [https://registry.npmmirror.com](https://registry.npmmirror.com) 或者官方镜像 [https://registry.npmjs.org/](https://registry.npmjs.org/) 。或者检查系统的代理配置，根证书配置等。
+
 进入到项目目录，执行：
 
 ```shell
@@ -100,7 +102,9 @@ yarn start
 
 你的第一个 Electron App 启动了！！
 
+
 ![启动界面](../../images/2024/02/electron-screenshot.png)
+
 
 现在你可以仔细看看你的目录结构了，这个 vite-typescript 的模版，特点是全部使用 ts，如果用 js 的话，文件组织形式会有不同，不过我个人很喜欢 ts，会让目录看起来更简洁一点，后续我会介绍更多的细节的点，比如我要用 vue 3 + typescript 来开发 App，如果 Electron 的部分是 js 的，而 vue 3 是 ts，就很不符合我的审美。
 

@@ -11,7 +11,7 @@ updated: 2024-02-20 15:55:50
 ---
 # 缘起
 
-昨天，我写了一篇文章，介绍[如何使用项目模板，构建一个 Electron 项目的脚手架](https://blog.csdn.net/shaoshaoh/article/details/136180392)，我发现我自己在本地无法运行成功，出现了错误。
+昨天，我写了一篇文章，介绍[如何使用项目模板，构建一个 Electron 项目的脚手架](/2024/howto-quick-start-a-electron-app/)，我发现我自己在本地无法运行成功，出现了错误。
 
 ```text
   ✖ Failed to install modules: ["@electron-forge/plugin-vite@^7.2.0","@typescript-eslint/eslint-plugin@^5.0.0","@typescript-eslint/parser@^5.0.0","eslint@^8.0.1","…
