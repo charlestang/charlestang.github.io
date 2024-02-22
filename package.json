@@ -1,6 +1,11 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.1",
+  "name": "charles-blog",
+  "description": "Charles' technical blog.",
+  "version": "1.0.0",
+  "author": {
+      "name": "Charles",
+      "url": "https://blog.charlestang.org"
+  },
   "private": true,
   "scripts": {
     "build": "hexo generate",
