@@ -169,3 +169,8 @@ mathjax:
   every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter
   packages: # extra packages to load
   extension_options: {}
+
+
+symbols_count_time:
+  total_time: false
+  exclude_codeblock: true
