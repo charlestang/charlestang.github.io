@@ -105,4 +105,4 @@ AMQP Models
 
 这次分享给大家的是一篇短小的知识：
 
-《[Linux 系统资源管理：什么是 cgroups？](https://sexywp.com/whats-cgroups.htm)》
+《[Linux 系统资源管理：什么是 cgroups？](https://blog.charlestang.org/whats-cgroups.htm)》

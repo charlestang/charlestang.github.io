@@ -88,4 +88,4 @@ xcode-select --install
 
 这个礼拜分享的文章，是眼前刚遇到的一个问题，虽然不是技术文章，但是也跟技术人息息相关。
 
-[《技术人走上管理岗位的困惑》](https://sexywp.com/tech-leader-worry.htm)
+[《技术人走上管理岗位的困惑》](https://blog.charlestang.org/tech-leader-worry.htm)

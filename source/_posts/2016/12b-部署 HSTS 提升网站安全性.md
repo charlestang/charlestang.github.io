@@ -27,7 +27,7 @@ HSTS 大致原理是，服务器在 SSL 连接的网站请求返回中，带上�
 
 ## HSTS 的使用
 
-[![](http://sexywp.com/wp-content/uploads/2016/12/STS-compatible-1024x505.png)](http://sexywp.com/wp-content/uploads/2016/12/STS-compatible.png)
+[![](http://blog.charlestang.org/wp-content/uploads/2016/12/STS-compatible-1024x505.png)](http://blog.charlestang.org/wp-content/uploads/2016/12/STS-compatible.png)
 
 从 2012 年发布至今，主流的浏览器基本都已经支持了。开启 HSTS 也是非常简单的。只要在 HTTPS 服务的返回的 Response Header 里面添加一条 HSTS 的声明就可以开启这个特性了。如下是一个 Nginx 下的配置范例。其原理只是标准的 HTTP Header 而已，其他的 Web 服务器的配置，就不再赘述了，可以查阅相关文档。
 

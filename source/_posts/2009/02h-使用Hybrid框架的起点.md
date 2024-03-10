@@ -13,7 +13,7 @@ date: 2009-02-18 23:16:07
 permalink: use-hybrid-to-build-child-theme/
 ---
 
-在上一篇《[Hybrid主题框架综述](http://sexywp.com/introduction-to-hybrid.htm)》中，我们已经介绍了Hybrid的基本原理。这篇文章，我们将主要介绍如何使用Hybrid来制作一款主题。本文主要面向的读者为主题制作爱好者，和狂热的DIY fans们。
+在上一篇《[Hybrid主题框架综述](http://blog.charlestang.org/introduction-to-hybrid.htm)》中，我们已经介绍了Hybrid的基本原理。这篇文章，我们将主要介绍如何使用Hybrid来制作一款主题。本文主要面向的读者为主题制作爱好者，和狂热的DIY fans们。
 <!-- more -->
 子主题，就是指，以另一个已经存在的主题的页面元素结构和功能为基础，创建完全自定义的样式，和附加功能。而在制作过程中，完全不修改另一个主题的代码。而“另一个主题”在这个过程中，就自动成为了“父主题”。
 
@@ -36,7 +36,7 @@ General comments/License Statement if any.
 
 创建子主题，就相当于站在巨人的肩膀上，你要处理的文件数量非常少，一般来说只有两个就够了，一个是style.css，另一个是functions.php。style.css的作用是用于说明子主题的外观样式，而functions.php的作用，是用于附加原来父级主题所没有的功能。
 
-这里要做一个**特别说明**，就是关于**文件加载的顺序**的说明。如果你制作了一款子主题，那么WordPress在加载的时候，**首先加载的是子主题的functions.php然后才是父级主题的functions.php**。这意味着什么呢？在Hybrid的functions.php里，使用add_action函数挂载了非常多的东西，根据Hybrid主题框架综述的说明，几乎所有的页面内容，都通过action来挂载。那么如果有哪部分内容，你不想要，或者你想替换成你自己的，那么你是无法直接在子主题的functions.php里面实现卸载的。你能直接操作的，只是挂载，而不能卸载。那么非要卸载是不是没有可能了呢？也不是。这里给出一个方法，首先，创建一个函数，action_to_remove，然后在函数体内写好你要卸载的action，然后将这个函数hook到全局的action **init** 之上，就可以实现卸载了。代码如下：[（什么是Hook？什么是Action？）](http://sexywp.com/try-to-explain-hook-in-wp.htm)
+这里要做一个**特别说明**，就是关于**文件加载的顺序**的说明。如果你制作了一款子主题，那么WordPress在加载的时候，**首先加载的是子主题的functions.php然后才是父级主题的functions.php**。这意味着什么呢？在Hybrid的functions.php里，使用add_action函数挂载了非常多的东西，根据Hybrid主题框架综述的说明，几乎所有的页面内容，都通过action来挂载。那么如果有哪部分内容，你不想要，或者你想替换成你自己的，那么你是无法直接在子主题的functions.php里面实现卸载的。你能直接操作的，只是挂载，而不能卸载。那么非要卸载是不是没有可能了呢？也不是。这里给出一个方法，首先，创建一个函数，action_to_remove，然后在函数体内写好你要卸载的action，然后将这个函数hook到全局的action **init** 之上，就可以实现卸载了。代码如下：[（什么是Hook？什么是Action？）](http://blog.charlestang.org/try-to-explain-hook-in-wp.htm)
 
 ```php
 add_action('init','action_to_remove');  function action_to_remove(){    remove_action('hybrid_header','hybrid_site_title');  }

@@ -31,7 +31,7 @@ permalink: better-extended-live-archive-update-strategy/
 
 ### 展示
 
-使用结构化的表现形势，将所有倒排索引展示在网页上，使用js添加动态内容更替特性，就显得非常的有意思。用起来流畅，而且方便。大家可以去[这个页面](http://sexywp.com/archives "Better Extended Live Archive")体验下。
+使用结构化的表现形势，将所有倒排索引展示在网页上，使用js添加动态内容更替特性，就显得非常的有意思。用起来流畅，而且方便。大家可以去[这个页面](http://blog.charlestang.org/archives "Better Extended Live Archive")体验下。
 
 ## 难题
 

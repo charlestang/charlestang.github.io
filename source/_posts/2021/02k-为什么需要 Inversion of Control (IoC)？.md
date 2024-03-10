@@ -10,7 +10,7 @@ date: 2021-02-26 11:15:39
 permalink: why-need-inversion-of-control-ioc/
 ---
 
-[上一篇文章](https://sexywp.com/inversion-of-control-ioc.htm)洋洋洒洒介绍了一些关于我对 IoC 的学习和理解，这篇文章继续来说说这个话题。认识一个事物，常用的方法就是 5W1H 法，这个方法提醒我们，尽可能全面去认识，不要遗漏某些方面，这里，最最重要的，可能就是 Why，也就是为什么。
+[上一篇文章](https://blog.charlestang.org/inversion-of-control-ioc.htm)洋洋洒洒介绍了一些关于我对 IoC 的学习和理解，这篇文章继续来说说这个话题。认识一个事物，常用的方法就是 5W1H 法，这个方法提醒我们，尽可能全面去认识，不要遗漏某些方面，这里，最最重要的，可能就是 Why，也就是为什么。
 
 这其实是一个非常艰难的话题，我只能硬着头皮来写写，因为能参考的东西实在是不多，就算是 Martin 老爷，也更多谈及了 What 的问题，比较少谈及了 Why，对于他来说，似乎是不言自明的。但是，说实在的，我不明白。比如说，我不明白，我们为什么要 IoC？如果不使用 IoC 的话，我们还有什么选择？IoC 和其他选择之间，优劣如何？
 
@@ -64,5 +64,5 @@ Abstract Factory 模式，体现了 IoC 思想
 
 系列文章：
 
-1.  《[什么是 Inversion of Control (IoC) ？](https://sexywp.com/inversion-of-control-ioc.htm)》
-2.  《[怎么实现 Inversion of Control (IoC) ？](https://sexywp.com/ioc-implementation.htm)》
+1.  《[什么是 Inversion of Control (IoC) ？](https://blog.charlestang.org/inversion-of-control-ioc.htm)》
+2.  《[怎么实现 Inversion of Control (IoC) ？](https://blog.charlestang.org/ioc-implementation.htm)》

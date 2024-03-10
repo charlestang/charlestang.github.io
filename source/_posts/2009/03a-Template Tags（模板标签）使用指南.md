@@ -38,7 +38,7 @@ _Template Tag_的中文翻译是模板标签。（就我个人来看，这个翻
 
 **到底应该如何使用？**
 
-第一，有明确的文档说明此函数为模板标签，这个函数才是模板标签，否则，不一定是。官方文档（[去看看吧](http://codex.wordpress.org/Template_Tags)）里有大量的标签可用，甚至有些插件，通过增加模板标签，来扩充WordPress的功能，典型的如WP Kit CN（[去看看它的文档](http://sexywp.com/wp-kit-cn-doc)）。
+第一，有明确的文档说明此函数为模板标签，这个函数才是模板标签，否则，不一定是。官方文档（[去看看吧](http://codex.wordpress.org/Template_Tags)）里有大量的标签可用，甚至有些插件，通过增加模板标签，来扩充WordPress的功能，典型的如WP Kit CN（[去看看它的文档](http://blog.charlestang.org/wp-kit-cn-doc)）。
 
 第二，知道了哪些东西是标签，还要明白标签的使用位置。有些标签，随便写在哪里都OK，另一些标签，只能出现在特定的地方（The Loop内部）。一般，没有特别说明只能用于The Loop内部的标签，就随处可用。那个神秘的The Loop，我们后面来解释，这里先跳过。
 

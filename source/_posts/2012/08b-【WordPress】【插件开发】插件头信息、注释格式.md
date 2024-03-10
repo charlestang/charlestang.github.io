@@ -28,7 +28,7 @@ WordPress后台可以看到已安装插件的列表，其中会显示插件的�
  Version: <版本11.0>
  Description: <插件简要说明>
  Author: Charles Tang
- Author URI: http://sexywp.com/
+ Author URI: http://blog.charlestang.org/
  Text Domain:[可选:这个用于l10n配置，下文解释]
  Domain Path:[可选:这个用于指定路径，下文解释]
  Network:[可选:bool类型，缺省false，下文解释]

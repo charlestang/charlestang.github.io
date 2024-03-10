@@ -82,7 +82,7 @@ $this->getUserOptions();
 
 ### 怎样使管理面板和用户面板一起工作
 
-你会回想起上一篇关于[设定一个管理面板](http://sexywp.com/how-to-write-a-wp-plugin-07.htm)的文章中，WordPress管理员可以设定文章末尾的内容，代码是否是否在头部显示，评论中的作者名字是否大写。而用户面板允许那些不是管理员的用户有能力设定他们是否希望这些options。
+你会回想起上一篇关于[设定一个管理面板](http://blog.charlestang.org/how-to-write-a-wp-plugin-07.htm)的文章中，WordPress管理员可以设定文章末尾的内容，代码是否是否在头部显示，评论中的作者名字是否大写。而用户面板允许那些不是管理员的用户有能力设定他们是否希望这些options。
 
 我们将允许用户决定，如果他们：
 

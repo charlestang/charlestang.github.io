@@ -14,7 +14,7 @@ permalink: softwares-on-symbian-s60iii/
 
 使用E63，又有一段日子了，这款手机依旧在不断地带给我惊喜，不能说这是[最好的手机](http://www.testfreaks.cn/cell-phones/)，但是，这绝对是[性价比最高的手机](http://www.testfreaks.cn/cell-phones/nokia-e63/)之一了。 在点评狂网站上，E63的评分（9.3），稳稳地领先于其孪生兄弟[E71](http://www.testfreaks.cn/cell-phones/nokia-e71/)（8.6）。
 
-我前几天，写过一篇关于E63的文章，主要[初上手E63时的一些感受，包括对手机外观和功能的简单评价](http://sexywp.com/impression-on-nokia-e63.htm)。在这一篇中，我将介绍我最近几天来安装各类E63软件的一点经验。
+我前几天，写过一篇关于E63的文章，主要[初上手E63时的一些感受，包括对手机外观和功能的简单评价](http://blog.charlestang.org/impression-on-nokia-e63.htm)。在这一篇中，我将介绍我最近几天来安装各类E63软件的一点经验。
 <!-- more -->
 ### 证书
 

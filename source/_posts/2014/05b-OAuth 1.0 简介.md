@@ -9,7 +9,7 @@ date: 2014-05-14 20:42:38
 permalink: oauth-1-intro/
 ---
 
-[![OAuth1.0Core](http://sexywp.com/wp-content/uploads/2014/05/OAuth1.0Core.png)](http://sexywp.com/wp-content/uploads/2014/05/OAuth1.0Core.png)
+[![OAuth1.0Core](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth1.0Core.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth1.0Core.png)
 
 现在已经是OAuth2.0的时代了，整个中国互联网圈子，基本都在使用OAuth2.0了，但是我们可以看到，Twitter，这个曾经引领 了互联网开放平台的先驱，依然固执得坚持着使用OAuth1.0，而且现如今都在使用OAuth2.0的这些中国互联网平台们，也都经历过 OAuth1.0的历史阶段。了解历史才能展望未来，就让我们来看一下什么是OAuth1.0吧~
 <!-- more -->
@@ -126,7 +126,7 @@ OAuth 1.0中，Service Provider至少提供三个URL，供接入者来完成授�
 
 以上介绍的是OAuth 1.0第一个广泛使用的版本，但是这个版本在2009年被爆了漏洞。标准的OAuth授权流程：
 
-[![oauth-flow-normal](http://sexywp.com/wp-content/uploads/2014/05/oauth-flow-normal.png)](http://sexywp.com/wp-content/uploads/2014/05/oauth-flow-normal.png)
+[![oauth-flow-normal](http://blog.charlestang.org/wp-content/uploads/2014/05/oauth-flow-normal.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/oauth-flow-normal.png)
 
 攻击者首先登录到接入者的网站中，然后发起OAuth授权流程，这时候，接入者的网站就会去服务提供商处请求Request Token，这个Request Token是未经授权的。到这个环节，这里面并没有任何作假的成分。
 
@@ -138,7 +138,7 @@ OAuth 1.0中，Service Provider至少提供三个URL，供接入者来完成授�
 
 攻击者攻击时候的流程：
 
-[![oauth-flow-exploit](http://sexywp.com/wp-content/uploads/2014/05/oauth-flow-exploit.png)](http://sexywp.com/wp-content/uploads/2014/05/oauth-flow-exploit.png)
+[![oauth-flow-exploit](http://blog.charlestang.org/wp-content/uploads/2014/05/oauth-flow-exploit.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/oauth-flow-exploit.png)
 
 产生这种结果的原因，在于上述提到的几个步骤中，步骤1、2和5三个步骤，是割裂的，没有一个方法帮助接入者或者服务提供商来识别说，这三个步 骤，是同一 个用户触发的，从而给了攻击者可乘之机。这里面还有一个问题，就是步骤2中，协议没有要求签名，所以，在这个步骤中，callback是有可能被篡改的 （在OAuth 2.0中，全面摒弃了签名，导致每个参数都是可以被篡改的，可以增加参数或者减少参数，从而多了更多的可乘之机）。
 

@@ -1,5 +1,5 @@
 ---
-title: 本站启用新域名SexyWP.com
+title: 本站启用新域名blog.charlestang.org
 tags:
   - notice
 id: '290'

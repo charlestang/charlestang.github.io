@@ -18,7 +18,7 @@ Actually, I'm lazy, and I hate paper work. My dear friend, Snowblink, created th
 
 非常感谢snowblink的辛勤工作，我不知道如何才能用英语表达对你的感谢。所以用中文再说一遍！
 <!-- more -->
-If the following answers do not solve your problem, please contact the author via the [Contact Form](http://sexywp.com/contact).
+If the following answers do not solve your problem, please contact the author via the [Contact Form](http://blog.charlestang.org/contact).
 
 Please describe your problem, the PHP and wordpress version you use, and what you have already tried in detail.
 

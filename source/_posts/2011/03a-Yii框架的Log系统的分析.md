@@ -14,7 +14,7 @@ permalink: how-to-use-log-in-yii-framework/
 
 昨天阅读了Yii框架中log部分的源代码，框架提供了灵活、强大的log功能，如果不是非常特殊的需求，框架中自带的类就已经能够满足一般的应用的需求了。实现log功能的源代码被存放在 framework/logging 目录下，这个目录下的代码都包含在包system.logging中。本文简要介绍一下我昨天阅读代码的所得。
 <!-- more -->
-[![yii-logging-class-graph-jpg](http://sexywp.com/wp-content/uploads/2011/03/class-graph.jpg)](http://sexywp.com/wp-content/uploads/2011/03/class-graph.jpg)
+[![yii-logging-class-graph-jpg](http://blog.charlestang.org/wp-content/uploads/2011/03/class-graph.jpg)](http://blog.charlestang.org/wp-content/uploads/2011/03/class-graph.jpg)
 
 首先，来看一下这个图，这是Charles昨夜工作的结晶，研究了logging目录下一共九个文件中的类的关系。YiiBase，Yii，CWebApplication不属于logging目录，但是为了说明这些类如何发生作用，也放在了这种图里。我的初衷，是要画一张标准的UML图的，无奈于本科的知识都还给老师了，所以这个图只能算是个四不像，大家凑合看一下，后面我会给自己补补课，后续的文章画得图会趋于规范的。
 

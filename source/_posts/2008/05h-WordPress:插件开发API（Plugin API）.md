@@ -22,16 +22,16 @@ permalink: wordpress-plugin-api/
 
 ### Hook，Action和Filter
 
-Hook是[WordPress](http://sexywp.com/cata/wp "Becoming Charles-WP")提供的一种机制，帮助您将您的插件加入到[WordPress](http://wordpress.org/ "WP")中；也即，在您的插件中，通过调用一些系统函数，使得您的插件可以运作起来。一共有两种Hook：
+Hook是[WordPress](http://blog.charlestang.org/cata/wp "Becoming Charles-WP")提供的一种机制，帮助您将您的插件加入到[WordPress](http://wordpress.org/ "WP")中；也即，在您的插件中，通过调用一些系统函数，使得您的插件可以运作起来。一共有两种Hook：
 
 1.  Action：Action是[WordPress](http://wordpress.org/ "WP")内核在运行到某个特定的点的，或者某个特定的事件发生的时候执行的。您可以通过使用Action API让您的插件中的一个或者多个函数在这些特定的点执行。
-2.  Filter：Filter是[WordPress](http://sexywp.com/cata/wp "Becoming Charles-WP")在将一段文本加入到数据库，或者发送给浏览器之前处理不同种类的文本用的。您的插件可以通过使用Filter API，让一个或者多个函数在这些时刻运行，以处理特定类型的文本。
+2.  Filter：Filter是[WordPress](http://blog.charlestang.org/cata/wp "Becoming Charles-WP")在将一段文本加入到数据库，或者发送给浏览器之前处理不同种类的文本用的。您的插件可以通过使用Filter API，让一个或者多个函数在这些时刻运行，以处理特定类型的文本。
 
 有的时候，您可以使用Action和Filter达到相同的目的。比如说，您希望你的插件可以更改一段日志的文本，您可能会往`publish_post`中添加一个Action函数（这段文字在被加入到数据库之前被修改了），或者往 `the_content`中添加一个Filter函数（这段文字在被发送给浏览器显示之前，被更改了）。
 
 ### Action
 
-Action由[WordPress](http://sexywp.com/tags/wordpress "Becoming Charles-WP")中发生的一些特定的事件所触发，比如发布一篇日志，更改主题，或者在管理面板显示一个页面。您的插件可以通过执行一个PHP函数来响应事件，实现以下几个目的：
+Action由[WordPress](http://blog.charlestang.org/tags/wordpress "Becoming Charles-WP")中发生的一些特定的事件所触发，比如发布一篇日志，更改主题，或者在管理面板显示一个页面。您的插件可以通过执行一个PHP函数来响应事件，实现以下几个目的：
 
 *   修改数据库数据
 *   发送Email信息

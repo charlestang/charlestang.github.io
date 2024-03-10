@@ -47,7 +47,7 @@ http://codex.wordpress.org/Plugin_API/Filter_Reference
 
 我们知道了要用的这个过滤器叫做the_content。
 
-然后，我们就要动手开发了。（有些东西不想重复说了，就是一些ABC，可以看看[插件开发API](http://sexywp.com/wordpress-plugin-api.htm)，那是我翻译的文档。）
+然后，我们就要动手开发了。（有些东西不想重复说了，就是一些ABC，可以看看[插件开发API](http://blog.charlestang.org/wordpress-plugin-api.htm)，那是我翻译的文档。）
 
 首先，准备好要插入的文字，可以先用个普通网页把东西调试好，然后，写成字符串的模样。
 
@@ -76,4 +76,4 @@ $bottem_string .= '';
 
 插件下载
 
-http://sexywp.com/downdown/add-bottom-info.rar
+http://blog.charlestang.org/downdown/add-bottom-info.rar

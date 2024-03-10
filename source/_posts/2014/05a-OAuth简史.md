@@ -10,7 +10,7 @@ date: 2014-05-13 21:11:34
 permalink: oauth-history/
 ---
 
-[![OAuth-cartoon](http://sexywp.com/wp-content/uploads/2014/05/OAuth-cartoon-300x267.png)](http://sexywp.com/wp-content/uploads/2014/05/OAuth-cartoon.png)
+[![OAuth-cartoon](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth-cartoon-300x267.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth-cartoon.png)
 
 最早的OAuth诞生于2006年11月，当时，程序猿布莱恩·库克（Blaine Cook）正在实现Twitter的OpenID。与此同时，Ma.gnolia（一个社会化书签服务2005.12.25~2009.1.30）需要一 个解决方案，允许使用OpenID的成员，授权Dashboard Widgets（Mac系统的桌面小挂件）访问它的服务。这样库克、克里斯·梅西纳（Chris Messina）和来自Ma.gnolia的拉里·哈尔夫（Larry Halff）与戴维·雷科尔顿（David Recordon）会面，讨论在Twitter和Ma.gnolia API上使用OpenID进行委托授权。他们的讨论，得出一个结论，没有开放标准完成API访问的委托。
 <!-- more -->

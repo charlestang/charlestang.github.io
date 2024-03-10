@@ -12,7 +12,7 @@ permalink: lucene-note-06/
 
 
 <!-- more -->
-在[笔记03](http://sexywp.com/lucene-note-03.htm "Lucene Note 03")中，已经提到了使用Lucene进行搜索的几个必要组件：
+在[笔记03](http://blog.charlestang.org/lucene-note-03.htm "Lucene Note 03")中，已经提到了使用Lucene进行搜索的几个必要组件：
 
 *   **IndexSearcher**——该对象内包含了很多search方法的重载，搜素一个索引，主要就是使用该对象的实例。
 *   **Query**——该类是一个抽象类，其派生类产生的对象，是对各种形式搜索的封装。

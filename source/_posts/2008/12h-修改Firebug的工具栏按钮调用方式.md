@@ -12,7 +12,7 @@ date: 2008-12-02 14:22:30
 permalink: modify-the-firebug-call-way/
 ---
 
-昨天晚上，我[写了篇文章，说我在玩Firefox美化](http://sexywp.com/some-problems-when-custom-firefox.htm)，其实，我主要在做的工作，就是清理Firefox浏览器界面上不需要的东西，尽量的压缩界面，扩大网页的可视化面积。
+昨天晚上，我[写了篇文章，说我在玩Firefox美化](http://blog.charlestang.org/some-problems-when-custom-firefox.htm)，其实，我主要在做的工作，就是清理Firefox浏览器界面上不需要的东西，尽量的压缩界面，扩大网页的可视化面积。
 
 昨天，为了隐藏掉Firefox的状态栏，我已经进行了相当多的努力，要隐藏掉状态来，还要保存状态栏的所有功能，着实不是那么简单的一件事情，老肥的文章只介绍了怎么把显示Active Link的功能搬移到地址栏里显示（使用Fission），还有把Gmail Manager整合到工具栏按钮。而我昨天提出的第三个问题，即firebug按钮，整合到工具栏后，调用方式变成“在新窗口中打开”，我今天终于给搞定了。
 <!-- more -->

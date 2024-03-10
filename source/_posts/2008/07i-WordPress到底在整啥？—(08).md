@@ -43,7 +43,7 @@ permalink: inside-wordpress-08/
 
 我举个例子吧，比如要访问我的feed：
 
-http://sexywp.com/?feed=rss2
+http://blog.charlestang.org/?feed=rss2
 
 然后，do_feed被调用，然后wp得到了需要的类型“rss2”。
 

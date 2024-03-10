@@ -14,7 +14,7 @@ permalink: how-to-write-a-wp-plugin-11/
 
 越来越多的插件开始使用AJAX技术。我个人并没有在大多数的插件中看到过AJAX，但是使用AJAX来完成某个任务对你的插件来说可能是必要的。这篇文章将像你展示怎样在你的插件中使用AJAX。
 
-这篇文章将在上一篇文章[《在插件中添加js和css》](http://sexywp.com/how-to-write-a-wp-plugin-09.htm)的基础上继续。
+这篇文章将在上一篇文章[《在插件中添加js和css》](http://blog.charlestang.org/how-to-write-a-wp-plugin-09.htm)的基础上继续。
 <!-- more -->
 ### 建立一个新的PHP文件
 

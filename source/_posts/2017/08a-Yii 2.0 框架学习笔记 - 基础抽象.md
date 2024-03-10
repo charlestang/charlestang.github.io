@@ -12,7 +12,7 @@ date: 2017-08-12 18:02:32
 permalink: yii2-abstraction/
 ---
 
-[![](http://sexywp.com/wp-content/uploads/2017/08/yii2-abstraction@2x-1024x607.png)](http://sexywp.com/wp-content/uploads/2017/08/yii2-abstraction@2x.png)
+[![](http://blog.charlestang.org/wp-content/uploads/2017/08/yii2-abstraction@2x-1024x607.png)](http://blog.charlestang.org/wp-content/uploads/2017/08/yii2-abstraction@2x.png)
 
 Yii 2.0 base 包里部分类的类图
 

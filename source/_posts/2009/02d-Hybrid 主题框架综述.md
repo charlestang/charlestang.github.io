@@ -38,4 +38,4 @@ Hybrid框架最适合作为开发子主题的基础，因为该框架本身布�
 
 未完待续
 
-下一篇，拟介绍《[使用Hybrid的起点](http://sexywp.com/use-hybrid-to-build-child-theme.htm)》，欢迎给位在下面跟帖讨论，并给我提供写作建议，谢谢！
+下一篇，拟介绍《[使用Hybrid的起点](http://blog.charlestang.org/use-hybrid-to-build-child-theme.htm)》，欢迎给位在下面跟帖讨论，并给我提供写作建议，谢谢！

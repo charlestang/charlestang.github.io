@@ -8,7 +8,7 @@ date: 2015-08-19 02:06:55
 permalink: why-i-like-git-better/
 ---
 
-之前，我写了一篇文章[《SVN为什么比git更好》](http://sexywp.com/why-svn-is-better-than-git.htm)，主要是从非常朴实和现实的角度，从一个为全团队选型的角度，分析了为什么SVN比git更好。但是公私分明，作为我个人来说，我想我还是更喜欢git的。
+之前，我写了一篇文章[《SVN为什么比git更好》](http://blog.charlestang.org/why-svn-is-better-than-git.htm)，主要是从非常朴实和现实的角度，从一个为全团队选型的角度，分析了为什么SVN比git更好。但是公私分明，作为我个人来说，我想我还是更喜欢git的。
 <!-- more -->
 ## 全分布式设计
 

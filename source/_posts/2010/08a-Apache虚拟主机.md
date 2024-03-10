@@ -22,7 +22,7 @@ Apache的虚拟主机是一种允许在同一台机器上，运行超过一个�
 
 > <VirtualHost 127.0.0.1:80>  
 >     ServerAdmin yourname@domain.com  
->     DocumentRoot "E:/sexywp.com/wordpress-latest"  
+>     DocumentRoot "E:/blog.charlestang.org/wordpress-latest"  
 >     ServerName wplatest.com  
 >     ServerAlias www.wplatest.com  
 >     ErrorLog "logs/wplatest.com-error.log"  
@@ -31,7 +31,7 @@ Apache的虚拟主机是一种允许在同一台机器上，运行超过一个�
 > 
 > <VirtualHost 127.0.0.2:80>  
 >     ServerAdmin yourname@domain.com  
->     DocumentRoot "E:/sexywp.com/wordpress-2.9.2"  
+>     DocumentRoot "E:/blog.charlestang.org/wordpress-2.9.2"  
 >     ServerName wpstable.com  
 >     ServerAlias www.wpstable.com  
 >     ErrorLog "logs/wpstable.com-error.log"  
@@ -48,7 +48,7 @@ Apache的虚拟主机是一种允许在同一台机器上，运行超过一个�
 > 
 > <VirtualHost *:80>  
 >     ServerAdmin yourname@domain.com  
->     DocumentRoot "E:/sexywp.com/wordpress-latest"  
+>     DocumentRoot "E:/blog.charlestang.org/wordpress-latest"  
 >     ServerName wplatest.com  
 >     ServerAlias www.wplatest.com  
 >     ErrorLog "logs/wplatest.com-error.log"  
@@ -57,7 +57,7 @@ Apache的虚拟主机是一种允许在同一台机器上，运行超过一个�
 > 
 > <VirtualHost *:80>  
 >     ServerAdmin yourname@domain.com  
->     DocumentRoot "E:/sexywp.com/wordpress-2.9.2"  
+>     DocumentRoot "E:/blog.charlestang.org/wordpress-2.9.2"  
 >     ServerName wpstable.com  
 >     ServerAlias www.wpstable.com  
 >     ErrorLog "logs/wpstable.com-error.log"  

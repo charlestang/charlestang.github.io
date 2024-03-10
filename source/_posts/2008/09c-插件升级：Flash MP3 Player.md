@@ -12,7 +12,7 @@ date: 2008-09-23 17:51:03
 permalink: flash-mp3-player-updated/
 ---
 
-**[插件主页在这里！](http://sexywp.com/flash-player-widget.htm)[FAQ](http://sexywp.com/flash-mp3-player-faq.htm)**
+**[插件主页在这里！](http://blog.charlestang.org/flash-player-widget.htm)[FAQ](http://blog.charlestang.org/flash-mp3-player-faq.htm)**
 
 又好久没有写博客了，不过，我确实一直没有离开WP的阵营，每天还在坚持着折腾一下WP，哈哈。由于我又开了一个生活日记类型的博客，所以，这里，我就打算只写些跟WP有关，跟技术有关的东西了。而这些天一直没有更新这个博客的原因，我只能说，有一些与WP相关，但是更加激动人心的事情让我着迷。
 

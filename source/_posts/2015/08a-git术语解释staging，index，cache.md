@@ -15,7 +15,7 @@ permalink: git-staging-area-index-cache/
 <!-- more -->
 比如，当我阅读git官网提供的电子书《Pro Git》的时候，最初一章里，就提到，文件在git里面，有三种状态，working copy，staging area，和 in repository。而在读一些man pages的时候，比如git-reset命令，又会看到index，这非常让人困扰。而git-rm 指令又有一个参数叫 --cached，其作用是"unstage and remove paths only from the index"，更加奇怪了，同时提到了stage和index，而参数名竟然是cached！！！
 
-![](http://sexywp.com/wp-content/uploads/2015/08/QQ20150829-1@2x.png)
+![](http://blog.charlestang.org/wp-content/uploads/2015/08/QQ20150829-1@2x.png)
 
 这三者的来龙去脉到底怎么回事？搞清楚这些问题，对于喜欢刨根究底的我来说，极其重要。通过谷歌，我找到了一个叫Junio C Hamano的日本小哥，他是git的核心维护者之一，讲述了[这三者的故事](http://gitster.livejournal.com/39629.html)。本文主要内容从那个文章中解读出来，添加了一些自己的理解，不感冒的同学，请直接阅读原文。
 

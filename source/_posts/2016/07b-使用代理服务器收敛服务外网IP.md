@@ -19,7 +19,7 @@ permalink: use-proxy-to-make-service-ip-consistent/
 
 然而微服务的实施，并不是每个企业都有能力去实践的，涉及到服务划分、治理、发现、运维等一系列的问题。对架构能力有很大的挑战。所以，我们在这个问题上，使用了非常简单轻巧的方式来收敛企业对外访问的 IP 地址。
 
-[![proxy-cluster](http://sexywp.com/wp-content/uploads/2016/07/proxy-cluster.png)](http://sexywp.com/wp-content/uploads/2016/07/proxy-cluster.png)
+[![proxy-cluster](http://blog.charlestang.org/wp-content/uploads/2016/07/proxy-cluster.png)](http://blog.charlestang.org/wp-content/uploads/2016/07/proxy-cluster.png)
 
 如图所示，我们使用云服务器，搭建了一个代理服务器的集群，这个集群的主要功能，就是对外提供一组比较稳定的 IP 地址，供第三方服务去做基于 IP 白名单的鉴权。对内部来说，各种产品，无论处于研发的哪个阶段，在第三方服务需要提供 IP 白名单的时候，只要提供 Proxy 的 IP 地址就可以了。因为功能的单纯，两台机器也不会有太高的负载，还是选用两台，主要是为了避免单点故障。
 

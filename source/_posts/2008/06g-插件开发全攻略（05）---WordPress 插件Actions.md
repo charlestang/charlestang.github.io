@@ -21,7 +21,7 @@ permalink: how-to-write-a-wp-plugin-05/
 <!-- more -->
 ### Action在行动
 
-当定义一个[WordPress插件的结构](http://sexywp.com/how-to-write-a-wp-plugin-04.htm)的时，我为某些Action留下了一块地方。在这个例子中，我们将使得一段代码可以在WordPress博客中的<head>标签内运行。
+当定义一个[WordPress插件的结构](http://blog.charlestang.org/how-to-write-a-wp-plugin-04.htm)的时，我为某些Action留下了一块地方。在这个例子中，我们将使得一段代码可以在WordPress博客中的<head>标签内运行。
 
 首先，我们需要在**DevloungePluginSeries**类中添加一个函数：
 

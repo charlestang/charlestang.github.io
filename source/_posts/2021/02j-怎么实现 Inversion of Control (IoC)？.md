@@ -12,9 +12,9 @@ permalink: ioc-implementation/
 
 前面花了很多篇幅去讲了 IoC 这个概念的问题，最后，还是要落实到实现上。通过分析和推理，我们了解到 IoC 的本质还是为了解耦和复用，而这个核心，最后落实到而组件和对象的创建和组装上面。
 
-《[什么是 Inversion of Control？](https://sexywp.com/inversion-of-control-ioc.htm)》
+《[什么是 Inversion of Control？](https://blog.charlestang.org/inversion-of-control-ioc.htm)》
 
-《[为什么需要 Inversion of Control？](https://sexywp.com/why-need-inversion-of-control-ioc.htm)》
+《[为什么需要 Inversion of Control？](https://blog.charlestang.org/why-need-inversion-of-control-ioc.htm)》
 
 了解了这些，就不会“乱花渐欲迷人眼”，无论是 Spring 强调的 IoC Container 也好，还是 Martin 老爷说的 Service Locator，Dependency Injection，其背后，目的是统一的。无非是手段是多样的。那么，我们只要逐一去了解这些手段即可。
 <!-- more -->
