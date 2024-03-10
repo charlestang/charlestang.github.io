@@ -9,7 +9,7 @@ categories:
   - [小窍门]
   - [工作相关, Python]
 date: 2020-03-03 15:57:31
-permalink: visual-studio-code-tricks/
+permalink: 2020/visual-studio-code-tricks/
 ---
 
 前两天写了如何给 Python 项目设置 Virtualenv，然后又发现了一个新的小问题，于是，干脆把文章也改了，改成小集锦了，以后各种小问题，都记录到这篇文章里面好了，省得开新的文章了。

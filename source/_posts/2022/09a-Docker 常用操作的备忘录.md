@@ -10,6 +10,8 @@ date: 2022-09-27 12:21:34
 permalink: docker-memo/
 ---
 
+![docker](../images/2022/09/dockerlabs.jpeg)
+
 Docker 一旦设置好了环境，日常就只要使用简单命令就可以运行和停止。
 
 于是，我每次用的时候，都想不起来一些关键性的命令到底怎么用，特此记录。

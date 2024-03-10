@@ -7,12 +7,12 @@ id: '909'
 categories:
   - [工作相关, 支付]
 date: 2020-05-28 14:29:49
-permalink: what-is-pos/
+permalink: 2020/what-is-pos/
 ---
 
 POS 的英文是 Point of Sales，字面意思是销售点，百度百科也说是“销售点情报管理系统”，本质上来说，是一套系统，有很多的组成部分。
 
-![](../images/2020/05/retail-pos-system-1200x650px-1024x555.jpg)
+![](../images/2020/05/retail-pos-system-1200x650px.jpg)
 
 POS 系统
 

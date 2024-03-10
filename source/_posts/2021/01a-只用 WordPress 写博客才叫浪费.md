@@ -10,6 +10,8 @@ date: 2021-01-22 11:27:13
 permalink: 2021/wordpress-more-than-blog/
 ---
 
+![wordpress](../images/2021/01/how-to-get-started-with-wordpress.jpg)
+
 玩 WordPress 年头已经长到记不起最初的记忆了，但是，今天我才发现我对其是何其陌生。
 
 现在的 WordPress 早就不是一个博客软件这么简单了，当年就意识到，WordPress 这样的软件，应该归类到 CMS 系统里面，今天，我才体会到什么叫强大的 CMS 系统。以前目光还是太短浅了，也忽略了事物的发展规律。如果 WordPress 一直把自己定位成一个博客，估计尸骨都凉透了。
@@ -22,7 +24,7 @@ permalink: 2021/wordpress-more-than-blog/
 
 我用我插件的名字和关键词，搜索插件目录，看看同类品里，做得最好的插件，提供了怎样的功能，以及如何设计交互界面，这才给我打开了一个全新的世界。我发现有些插件的安装量，超过了 500万，这太惊人了，完全超乎了我的想象。虽然我觉得插件的世界是个长尾的世界，但是也没想过有插件能超过 500万安装量。
 
-![](../../images/2021/01/gutenberg-hub-template-library.png)
+![](../images/2021/01/gutenberg-hub-template-library.png)
 
 Gutenberg 古腾堡区块布局
 

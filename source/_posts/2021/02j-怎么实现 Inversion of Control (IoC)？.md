@@ -148,6 +148,8 @@ class BaseObject implements Configurable
 
 ## Service Locator
 
+![](../images/2021/02/Service-Locator-Pattern.png)
+
 这是另一种实现 IoC 的模式，也是来自 Martin 老爷。我怎么理解这个模式呢，和 DI 比较着理解的话，我觉得就是“主动”与“被动”的区别。在 DI 里面，我们无论是实现构造器，实现属性，还是实现接口，都是等着“别人”来给我的对象里注入我的依赖。
 
 但是如果是对象自己主动去一个注册表里查询获取一个需要的依赖呢？这种模式就成了 Service Locator。这种模式本质上就是一个注册表，大家仍然可以把依赖注册进去，每个对象都有自己的 key，需要依赖的对象，在使用的时候，只要调用 locator 进行获取即可。
