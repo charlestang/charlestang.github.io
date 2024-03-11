@@ -7,11 +7,25 @@ tags:
   - markdown
   - syntax
 date: 2024-03-10 11:02:00
+updated: 2024-03-10 14:59:35
 ---
 
 记录一些怎么也记不住写法的 Markdown 语法。
 
 <!--more-->
+
+## 链接
+
+### 基础
+
+```markdown
+[链接文字](https://blog.charlestang.org)
+```
+
+效果
+
+[Becomin' Charles](https://blog.charlestang.org)
+
 
 ## 表格
 
