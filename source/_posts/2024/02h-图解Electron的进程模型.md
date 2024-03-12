@@ -10,7 +10,7 @@ tags:
   - vue
   - usage
 date: 2024-02-26 17:58:00
-updated: 2024-02-26 18:52:14
+updated: 2024-03-12 19:01:09
 ---
 此前，已经介绍了《[如何从 0 开始，创建一个 Electron 的 App][howto-quickstart-electron]》，每个人就有了一个梦开始的地方。如果想实现一个功能丰富的 App，了解一点基础知识，是非常必要的。比如，Electron 的进程模型。
 
@@ -18,15 +18,15 @@ updated: 2024-02-26 18:52:14
 
 # 一、简介 Chrome 的进程模型
 
-Chrome 浏览器是多进程的结构，使用一个管理器，来管理多个页面进程，每个页面存在一个沙盒中，如果崩溃了，也不会影响其他的页面。
+Chrome 浏览器是[多进程结构](https://www.chromium.org/developers/design-documents/multi-process-architecture/)，使用一个管理器，来管理多个页面进程，每个页面存在一个沙盒中，如果崩溃了，也不会影响其他的页面。
 
-[插图，Chrome 浏览器进程管理模型]
+![Chrome 浏览器进程管理模型](../images/2024/02/chrome-arch.png)
 
 从上图我们看到，每个页面独占一个进程，管理器负责管理所有的页面。这种架构，使得浏览器的稳定性加强，但是资源占用更加庞大，系统架构也更加复杂。
 
 # 二、Electron 的进程模型
 
-[Electron 的进程模型图]
+![Electron 的进程模型图](../images/2024/02/electron-arch.png)
 
 Electron 的进程模型参考 Chrome，也存在一个管理器进程，即主进程，这是一个系统进程，启动的时候，会首先加载我们项目里的 `main.js` 文件，这个文件的路径，需要在 `package.json` 文件里配置，用 `main` 这个 `key`，告诉 `electron` 启动的时候，去哪个路径找入口文件，显然，入口文件的名字也是可以改的。
 
