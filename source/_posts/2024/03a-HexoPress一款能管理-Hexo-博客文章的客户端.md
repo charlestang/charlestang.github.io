@@ -10,8 +10,12 @@ tags:
   - electron
   - vue
 date: 2024-03-04 15:52:31
-updated: 2024-03-14 16:16:37
+updated: 2024-03-15 12:40:55
 ---
+![Dashboard](../../images/2024/03/dashboard-cn.png)
+
+<!--more-->
+
 # 一、缘起：为什么开发 HexoPress
 
 去年，我将个人博客 —— [《 Becomin' Charles 》](https://blog.charlestang.org)，从阿里云香港服务器迁移到了 GitHub Pages 托管。这么做的好处是毋庸置疑的 —— 免费。但也不是只因为费用的原因，毕竟我依然租赁着服务器，是考虑到现在的解决方案可以在无人续费的情况下，尽可能长时间的运营下去，这一点比付费服务器更有优势。
