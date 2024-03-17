@@ -7,7 +7,7 @@ tags:
   - markdown
   - syntax
 date: 2024-03-10 11:02:00
-updated: 2024-03-16 17:00:33
+updated: 2024-03-17 19:38:54
 ---
 
 记录一些怎么也记不住写法的 Markdown 语法。
@@ -94,6 +94,24 @@ _**粗斜体**_
 实例：
 
 [Becomin' Charles](https://blog.charlestang.org)
+
+### 7. 代码
+
+````markdown
+```<language>
+```
+行内代码，`code`
+````
+
+### 8. 图片
+
+```markdown
+![](../../images/2024/03/dashboard-cn.png)
+```
+
+实例：
+
+![](../../images/2024/03/dashboard-cn.png)
 
 
 ## 二、复杂语法
