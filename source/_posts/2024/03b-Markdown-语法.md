@@ -7,7 +7,7 @@ tags:
   - markdown
   - syntax
 date: 2024-03-10 11:02:00
-updated: 2024-03-17 19:38:54
+updated: 2024-03-19 23:11:56
 ---
 
 记录一些怎么也记不住写法的 Markdown 语法。
@@ -149,3 +149,132 @@ _**粗斜体**_
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
+
+## 三、皮肤特有
+
+### 1. 引用
+
+```markdown
+{% centerquote %}本来是没有路的，走得人多了就成了路{% endcenterquote %}
+{% cq %}Elegant in code, simple in core{% endcq %}
+```
+
+实例：
+
+{% centerquote %}本来是没有路的，走得人多了就成了路{% endcenterquote %}
+{% cq %}Elegant in code, simple in core{% endcq %}
+
+### 2. Note
+
+````markdown
+{% note %}
+#### Header
+(without define class style)
+{% endnote %}
+
+{% note default %}
+#### Default Header
+Welcome to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note primary %}
+#### Primary Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info %}
+#### Info Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note success %}
+#### Success Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note warning %}
+#### Warning Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note danger %}
+#### Danger Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info no-icon %}
+#### No icon note
+Note **without** icon: `note info no-icon`
+{% endnote %}
+
+{% note primary This is a summary %}
+#### Details and summary
+Note with summary: `note primary This is a summary`
+{% endnote %}
+
+{% note success %}
+#### Codeblock in note
+
+```
+code block in note tag
+code block in note tag
+code block in note tag
+```
+{% endnote %}
+
+````
+
+{% note %}
+#### Header
+(without define class style)
+{% endnote %}
+
+{% note default %}
+#### Default Header
+Welcome to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note primary %}
+#### Primary Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info %}
+#### Info Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note success %}
+#### Success Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note warning %}
+#### Warning Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note danger %}
+#### Danger Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info no-icon %}
+#### No icon note
+Note **without** icon: `note info no-icon`
+{% endnote %}
+
+{% note primary This is a summary %}
+#### Details and summary
+Note with summary: `note primary This is a summary`
+{% endnote %}
+
+{% note success %}
+#### Codeblock in note
+
+```
+code block in note tag
+code block in note tag
+code block in note tag
+```
+{% endnote %}
