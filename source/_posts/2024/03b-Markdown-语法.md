@@ -7,7 +7,7 @@ tags:
   - markdown
   - syntax
 date: 2024-03-10 11:02:00
-updated: 2024-03-19 23:11:56
+updated: 2024-03-20 22:06:14
 ---
 
 记录一些怎么也记不住写法的 Markdown 语法。
@@ -278,3 +278,22 @@ code block in note tag
 code block in note tag
 ```
 {% endnote %}
+
+### 3. Label 标签
+
+```markdown
+语法格式：
+
+{% label [class]@text %}
+
+范例：
+Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim *{% label warning @ad %}* minim veniam, quis **{% label danger@nostrud %}** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+```
+
+实例：
+
+Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim *{% label warning @ad %}* minim veniam, quis **{% label danger@nostrud %}** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
