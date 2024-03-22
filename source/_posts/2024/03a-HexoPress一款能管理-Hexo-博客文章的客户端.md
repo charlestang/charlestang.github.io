@@ -10,7 +10,7 @@ tags:
   - electron
   - vue
 date: 2024-03-04 15:52:31
-updated: 2024-03-15 13:05:56
+updated: 2024-03-22 12:56:55
 ---
 ![Dashboard](../../images/2024/03/dashboard-cn.png)
 
@@ -38,13 +38,13 @@ GitHub Pages 服务，只支持静态内容的托管，所以，我的博客内�
 
 在更换博客系统之前，我一直用的都是 WordPress 博客，所以，早就习惯了其内容组织和管理方式，所以我将博客管理客户端的设计，信息架构，参考了 WordPress 的管理后台。
 
-* Dashboard 仪表板，主要展示博客的一些最新变动和元数据，统计信息等；
-* 文章列表，主要展示所有的文章列表，提供按照月份、分类、关键字的检索；
-* 分类列表，展示所有的分类和分类的层次关系，比较理想的是可以维护分类的名字和层次关系（暂不支持）；
-* 标签列表，展示所有的标签，以及每个标签包含的文章的数量统计，比较理想的是可以编辑标签的名字（暂不支持）；
-* 媒体库，可以看到博客里已经引用的所有图片，以及一些图片的元信息；
-* 配置界面，博客客户端自身的一些偏好设置；
-* 博客设置调整，可以调整 Hexo 博客的一些设置（暂不支持）；
+- Dashboard 仪表板，主要展示博客的一些最新变动和元数据，统计信息等；
+- 文章列表，主要展示所有的文章列表，提供按照月份、分类、关键字的检索；
+- 分类列表，展示所有的分类和分类的层次关系，比较理想的是可以维护分类的名字和层次关系（暂不支持）；
+- 标签列表，展示所有的标签，以及每个标签包含的文章的数量统计，比较理想的是可以编辑标签的名字（暂不支持）；
+- 媒体库，可以看到博客里已经引用的所有图片，以及一些图片的元信息；
+- 配置界面，博客客户端自身的一些偏好设置；
+- 博客设置调整，可以调整 Hexo 博客的一些设置（暂不支持）；
 
 这些东西的可视化管理，可以说是一个博客系统应该给客户提供的比较基础的管理功能，不过 Hexo 因为只是一个网页生成器，所以都不提供这些。这是我这个客户端要补全的。
 
@@ -66,9 +66,9 @@ GitHub Pages 服务，只支持静态内容的托管，所以，我的博客内�
 
 现在 HexoPress 已经发布了 v1.1.0 版本，可以从 GitHub 下载编译好的二进制版本进行体验，不过我自己就是开发者，没有测试过安装包到底好不好用，会不会遇到问题。下载链接见：
 
-* 苹果：[苹果芯片](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-darwin-arm64-1.0.0.zip)
-* 苹果：[Intel芯片](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-darwin-x64-1.1.0.zip)
-* Windows：[x64](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-squirrel.windows-x64-1.1.0.zip)
+- 苹果：[苹果芯片](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-darwin-arm64-1.0.0.zip)
+- 苹果：[Intel 芯片](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-darwin-x64-1.1.0.zip)
+- Windows：[x64](https://github.com/charlestang/HexoPress/releases/download/v1.1.0/HexoPress-squirrel.windows-x64-1.1.0.zip)
 
 双击启动后，首先要选择你的 Hexo 博客的根目录在哪里，配置好根目录后，就可以开始使用了。
 
@@ -81,7 +81,5 @@ GitHub Pages 服务，只支持静态内容的托管，所以，我的博客内�
 也希望大家使用了此客户端后，能来跟我反馈问题。不过目前看来还没有什么用户。不过，我想我坚持工作，总是能把它做得更好，至少，从我个人角度看，我总希望自己用得舒服吧。我听说当年王小波为了写小说，自己开发了一款输入法。让我惊为天人，我也想效仿他。
 
 大家如果有志于参与共同开发，我在 GitHub 上也写了一些说明，可以前往观看。也可以直接给我留言，在 [Discussion](https://github.com/charlestang/HexoPress/discussions) 板块可以畅所欲言。
-
-
 
 [hexopress-project]: https://github.com/charlestang/HexoPress

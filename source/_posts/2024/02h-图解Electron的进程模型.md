@@ -10,7 +10,7 @@ tags:
   - vue
   - usage
 date: 2024-02-26 17:58:00
-updated: 2024-03-12 19:01:09
+updated: 2024-03-22 13:00:24
 ---
 此前，已经介绍了《[如何从 0 开始，创建一个 Electron 的 App][howto-quickstart-electron]》，每个人就有了一个梦开始的地方。如果想实现一个功能丰富的 App，了解一点基础知识，是非常必要的。比如，Electron 的进程模型。
 
