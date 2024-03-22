@@ -220,23 +220,28 @@ footer:
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url:
 
-# ============
 
-language: zh-CN
-index_with_subtitle: true
+# ---------------------------------------------------------------
+# Post Settings
+# See: https://theme-next.js.org/docs/theme-settings/posts
+# ---------------------------------------------------------------
 
-# 在网站右上角，展示一个 GitHub 的 Ribbon
-github_banner:
-  enable: true
-  permalink: https://github.com/charlestang
+# Use `description` in front-matter to specify post excerpt.
+excerpt_description: true
 
+# Read more button
+# If true, the read more button will be displayed in excerpt section.
+read_more_btn: true
+
+# Post meta display settings
 # 文章元信息，要求不展示文章更新时间
 post_meta:
+  item_text: true
+  created_at: true
   updated_at:
     enable: false
-
-# 默认情况下，tag 在文章末尾，用 # 开头，可以用此选项，替换成图标
-tag_icon: true
+    another_day: true
+  categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
@@ -244,14 +249,105 @@ symbols_count_time:
   separated_meta: true
   item_text_total: true
 
-# 相关文章插件 npm install hexo-related-posts && hexo clean
-#related_posts:
-#  enable: true
-#  icon: fa fa-signs-post
+# Use icon instead of the symbol # to indicate the tag at the bottom of the post
+# 默认情况下，tag 在文章末尾，用 # 开头，可以用此选项，替换成图标
+tag_icon: true
 
+# Donate (Sponsor) settings
+# Front-matter variable (nonsupport animation).
+reward_settings:
+  # If true, a donate button will be displayed in every article by default.
+  enable: false
+  animation: false
+
+reward:
+  #wechatpay: /images/wechatpay.png
+  #alipay: /images/alipay.png
+  #paypal: /images/paypal.png
+  #bitcoin: /images/bitcoin.png
+
+# Subscribe through Telegram Channel, Twitter, etc.
+# Usage: `Key: permalink || icon` (Font Awesome)
+follow_me:
+  #Twitter: https://twitter.com/username || fab fa-twitter
+  #Telegram: https://t.me/channel_name || fab fa-telegram
+  #WeChat: /images/wechat_channel.png || fab fa-weixin
+  #RSS: /atom.xml || fa fa-rss
+
+# Related popular posts
+# Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
+# 相关文章插件 npm install hexo-related-posts && hexo clean
+related_posts:
+  enable: false
+  icon: fa fa-signs-post
+
+# Post edit
+# Easily browse and edit blog source code online.
 post_edit:
   enable: true
   url: https://github.com/charlestang/charlestang.github.io/tree/master/source/
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
+
+# Show previous post and next post in post footer if exists
+# Available values: left | right | false
+post_navigation: left
+
+# ---------------------------------------------------------------
+# Custom Page Settings
+# See: https://theme-next.js.org/docs/theme-settings/custom-pages
+# ---------------------------------------------------------------
+
+# TagCloud settings for tags page.
+tagcloud:
+  min: 12 # Minimum font size in px
+  max: 30 # Maximum font size in px
+  amount: 200 # Total amount of tags
+  orderby: name # Order of tags
+  order: 1 # Sort order
+
+# Google Calendar
+# Share your recent schedule to others via calendar page.
+calendar:
+  calendar_id: <required> # Your Google account E-Mail
+  api_key: <required>
+  orderBy: startTime
+  showLocation: false
+  offsetMax: 72 # Time Range
+  offsetMin: 4 # Time Range
+  showDeleted: false
+  singleEvents: true
+  maxResults: 250
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
+# ---------------------------------------------------------------
+
+# Preload styles and preconnect CDN for fonts and plugins.
+# For more information: https://www.w3.org/TR/resource-hints/#preconnect
+preconnect: false
+
+# Set the text alignment in posts / pages.
+text_align:
+  # Available values: start | end | left | right | center | justify | justify-all | match-parent
+  desktop: justify
+  mobile: justify
+
+# Reduce padding / margin indents on devices with narrow width.
+mobile_layout_economy: false
+
+# Browser header panel color.
+theme_color:
+  light: "#222"
+  dark: "#222"
+
+# Override browsers' default behavior.
+body_scrollbar:
+  # Place the scrollbar over the content.
+  overlay: false
+  # Present the scrollbar even if the content is not overflowing.
+  stable: false
 
 codeblock:
   # Code Highlight theme
@@ -260,13 +356,58 @@ codeblock:
   theme:
     light: base16/solarized-light
     dark: tomorrow-night-bright
+  prism:
+    light: prism
+    dark: prism-dark
   # Add copy button on codeblock
   copy_button:
     enable: false
-    # Show text copy result.
-    show_result: false
     # Available values: default | flat | mac
     style:
+  # Fold code block
+  fold:
+    enable: false
+    height: 500
+
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: true
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+
+# Reading progress bar
+reading_progress:
+  enable: true
+  # Available values: left | right
+  start_at: left
+  # Available values: top | bottom
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 2px
+
+# Bookmark Support
+bookmark:
+  enable: false
+  # Customize the color of the bookmark.
+  color: "#222"
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
+  save: auto
+
+# `Follow me on GitHub` banner in the top-right corner.
+# 在网站右上角，展示一个 GitHub 的 Ribbon
+github_banner:
+  enable: true
+  permalink: https://github.com/charlestang
+
+
+
+# ============
+
+language: zh-CN
+index_with_subtitle: true
 
 local_search:
   enable: true
@@ -291,17 +432,4 @@ busuanzi_count:
   total_views: true
   total_views_icon: fa fa-eye
 
-reading_progress:
-  enable: true
-  # Available values: left | right
-  start_at: left
-  # Available values: top | bottom
-  position: top
-  reversed: false
-  color: "#37c6c0"
-  height: 2px
-
-back2top:
-  enable: true
-  sidebar: true
-  scrollpercent: true
+fancybox: true
