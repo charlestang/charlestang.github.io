@@ -432,4 +432,7 @@ busuanzi_count:
   total_views: true
   total_views_icon: fa fa-eye
 
-fancybox: true
+# Do not enable both fancybox and mediumzoom.
+# 二者不可同时开启
+fancybox: false
+mediumzoom: true
