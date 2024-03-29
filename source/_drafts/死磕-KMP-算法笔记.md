@@ -4,6 +4,7 @@ tags: []
 id: '1112'
 categories:
   - - 日　　记
+updated: 2024-03-24 01:58:19
 ---
 
 还在读大学时候，就久仰了 KMP 算法的大名，但是无奈智商有限，我就从来没有看懂过 KMP 算法，前几天，遇到一个题目，正好用到了字符串匹配，[第 1044 题](https://leetcode-cn.com/problems/longest-duplicate-substring/)，非常巧妙，二分法 + 哈希 + 字符串匹配。
