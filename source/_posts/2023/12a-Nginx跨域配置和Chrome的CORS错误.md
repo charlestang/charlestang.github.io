@@ -1,17 +1,14 @@
 ---
-title: Nginx 跨域配置和Chrome 的 CORS 错误
+title: Nginx 跨域配置和 Chrome 的 CORS 错误
 permalink: 2023/nginx-cors-config/
 categories:
-  - - 工作相关
-  - - 工作相关
-    - 心得体会
-  - - 日　　记
+  - - 前端开发技术
 tags:
   - nginx
   - CORS
   - Chrome
 date: 2023-12-19 20:35:37
-updated: 2024-01-05 00:53:27
+updated: 2024-04-21 19:22:26
 ---
 最近，我完成了一个小项目，使用了当下比较时髦的 Vue 3 + TypeScript + Vite + Element Plus，采用前后端分离架构。为了减少对后端 API 的维护量，我将后端的 API 写在了主站的代码里。这样一来，前台网站的域名和后台网站的域名不同，就出现了跨域的问题。
 
