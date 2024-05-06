@@ -5,11 +5,11 @@ tags:
   - OTP
 id: '1213'
 categories:
-  - [工作相关, Flutter]
-date: 2023-04-21 12:32:09
+  - - 客户端开发技术
 permalink: howto-implement-otp-authenticator-with-flutter/
+date: 2023-04-21 12:32:09
+updated: 2024-05-06 14:14:51
 ---
-
 我刚入职的时候，公司使用 RSA 公司的 token，所谓的 token 就是一个像优盘一样的硬件，每隔 30 秒会产生一个 6 位数字，这个数字作为一次性密码，也即标题里提到的 OTP，one-time-password 的缩写。
 
 后来手机普及后，出现了很多软件实现的 OTP，比如 QQ 安全中心，微软的 Authenticator，以及 Google Authenticator。这些验证器和一次性密码，成为两步验证一种比较流行的方式。我个人也很喜欢，至少我觉得比短信验证码体验要好一些。
@@ -20,7 +20,7 @@ permalink: howto-implement-otp-authenticator-with-flutter/
 
 OTP (One-Time Password)，翻译成中文为一次性密码，是一种加强网络安全的方法。在使用传统的用户名和密码进行登录时，由于密码可能被泄露或者猜测，因此使用 OTP 能够在一定程度上防止网络攻击和不法分子的破坏。
 
-OTP 常见的实现方式有 HOTP 和 TOTP。而HOTP (HMAC-based One-Time Password)，利用哈希算法来生成密码。HMAC（Hash-based Message Authentication Code，中文名：基于哈希的消息认证码），这个算法主要是用于验证消息的合法性，与常见的哈希算法的唯一区别是，在计算哈希摘要时，还需要额外提供一串密钥，俗称加盐（salt 或 nonce）。这串密钥只有客户端和服务端双方知道，被计算摘要的消息要求双方都能知道并保持相同，一般是一个自增计数器，比如：0, 1, 2, 3, 4。被计算出的一次性口令每使用一次，这个计数器就加一，由于密钥只有双方才知道，故双方都可以计算出一样的一次性口令，而第三方不知道这串密钥的，无法计算出一样的口令。RFC 4226 描述了其技术规范。
+OTP 常见的实现方式有 HOTP 和 TOTP。而 HOTP (HMAC-based One-Time Password)，利用哈希算法来生成密码。HMAC（Hash-based Message Authentication Code，中文名：基于哈希的消息认证码），这个算法主要是用于验证消息的合法性，与常见的哈希算法的唯一区别是，在计算哈希摘要时，还需要额外提供一串密钥，俗称加盐（salt 或 nonce）。这串密钥只有客户端和服务端双方知道，被计算摘要的消息要求双方都能知道并保持相同，一般是一个自增计数器，比如：0, 1, 2, 3, 4。被计算出的一次性口令每使用一次，这个计数器就加一，由于密钥只有双方才知道，故双方都可以计算出一样的一次性口令，而第三方不知道这串密钥的，无法计算出一样的口令。RFC 4226 描述了其技术规范。
 
 验证与被验证两方，怎么能保证用于验证的消息始终保持同步呢？在现实世界中，确实是一个麻烦的事情，所以，就有 TOTP。TOTP (Time-based One-Time Password)，时间同步动态口令，是一种基于时间的 OTP，也就是说 TOTP 通过计算当前时间和一个密钥来生成密码。这样，验证与被验证两方，共同使用的用于验证的消息，就是时间。其实就是将消息建立在全球时间服务的基础上，实现共识。不但各方得到的时间是一致的，而且时间在单向向前改变数字，成为了 OTP 的很好基础。
 
@@ -116,6 +116,6 @@ otpauth://totp/{label}?secret={secret}&issuer={issuer}
 
 TOTP 是一种简易方便的一次性密码生成方法和验证方法，其实现有标准规范，以及很多开源的类库实现。简单动手就可以提升自己系统体系的安全性。自研客户端也很容易实现。
 
-[1] 在这里可以尝试验证实现的OTP token 是否正确。https://moyuscript.github.io/2fa-test/  
+[1] 在这里可以尝试验证实现的 OTP token 是否正确。https://moyuscript.github.io/2fa-test/  
 [2] 此文介绍了用 node 实现的方法 https://zhuanlan.zhihu.com/p/484991482  
 [3] 本文介绍了 HOTP 和 TOTP 的原理，有图示 https://bbs.huaweicloud.com/blogs/307638

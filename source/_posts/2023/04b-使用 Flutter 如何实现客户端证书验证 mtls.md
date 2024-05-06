@@ -6,11 +6,11 @@ tags:
   - TLS
 id: '1219'
 categories:
-  - [工作相关, Flutter]
-date: 2023-04-27 16:00:18
+  - - 客户端开发技术
 permalink: flutter-howto-implement-client-cert-verify-mtls/
+date: 2023-04-27 16:00:18
+updated: 2024-05-06 14:14:42
 ---
-
 SSL 已经成为互联网最重要的基础设施，尤其是最近几年，基本上所有网站都已经部署了 HTTPS。曾几何时，SSL 证书对普通个人网站来说，还是很难取得的，主要是要收费。但是，从 Let's Encrypt 提供服务开始，几乎整个互联网都用上了免费的 SSL 证书。
 
 使用 HTTPS 可以保证你的网站上提供的服务和用户浏览器之间的链接加密，其内容不必篡改和窃听。SSL 证书有很多等级，一般免费的证书都是域名级别的，即证明网站服务提供商，拥有目标域名的管理权限。当然还有更高级别的。
@@ -120,19 +120,19 @@ Web 服务实现了客户端证书验证后，所有需要访问受保护网站�
 
 ### [处理认证挑战（Handling an Authentication Challenge）](https://developer.apple.com/documentation/foundation/url_loading_system/handling_an_authentication_challenge)
 
-介绍了当服务器要求对URL请求进行身份验证时，适当做出响应。苹果官方文档，介绍了，如何响应服务器的证书要求。
+介绍了当服务器要求对 URL 请求进行身份验证时，适当做出响应。苹果官方文档，介绍了，如何响应服务器的证书要求。
 
-### [问题编号152584：Chrome不支持在系统根存储中安装的客户端信任根证书](https://bugs.chromium.org/p/chromium/issues/detail?id=152584)（2012-09-27）
-
-……
-
-能够访问系统根存储是不公开的API - 它隐藏在SecTrustEvaluate的实现细节后面。iOS密钥链API仅提供访问每个应用程序密钥链的权限，而无法列出或迭代系统密钥链。
-
-由于“添加证书”也可用于配置客户端证书，因此由MDM / iCU添加的客户端证书存储在一个由苹果限制的密钥链访问组中，可供所有苹果系统应用程序使用，但无法供任何第三方应用程序使用。
+### [问题编号 152584：Chrome 不支持在系统根存储中安装的客户端信任根证书](https://bugs.chromium.org/p/chromium/issues/detail?id=152584)（2012-09-27）
 
 ……
 
-【以上，在 Chrome 浏览器里(特指 iOS 版)，无法应对服务器的客户端证书挑战，现在(2022)十年过去了，似乎仍是同样的问题，我们使用Google Worksapce，如果通过 MDM 下发证书等，可以在 Chrome 浏览器实现安全并一致的体验，但是因为苹果这个障碍，变得不可实现了。下发私有信任的根证书和客户端证书，都不可能，甚至手动在 Chrome 里安装客户端证书都没有找到什么方式，估计 Google 也放弃了吧，毕竟企业应用只是个小众的领域，用 Safari 能做好的，何必费力呢？】
+能够访问系统根存储是不公开的 API - 它隐藏在 SecTrustEvaluate 的实现细节后面。iOS 密钥链 API 仅提供访问每个应用程序密钥链的权限，而无法列出或迭代系统密钥链。
+
+由于“添加证书”也可用于配置客户端证书，因此由 MDM / iCU 添加的客户端证书存储在一个由苹果限制的密钥链访问组中，可供所有苹果系统应用程序使用，但无法供任何第三方应用程序使用。
+
+……
+
+【以上，在 Chrome 浏览器里(特指 iOS 版)，无法应对服务器的客户端证书挑战，现在(2022)十年过去了，似乎仍是同样的问题，我们使用 Google Worksapce，如果通过 MDM 下发证书等，可以在 Chrome 浏览器实现安全并一致的体验，但是因为苹果这个障碍，变得不可实现了。下发私有信任的根证书和客户端证书，都不可能，甚至手动在 Chrome 里安装客户端证书都没有找到什么方式，估计 Google 也放弃了吧，毕竟企业应用只是个小众的领域，用 Safari 能做好的，何必费力呢？】
 
 ### [iOS 上的客户端证书处理](https://medium.com/nerd-for-tech/client-certificate-handling-on-ios-f704d896cccd)
 

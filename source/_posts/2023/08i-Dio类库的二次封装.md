@@ -4,9 +4,10 @@ tags:
   - Flutter
   - Dio
 categories:
-  - [工作相关, Flutter]
-date: 2023-08-28 14:07:00
+  - - 客户端开发技术
 permalink: 2023/dio-encapsulate/
+date: 2023-08-28 14:07:00
+updated: 2024-05-06 14:14:31
 ---
 
 使用 Flutter 开发 App 都免不了要使用网络访问的类库，Dio 是其中最流行的，我之前调研的一些范例 App 代码，都引用了 Dio。Dio 是对 http 的一套封装，提供了很多友好的功能。

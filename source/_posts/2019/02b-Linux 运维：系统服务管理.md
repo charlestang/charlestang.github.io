@@ -5,16 +5,16 @@ tags:
   - shell
 id: '803'
 categories:
-  - [工作相关, Linux]
-  - [日　　记]
-date: 2019-02-28 01:49:30
+  - - 后端开发技术
 permalink: linux-management-sys/
+date: 2019-02-28 01:49:30
+updated: 2024-05-06 14:18:42
 ---
 我发现，每隔一段时间，运维 Linux 服务器的方法，就会变迁一次，害得我总是要重复学习这件事情，真是太不友好了。Linux 服务器运维的方法不是一种半衰期很长的技巧么？世道都变了啊……
 
 ## Ubuntu 桌面系统初始化
 
-这两天安装了一个 Ubuntu 19.04 Desktop 到我的最老的 Macbook Pro上面，打算当成家庭的 Server 使用的。
+这两天安装了一个 Ubuntu 19.04 Desktop 到我的最老的 Macbook Pro 上面，打算当成家庭的 Server 使用的。
 
 ```shell
 # 1. 说实在的，我就看不出来这个新版的 apt 命令有什么好用的
@@ -27,6 +27,7 @@ aptitude install vim
 #    不是梯子的 ss，我没写错，就是 ss 命令
 aptitude install net-tools
 ```
+
 ## CentOS 检查系统已注册服务
 
 ```shell
@@ -54,12 +55,13 @@ systemctl reset-failed
 systemctl list-units --type service
 # 执行上述两个命令，发现没有残留了
 ```
+
 ## CentOS 上安装支持 BBR 的 kernel
 
-*   [什么是BBR？](https://github.com/google/bbr)
-*   [BBR原理以及有什么作用？](https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster)
-*   [BBR 论文](https://queue.acm.org/detail.cfm?id=3022184)
-*   [怎么在 CentOS 7 上启用 BBR](https://yeahlinux.com/how-to-get-google-bbr-on-centos-7/)（英文）
+- [什么是 BBR？](https://github.com/google/bbr)
+- [BBR 原理以及有什么作用？](https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster)
+- [BBR 论文](https://queue.acm.org/detail.cfm?id=3022184)
+- [怎么在 CentOS 7 上启用 BBR](https://yeahlinux.com/how-to-get-google-bbr-on-centos-7/)（英文）
 
 ```shell
 # 查看当前的发型版本
@@ -77,7 +79,7 @@ rpm -qa  grep kernel
 # 查看目前的配置
 egrep ^menuentry /etc/grub2.cfg  cut -f 2 -d "'"
 # 这步骤之后，机器需要重启，然后确认现在内核的版本号
-uname -a 
+uname -a
 # 启用 BBR
 echo 'net.core.default_qdisc=fq'  tee -a /etc/sysctl.conf
 echo 'net.ipv4.tcp_congestion_control=bbr'  tee -a /etc/sysctl.conf
@@ -85,6 +87,7 @@ sysctl -p
 # 确认 BBR 是否启动
 lsmod  grep bbr
 ```
+
 ## 在 Linode 上申请了一台 CentOS 7
 
 最近，腾讯云审核非常严格，于是我又购买了一台 Linode 的服务器来玩，以防万一，按照以前我的性格，我会选 Debian 9 发型版的，但是最近比较偏爱 CentOS，就选择了 CentOS 7，其实，CentOS 8 也出来了，不过真的鬼使神差还是选了 7。
@@ -151,7 +154,7 @@ screen -dmS SessionName /bin/cmd -o options
 
 ```shell
 # 首先检查一下现在系统的内存，单位用 MB
-free -m 
+free -m
 
 # 看到服务器没有配置任何 swap，total = 0
 # 看看是否有已经定义的 swap 文件
@@ -171,7 +174,7 @@ swapon /swapfile
 /swapfile          swap            swap    defaults        0 0
 
 # 修改文件权限
-chown root:root /swapfile 
+chown root:root /swapfile
 chmod 0600 /swapfile
 
 # 最后用 free -m 看看 swap 的 total 增加了没有
@@ -198,10 +201,10 @@ swapoff -a
 swapof -s
 
 # 看到没有文件了
-vi /etc/fstab 
+vi /etc/fstab
 
 # 去掉关于 swap 的配置
-rm /swapfile 
+rm /swapfile
 
 # 就彻底删掉了 swapfile
 ```
@@ -211,23 +214,31 @@ rm /swapfile
 其实毫无难度的，就是用 apt install mysql-server 就可以了。我这里想说的是，装完了以后，怎么登录进去呢？整个安装过程是没有交互式的。
 
 你可以 sudo mysql，直接用 root 权限调用客户端，就会以 root 身份登录了，不需要密码。
+
 ```shell
 mysql -uroot -p
 ```
+
 首次安装好数据库后，不需要密码，直接按回车就可以登录进去了。值得一提的是，现在创建用户和密码的方法变了。
+
 ```mysql
 create user admin@localhost identified by '123@qwe';
 ```
+
 上面的用户定义了一个本地用户，密码是 `123@qwe`，我以前喜欢用`Grant`语句直接授权和创建用户和密码，现在似乎是不行了。
+
 ```mysql
 grant all privileges on db_name.* to admin@localhost;
 ```
+
 上面的语句是授权用户访问一个数据库的语句，`privileges` 关键字不是必须的，可以省略。
 
 然后需要执行：
+
 ```mysql
 flush privileges;
 ```
+
 关于这一点，腾讯有一片文章介绍得不错：
 
 [《如何在 Ubuntu 20.04 上安装 MySQL》](https://cloud.tencent.com/developer/article/1622599)
@@ -243,20 +254,28 @@ flush privileges;
 ## 首次在 CentOS 服务器上安装 MySQL
 
 安装服务器比较简单：
+
 ```shell
 yum install mysql-server.x86_64
 ```
+
 装完服务器后，服务器默认是不启动的，使用 systemctl 命令进行启动
+
 ```shell
 systemctl start mysqld.service
 ```
+
 然后，root 的初始密码是什么呢？
+
 ```shell
 mysql -uroot -p
 ```
+
 你会发现，MySQL 初始并未设置密码，比较安全的方式是，你登录成功后，马上设置一个新的密码，使用命令：
+
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的密码';
 FLUSH PRIVILEGES;
 ```
+
 即可完成 root 密码的设定。

@@ -2,12 +2,12 @@
 title: 从 0 开始在项目中引入 Element Plus
 permalink: 2024/howto-introduce-element-plus-to-project/
 categories:
-  - - 工作相关
+  - - 前端开发技术
 tags:
   - Element Plus
   - usage
 date: 2024-02-23 09:50:17
-updated: 2024-02-23 12:13:47
+updated: 2024-05-06 14:09:34
 ---
 此前，已经写文章介绍了[如何从 0 开始创建 Vue 项目](https://blog.charlestang.org/2024/howto-learn-vue-from-zero/)，今天我们来说说，怎么在 Vue 项目中引入 Element Plus。
 

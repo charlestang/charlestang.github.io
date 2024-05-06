@@ -2,11 +2,11 @@
 title: 为 Electron 应用制作图标
 permalink: 2023/howto-change-app-icon-for-electron-app/
 categories:
-  - - 日　　记
+  - - 客户端开发技术
 tags:
   - electron
 date: 2023-12-07 10:26:21
-updated: 2023-12-20 23:13:20
+updated: 2024-05-06 14:11:37
 ---
 最近在开发博客本地客户端 HexoPress，应用做好后，需要打包，如果不希望打包出来 App 的图标用的是 Electron 默认的星球环绕的图标，那么需要自己制作图标。
 

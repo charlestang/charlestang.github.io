@@ -4,12 +4,11 @@ tags:
   - mac
 id: '1079'
 categories:
-  - [小窍门]
-  - [日　　记]
-date: 2021-09-04 16:16:47
+  - - Mac
 permalink: howto-disable-sip-on-macos/
+date: 2021-09-04 16:16:47
+updated: 2024-05-06 14:18:09
 ---
-
 SIP 是 MacOS 的一项新特性，System Integrity Protection，系统完整性保护，主要用于阻止系统运行未授权的代码。除了通过 App Store 正规途径分发软件给用户，开发者还可以通过公正，直接分发软件给用户。除此以外的软件分发，都是不被授权的。
 
 执行命令：

@@ -2,15 +2,14 @@
 title: HexoPress：一款能管理 Hexo 博客文章的客户端
 permalink: 2024/hexopress-blog-client/
 categories:
-  - - 工作相关
-    - Vue
+  - - 开源项目
 tags:
   - Hexo
   - open source
   - electron
   - vue
 date: 2024-03-04 15:52:31
-updated: 2024-03-22 12:56:55
+updated: 2024-05-06 14:08:48
 ---
 ![Dashboard](../../images/2024/03/dashboard-cn.png)
 

@@ -5,11 +5,11 @@ tags:
   - iOS
 id: '1080'
 categories:
-  - [工作相关, Flutter]
-date: 2021-09-06 12:00:33
+  - - 客户端开发技术
 permalink: in-ios-willpopscope-disable-swipe-back/
+date: 2021-09-06 12:00:33
+updated: 2024-05-06 14:15:43
 ---
-
 本原文发布于 2021-09-06
 
 在有些场景下，App 为了防止用户误触返回按钮或者误触返回键，导致未保存的结果返回，都会想办法拦截用户的返回行为。WillPopScope 就是做这个用的。这个组件会提供一个回调 onWillPop，当用户尝试返回的时候，会被调用，如果返回 false，则会阻止用户的返回行为。
@@ -113,9 +113,9 @@ permalink: in-ios-willpopscope-disable-swipe-back/
 
 第三，现在遇到的困扰，就是 Swipe Back 这个动作，在穿越 WebView 和 Flutter App 中间的界限的时候，出现了衔接的问题。这个地方本来就需要衔接，因为 App 和 WebView 都可以响应 Swipe Back 动作，那么应该谁来处理这个事件，程序员就需要自己决定。本来，如果 onWillPop 回调，在 iOS 上没有 bug 的话，一切都很美，可惜事与愿违；
 
-第四，上述解决方案，就是在通过编程，来确立 App 和 WebView 谁来接管 Swipe Back 动作的边界，也即设立了一个 _canGoBack 的变量，作为 flag。核心原理是，内部 history 可以执行 goBack 的时候，就由内部接管，不能执行的时候，就由外部接管。程序员要做的，就是在恰当的时候，正确设定 flag 的值。
+第四，上述解决方案，就是在通过编程，来确立 App 和 WebView 谁来接管 Swipe Back 动作的边界，也即设立了一个 \_canGoBack 的变量，作为 flag。核心原理是，内部 history 可以执行 goBack 的时候，就由内部接管，不能执行的时候，就由外部接管。程序员要做的，就是在恰当的时候，正确设定 flag 的值。
 
-原文方案里，我只是在 WebView:onLoadStop 事件中，设定 _canGoBack 的值为 true/false，也即，如果内部 WebView 加载了超过一个页面，那么就由内部接管事件，这个时候开启 onWillPop 捕获，会自动屏蔽 iOS 下 App 级别的事件处理。
+原文方案里，我只是在 WebView:onLoadStop 事件中，设定 \_canGoBack 的值为 true/false，也即，如果内部 WebView 加载了超过一个页面，那么就由内部接管事件，这个时候开启 onWillPop 捕获，会自动屏蔽 iOS 下 App 级别的事件处理。
 
 现在我们的业务场景遇到一个新的问题，就是 WebView 加载的内嵌页面，可能是一个 SPA，单页应用，这种类型的应用，在页面内部的路由切换，浏览器不需要重新加载，这个时候，就不会触发 onLoadStart/onLoadStop 事件，导致我们设定 flag 的意图无法实现，此种情景下，就会让 back 按钮一点就会退出整个 WebView。
 

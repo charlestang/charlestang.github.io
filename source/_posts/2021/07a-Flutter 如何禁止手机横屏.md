@@ -5,11 +5,11 @@ tags:
   - tricks
 id: '1072'
 categories:
-  - [工作相关, Flutter]
-date: 2021-07-08 16:40:58
+  - - 客户端开发技术
 permalink: flutter-disable-landscape-mode/
+date: 2021-07-08 16:40:58
+updated: 2024-05-06 14:15:22
 ---
-
 在一些特定的 App 里，我们不希望手机横屏的时候，App 发生旋转，比如微信，企业微信都是这样的。
 
 代码可以这样设定：
@@ -22,7 +22,7 @@ void main() async => {
   await SystemChrome.setPreferredOrientations(
     [
       DeviceOrientation.portraitUp,   // 竖屏 Portrait 模式
-      DeviceOrientation.portraitDown, 
+      DeviceOrientation.portraitDown,
       // DeviceOrientation.landscapeLeft, // 横屏 Landscape 模式
       // DeviceOrientation.landscapeRight,
     ],

@@ -5,12 +5,11 @@ tags:
   - flutter
 id: '1075'
 categories:
-  - [工作相关, Flutter]
-  - [工作相关, 心得体会]
-date: 2021-07-23 22:52:40
+  - - 客户端开发技术
 permalink: flutter-provider-listener-dispose/
+date: 2021-07-23 22:52:40
+updated: 2024-05-06 14:15:31
 ---
-
 学会了使用 Provider 后，真是感觉无比畅快，恨不得每个页面都替换成使用 Provider 来开发。不过今天遇到了一个问题：
 
 ```generic

@@ -2,13 +2,12 @@
 title: 2024年了，如何从 0 搭建一个 Electron 应用
 permalink: 2024/howto-quick-start-a-electron-app/
 categories:
-  - - 工作相关
-    - 心得体会
+  - - 客户端开发技术
 tags:
   - electron
   - develop
 date: 2024-02-19 22:54:49
-updated: 2024-02-19 23:58:09
+updated: 2024-05-06 14:10:23
 ---
 ## 简介
 
