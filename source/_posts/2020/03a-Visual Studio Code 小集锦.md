@@ -6,12 +6,12 @@ tags:
   - 开发环境
 id: '888'
 categories:
-  - [小窍门]
-  - [工作相关, Python]
-date: 2020-03-03 15:57:31
+  - - 小窍门
+  - - 工作相关
 permalink: 2020/visual-studio-code-tricks/
+date: 2020-03-03 15:57:31
+updated: 2024-05-07 21:01:22
 ---
-
 前两天写了如何给 Python 项目设置 Virtualenv，然后又发现了一个新的小问题，于是，干脆把文章也改了，改成小集锦了，以后各种小问题，都记录到这篇文章里面好了，省得开新的文章了。
 
 ## Mac 上如何给 Python 项目设置 Virtualenv
