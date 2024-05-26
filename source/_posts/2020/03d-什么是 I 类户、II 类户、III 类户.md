@@ -4,9 +4,11 @@ tags:
   - Payment
 id: '906'
 categories:
-  - [工作相关, 支付]
-date: 2020-03-30 14:31:30
+  - - 工作相关
+    - 支付
 permalink: type-i-ii-iii-account/
+date: 2020-03-30 14:31:30
+updated: 2024-05-26 18:38:30
 ---
 
 在移动支付领域，经常会听到这个术语，I 类户，II 类户，III 类户，这个称法，据说最早开始于 2015 年，中国人民银行的发文（[银发[392]号文](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%93%B6%E8%A1%8C%E5%85%B3%E4%BA%8E%E6%94%B9%E8%BF%9B%E4%B8%AA%E4%BA%BA%E9%93%B6%E8%A1%8C%E8%B4%A6%E6%88%B7%E6%9C%8D%E5%8A%A1%E5%8A%A0%E5%BC%BA%E8%B4%A6%E6%88%B7%E7%AE%A1%E7%90%86%E7%9A%84%E9%80%9A%E7%9F%A5/19183683)），内容是《关于改进个人银行账户服务加强账户管理的通知》。
