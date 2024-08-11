@@ -8,13 +8,13 @@ categories:
   - - 客户端开发技术
 permalink: in-ios-willpopscope-disable-swipe-back/
 date: 2021-09-06 12:00:33
-updated: 2024-05-06 14:15:43
+updated: 2024-08-11 16:52:20
 ---
 本原文发布于 2021-09-06
 
 在有些场景下，App 为了防止用户误触返回按钮或者误触返回键，导致未保存的结果返回，都会想办法拦截用户的返回行为。WillPopScope 就是做这个用的。这个组件会提供一个回调 onWillPop，当用户尝试返回的时候，会被调用，如果返回 false，则会阻止用户的返回行为。
 
-```generic
+```dart
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -59,7 +59,7 @@ updated: 2024-05-06 14:15:43
 
 只剩下一个办法，就是通过判断 `canGoBack`，来决定是否绑定 `onWillPop`，就可以完全实现我的想法，不过 `canGoBack` 又是一个 `Future` 类型，我又不知道怎么写了。唉。问题仍然还是没有解决的，我特别记录在此，给遇到同样问题的同学一些参考，同时也希望高手看到了不吝赐教。
 
-```generic
+```dart
   @override
   Widget build(BuildContext context) {
     mUrl = ModalRoute.of(context)?.settings.arguments.toString() ?? "";
