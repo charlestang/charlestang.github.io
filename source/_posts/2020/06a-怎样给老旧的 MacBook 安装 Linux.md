@@ -4,10 +4,10 @@ tags:
   - Linux
   - mac
 id: '919'
-categories:
-  - 小窍门
-date: 2020-06-21 21:48:03
+categories: []
 permalink: 2020/howto-install-linux-on-legacy-mac/
+date: 2020-06-21 21:48:03
+updated: 2024-09-08 17:41:26
 ---
 
 话说，不作死就不会死。

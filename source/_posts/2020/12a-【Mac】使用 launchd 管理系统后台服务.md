@@ -5,10 +5,10 @@ tags:
   - mac
 id: '574'
 categories:
-  - [Mac]
-  - [小窍门]
-date: 2020-12-17 00:09:54
+  - - Mac
 permalink: use-launchd-to-manage-system-services/
+date: 2020-12-17 00:09:54
+updated: 2024-09-08 17:41:45
 ---
 在 Mac 上安装了 Adobe Photoshop 2021 后，我发现一个代表 Adobe Creative Cloud 服务的图标，出现在 Mac 系统右上角的菜单栏（Menu Bar）上。如果点击这个图标，就会弹出一个窗口，展示 Adobe 的登录表单。这个图标很容易误点，在图标上点击右键，菜单里也没有“退出”选项。打开“系统偏好设置”，“用户与群组”，在“登录项”选项卡上，也没有看到 Adobe 注册什么登录项。到底怎么才能退出这个恼人的程序呢？唯有了解了 launchd 这个系统服务管理机制，才能做到。
 
