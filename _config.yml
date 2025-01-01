@@ -175,3 +175,19 @@ mathjax:
 symbols_count_time:
   total_time: false
   exclude_codeblock: true
+
+feed:
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  autodiscovery: true
+  template:
