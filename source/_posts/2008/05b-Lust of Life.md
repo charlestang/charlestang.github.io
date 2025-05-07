@@ -1,13 +1,13 @@
 ---
 title: Lust of Life
 tags:
-  - moved
-  - movie
+  - movie review
 id: '82'
 categories:
-  - 看 电 影
-date: 2008-05-23 17:04:38
+  - - 历史归档
 permalink: lust-of-life/
+date: 2008-05-23 17:04:38
+updated: 2025-05-08 02:28:46
 ---
 
 [![](http://lh5.ggpht.com/TangChao.ZJU/SDbYhSGpJZI/AAAAAAAAAaA/QZK9lpM68cE/s144/Lust_of_Life.jpg)](http://picasaweb.google.com/TangChao.ZJU/nLWIF/photo#5203584485780170130)

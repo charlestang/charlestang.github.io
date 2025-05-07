@@ -1,15 +1,12 @@
 ---
 title: 关于Push Mail的种种
-tags:
-  - mobile phone
-  - opinion
-  - usage
-  - user experience
+tags: []
 id: '350'
 categories:
-  - 手　　机
-date: 2009-06-26 17:59:39
+  - - 历史归档
 permalink: what-is-push-mail/
+date: 2009-06-26 17:59:39
+updated: 2025-05-08 02:17:53
 ---
 
 Push Mail应用，是黑莓手机赖以成名的绝技，非常遗憾的一件事情是，在中国，这项业务是收费服务，而且价格不菲。但是，随着中国移动通信行业的发展，Push Mail的概念日渐火热，其门槛不断降低，再非昔日的高不可攀，最近一段日子，我不禁对这项应用倍感兴趣。

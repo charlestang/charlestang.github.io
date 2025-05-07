@@ -1,15 +1,13 @@
 ---
 title: Juno
 tags:
-  - fox searchlight
-  - interesting
-  - movie
-  - moving
+  - movie review
 id: '46'
 categories:
-  - 看 电 影
-date: 2008-04-09 23:52:09
+  - - 历史归档
 permalink: juno/
+date: 2008-04-09 23:52:09
+updated: 2025-05-08 02:29:11
 ---
 
 [![](http://lh4.ggpht.com/TangChao.ZJU/R_2PrR81GCI/AAAAAAAAAR4/Igawj2ZbWfc/s144/junofinaloutreach%282%29.jpg)](http://picasaweb.google.com/TangChao.ZJU/nLWIF/photo#5187460319516366882)

@@ -1,13 +1,12 @@
 ---
 title: Nexus S使用一段时间后的体验
-tags:
-  - nexus s
-  - 缺点
+tags: []
 id: '426'
 categories:
-  - 手　　机
-date: 2011-04-30 13:28:11
+  - - 历史归档
 permalink: nexus-s-exp/
+date: 2011-04-30 13:28:11
+updated: 2025-05-08 02:17:34
 ---
 
 使用Nexus S（下面简称NS）已经一段时间了，我看了一下，之前发布的文章《[入手Nexus S](http://blog.charlestang.org/nexus-s-sucks.htm)》，是3月14日，到现在，应该正好是一个半月左右的时间，很多的怨念、新鲜都已经退却，那我就再来谈谈关于这款手机的实际使用体验。

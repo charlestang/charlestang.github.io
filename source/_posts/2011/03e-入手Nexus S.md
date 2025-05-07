@@ -1,13 +1,12 @@
 ---
 title: 入手Nexus S
-tags:
-  - android
-  - nexus s
+tags: []
 id: '415'
 categories:
-  - 手　　机
-date: 2011-03-14 20:11:08
+  - - 历史归档
 permalink: nexus-s-sucks/
+date: 2011-03-14 20:11:08
+updated: 2025-05-08 02:18:36
 ---
 
 移动互联网的飞速发展，真的让我眼热，虽然没哥什么鸟事，但是也还是想快速走入这个领域看看。于是乎，想要一尝Android之鲜。充分分析了现在经济状况，Android系统的相应机型，最终挑选了Google亲历打造的Nexus S。哥玩的就是血统。在辗转反侧想了很多个日夜后，终于出手，并于今天下午拿到了手上。

@@ -1,15 +1,12 @@
 ---
 title: Nokia E63 使用体会
-tags:
-  - Nokia
-  - opinion
-  - usage
-  - user experience
+tags: []
 id: '349'
 categories:
-  - 手　　机
-date: 2009-06-24 21:29:00
+  - - 历史归档
 permalink: impression-on-nokia-e63/
+date: 2009-06-24 21:29:00
+updated: 2025-05-08 02:18:08
 ---
 
 前不久，我心爱的黑莓遗失了，不要询问我事情的始末，这始终让我悲痛万分。虽然，我旧有的手机Nokia 6280依然健康，但是，仿佛为了弥补那失去一员爱将而产生的空虚感，我急切地想要再购入一部手机。这种行为可能相当地不理智，但是我还是那么做了，选中的机器，就是Nokia E63。

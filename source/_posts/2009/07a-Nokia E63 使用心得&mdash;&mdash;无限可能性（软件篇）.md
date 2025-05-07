@@ -1,15 +1,12 @@
 ---
-title: Nokia E63 使用心得&mdash;&mdash;无限可能性（软件篇）
-tags:
-  - Nokia
-  - opinion
-  - usage
-  - user experience
+title: Nokia E63 使用心得——无限可能性（软件篇）
+tags: []
 id: '351'
 categories:
-  - 手　　机
-date: 2009-07-05 00:46:28
+  - - 历史归档
 permalink: softwares-on-symbian-s60iii/
+date: 2009-07-05 00:46:28
+updated: 2025-05-08 02:19:05
 ---
 
 使用E63，又有一段日子了，这款手机依旧在不断地带给我惊喜，不能说这是[最好的手机](http://www.testfreaks.cn/cell-phones/)，但是，这绝对是[性价比最高的手机](http://www.testfreaks.cn/cell-phones/nokia-e63/)之一了。 在点评狂网站上，E63的评分（9.3），稳稳地领先于其孪生兄弟[E71](http://www.testfreaks.cn/cell-phones/nokia-e71/)（8.6）。

@@ -1,14 +1,12 @@
 ---
-title: 使用Dropbox的Camera Upload管理iPhone照片
-tags:
-  - Dropbox
-  - iPhone
-  - usage
+title: 使用 Dropbox 的 Camera Upload 管理 iPhone 照片
+tags: []
 id: '511'
 categories:
-  - 手　　机
-date: 2012-10-06 16:30:49
+  - - 历史归档
 permalink: use-dropbox-camera-upload-to-manage-photos/
+date: 2012-10-06 16:30:49
+updated: 2025-05-07 13:16:41
 ---
 
 Dropbox在几个月前有个升级，增加了一项功能，叫Camera Upload，之前没有明白这个功能有什么意义，直到今天才体会到这个功能的好处。

@@ -1,14 +1,13 @@
 ---
 title: Micheal Clayton
 tags:
-  - just so so
-  - movie
-  - Warner Bros. Entertainment
+  - movie review
 id: '44'
 categories:
-  - 看 电 影
-date: 2008-04-07 10:56:12
+  - - 历史归档
 permalink: micheal-clayton/
+date: 2008-04-07 10:56:12
+updated: 2025-05-08 02:29:36
 ---
 
 [![](http://lh6.google.com/TangChao.ZJU/R_l-P2LV6GI/AAAAAAAAAQg/Sfrt8nRcCrM/s144/michael-clayton.jpg)](http://picasaweb.google.com/TangChao.ZJU/nLWIF/photo#5186315256600062050)
