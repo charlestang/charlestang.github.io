@@ -1,13 +1,14 @@
 ---
 title: 'WordPress Plugin: Embedded Slideshow'
 tags:
-  - my works
   - plugins
+  - WordPress
 id: '291'
 categories:
-  - [WordPress, Plugins]
-date: 2008-12-07 23:43:21
+  - - 历史归档
 permalink: embedded-slideshow/
+date: 2008-12-07 23:43:21
+updated: 2025-05-10 14:03:19
 ---
 
 English version is under construction...

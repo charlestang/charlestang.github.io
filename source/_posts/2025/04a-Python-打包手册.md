@@ -6,13 +6,13 @@ categories:
 tags:
   - python
 date: 2025-04-09 14:07:04
-updated: 2025-04-10 17:39:07
+updated: 2025-05-14 22:33:10
 ---
 我在使用 Mac 的命令行管理自己的服务器的时候，我一直使用一个 goto 的命令，这个命令会列出所有的服务器列表，里面包含用户名，IP 地址，以及备注，我只要再键入一个序号，就可以自动发起对服务器的连接。这个脚本是我自己写的，是一个 Python 的命令行脚本。今年，这个脚本不能运行了，后来我打开 Cursor 寻求解决方法，AI 建议我将这个命令打包封装。
 
 <!--more-->
 
-> 建立你对 Python 打包的理解，是一个旅程。耐心和持续地改进是成功的关键。  —— 《Python 打包用户手册》
+> 建立你对 Python 打包的理解，是一个旅程。耐心和持续地改进是成功的关键。 —— 《Python 打包用户手册》
 
 ## Python 打包概览
 
@@ -48,7 +48,7 @@ Python 的代码有很多的打包方式。
 
 Python 的很多能力来自跟软件生态的整合，尤其是那些用 C，C++ 编写的类库，但是不是所有使用者都有合适的环境用于编译这些代码，所以 Python 创建了 Wheel，一种打包格式，用来分发编译好的工件。比如 pip 就喜欢使用 wheels，因为安装速度很快，而且，就算纯 Python 代码，也可以 wheel 的形式良好工作。
 
-![](../images/2025/04/python-packaging-tools-and-libs.png)
+![](../../images/2025/04/python-packaging-tools-and-libs.png)
 
 ## 打包的流程
 
@@ -136,4 +136,3 @@ packages = ["src/goto"]
 ## 参考
 
 https://packaging.python.org/en/latest/
-

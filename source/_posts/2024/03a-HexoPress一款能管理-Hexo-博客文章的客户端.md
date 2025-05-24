@@ -9,7 +9,7 @@ tags:
   - electron
   - vue
 date: 2024-03-04 15:52:31
-updated: 2024-05-06 14:08:48
+updated: 2025-05-10 14:13:26
 ---
 ![Dashboard](../../images/2024/03/dashboard-cn.png)
 

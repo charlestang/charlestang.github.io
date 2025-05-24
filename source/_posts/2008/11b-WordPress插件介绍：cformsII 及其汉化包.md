@@ -1,16 +1,14 @@
 ---
 title: WordPress插件介绍：cformsII 及其汉化包
 tags:
-  - my works
   - plugins
-  - recommend
-  - translate
   - WordPress
 id: '261'
 categories:
-  - [WordPress, Plugins]
-date: 2008-11-20 17:28:50
+  - - 历史归档
 permalink: wp-plugins-cformsii-intro/
+date: 2008-11-20 17:28:50
+updated: 2025-05-10 14:03:00
 ---
 
 **Updated:** 终于与插件原作者取得了联系，得到了作者的支持，本文链接已经被列到了官方插件主页上，热情的作者还帮忙制作了标题图片的汉化版本。本文底部的下载也就顺便升级到了9.3版本。

@@ -1,17 +1,15 @@
 ---
 title: 'Sidebar Widget: Picasaweb Photo Slide'
 tags:
-  - my works
   - plugins
-  - sidebar
-  - widget
   - WordPress
 id: '270'
 categories:
-  - [WordPress, Plugins]
+  - - 历史归档
 comments: false
-date: 2008-12-08 23:09:20
 permalink: picasaweb-photo-slide/
+date: 2008-12-08 23:09:20
+updated: 2025-05-10 14:03:39
 ---
 
 This plugin is created long time ago.

@@ -5,16 +5,14 @@ tags:
   - WordPress
 id: '158'
 categories:
-  - [WordPress, Plugins]
-date: 2008-07-25 23:12:41
+  - - 历史归档
 permalink: chinese-wordcount/
+date: 2008-07-25 23:12:41
+updated: 2025-05-10 14:02:13
 ---
-
 从WordPress 2.6版本开始，后台撰写日志的界面带有了字数统计功能。不过呢，我发现，这个字数统计功能，计算出来的数字非常的不靠谱。
 
-打开代码看了看，原理不是很复杂，就自己动手给改了。效果如下：
-
-[![The screenshot of the effect of the chinese word count. ](http://lh3.ggpht.com/TangChao.ZJU/SInoy3wyHDI/AAAAAAAAAew/BCzvB33J4FA/s400/chinese-wordcount.png)](http://picasaweb.google.com/TangChao.ZJU/Illustration/photo#5226964803199835186)
+打开代码看了看，原理不是很复杂，就自己动手给改了。
 
 我将这个小小的修正写成了插件，明白原理的同学，直接看代码决定怎么处置，不明白的同学，下载我写的插件，启用即可。
 

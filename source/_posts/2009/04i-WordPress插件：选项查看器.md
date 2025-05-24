@@ -1,16 +1,14 @@
 ---
 title: WordPress插件：选项查看器
 tags:
-  - development
-  - my works
   - plugins
-  - tools
   - WordPress
 id: '335'
 categories:
-  - [WordPress, Plugins]
-date: 2009-04-08 16:20:47
+  - - 历史归档
 permalink: plugin-options-inspector/
+date: 2009-04-08 16:20:47
+updated: 2025-05-10 14:03:53
 ---
 
 Options Inspector is a tool with which you can list all the options in your database, view a certain one in detail, even its data is serialized, and alter exactly a certain part of option value. It is mainly designed for plugin developers and theme designers.

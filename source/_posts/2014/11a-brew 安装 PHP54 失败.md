@@ -6,16 +6,17 @@ tags:
   - PHP
 id: '655'
 categories:
-  - [小窍门]
-  - [工作相关]
-date: 2014-11-17 15:34:37
+  - - 小窍门
+  - - 工作相关
 permalink: brew-install-php54-failed/
+date: 2014-11-17 15:34:37
+updated: 2025-05-15 00:38:26
 ---
-
 今天使用brew安装PHP54，结果发现出现如下错误：
-<!-- more -->
-```shell
 
+<!-- more -->
+
+```shell
 TCRMBP➜  Homebrew  brew install php54
 ==> Installing php54 from homebrew/homebrew-php
 ==> Downloading http://www.php.net/get/php-5.4.33.tar.bz2/from/this/mirror
@@ -52,11 +53,12 @@ from /usr/local/Library/Homebrew/exceptions.rb:143:in `issues'
 from /usr/local/Library/Homebrew/exceptions.rb:182:in `dump'
 from /usr/local/Library/brew.rb:163:in `rescue in'
 from /usr/local/Library/brew.rb:66:in `'
-
+```
 
 这个东西怎么造成的呢，其实MacOS系统升级Yosemite后，系统include目录又没了，执行如下命令即可修复这个问题：
 
+```shell
 sudo ln -s /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include /usr/include
+```
 
 这个命令是把XCode目录下的include文件给链接到 /usr/include，其实很多configure错误，都可能是这个造成的。如果安装别的失败也可以这么试试。
-```

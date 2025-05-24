@@ -10,7 +10,7 @@ categories:
   - - 工作相关
 permalink: 2020/visual-studio-code-tricks/
 date: 2020-03-03 15:57:31
-updated: 2024-05-07 21:01:22
+updated: 2025-05-15 00:26:32
 ---
 前两天写了如何给 Python 项目设置 Virtualenv，然后又发现了一个新的小问题，于是，干脆把文章也改了，改成小集锦了，以后各种小问题，都记录到这篇文章里面好了，省得开新的文章了。
 
@@ -40,13 +40,13 @@ updated: 2024-05-07 21:01:22
 
 连续用了几天的 VS Code，发现左侧目录树的展开折叠后，子目录的缩进实在是太小了，目录层级多了，展开以后真的看着很难受，很累眼睛，经常有迷路的感觉。
 
-![](../images/2020/03/visual-studio-tree-screenshot-709x1024.png)
+![](../../images/2020/03/visual-studio-tree-screenshot-709x1024.png)
 
 VS Code 左侧目录树的缩进感觉
 
 放狗搜索了一下，在知乎找到了一个答案，原来可以在设置里面，通过设置 Tree:Indent 选项的值来控制缩进。
 
-![](../images/2020/03/vscode-tree-settings-1024x555.png)
+![](../../images/2020/03/vscode-tree-settings-1024x555.png)
 
 在设置里搜索 Tree:Indent 选项 可以找到
 

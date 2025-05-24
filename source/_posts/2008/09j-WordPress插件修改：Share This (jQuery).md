@@ -1,15 +1,14 @@
 ---
 title: WordPress插件修改：Share This (jQuery)
 tags:
-  - jQuery
-  - my works
   - plugins
   - WordPress
 id: '230'
 categories:
-  - [WordPress, Plugins]
-date: 2008-09-02 20:15:49
+  - - 历史归档
 permalink: share-this-jquery/
+date: 2008-09-02 20:15:49
+updated: 2025-05-10 14:02:37
 ---
 
 [Share This 中文](http://www.happinesz.cn/archives/328/)，我很喜欢，看起来效果很好，但是……
