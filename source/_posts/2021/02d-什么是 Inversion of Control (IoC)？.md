@@ -5,19 +5,23 @@ tags:
   - object oriented
 id: '1003'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, PHP]
-date: 2021-02-25 13:12:47
+  - - 工作相关
+    - 心得体会
+  - - 工作相关
+    - PHP
 permalink: inversion-of-control-ioc/
+date: 2021-02-25 13:12:47
+updated: 2025-06-29 15:50:30
 ---
-
 局限于英文水平和对软件工程“学术界”了解的浅薄，我对 Inverstion of Control —— 中文或许可以翻译成“反向控制” —— 的理解，总是停滞在一种似是而非的程度。我尝试通过搜索来学习，发现我能搜到的中文文章，都不能给我很大的帮助，有的在大谈特谈 Spring 框架如何如何；有的又说，想搞清楚 IoC，你先要理解 DIP …… ；也有的，干脆就说，所谓的 IoC 根本就是 DI。一时间，各种术语满天飞，越发让我觉得糊涂了。
 
 不得已，我又开始搜寻英文资料，发现基本也是各种意见都有，但是无一例外都会指向一个地方，就是 Martin Fowler（马丁・福勒）的文章（很感谢国外这些博客的作者，都有良好的习惯，让人比较容易找到一个概念的发展脉络）。通过学习和对比各种国内的文章，我似乎对这个概念更加清晰了一些，不敢说全懂了，但是总算比以前明了了一点。特此记录。
+
 <!-- more -->
+
 ## 缘起
 
-我是一个 PHP 程序员，一直使用 Yii 框架，[从 2.0 版本开始，就显式地出现了 DI 这个概念](https://blog.charlestang.org/yii2-abstraction.htm)，不怕丢人，我就是看不懂，不过就像大多数情况一样，看不懂也根本不会影响使用。不过，时不时遇到的时候，还是觉得萦绕心头，偶尔搜些资料看看，才知道了 IoC，[把 IoC 和 DI 联系在一起的人，是 Martin Fowler](https://martinfowler.com/articles/injection.html)（[中文版](https://insights.thoughtworks.cn/injection/)），就算他不是第一个，但是极有可能是影响力最大的一个。
+我是一个 PHP 程序员，一直使用 Yii 框架，[从 2.0 版本开始，就显式地出现了 DI 这个概念](https://blog.charlestang.org/yii2-abstraction/)，不怕丢人，我就是看不懂，不过就像大多数情况一样，看不懂也根本不会影响使用。不过，时不时遇到的时候，还是觉得萦绕心头，偶尔搜些资料看看，才知道了 IoC，[把 IoC 和 DI 联系在一起的人，是 Martin Fowler](https://martinfowler.com/articles/injection.html)（[中文版](https://insights.thoughtworks.cn/injection/)），就算他不是第一个，但是极有可能是影响力最大的一个。
 
 对我来说，DI 和 Service Locator 之外，又出现了一个新概念，就自然而然顺藤摸瓜去了解，没想到我非但没有更清楚，反而更糊涂了，继而又陆续看了很多资料，才又出现了一丝丝清明。
 
@@ -40,7 +44,7 @@ permalink: inversion-of-control-ioc/
 Martin Fowler 在一篇词源追溯的文章里，对 IoC 的定义，是一种“现象”，或者说一种“特点”。介于他是这个领域最权威的专家和最早探讨这个概念的人之一，我个人比较倾向于相信他的话。其实我比较佩服的就是他的写作能力，他精挑细选地这两个词汇，避开了人云亦云的“Principle”或者“Pattern”，可以看出他的态度。
 
 > Inversion of Control is a common phenomenon that you come across when extending frameworks. Indeed it's often seen as a defining characteristic of a framework.
-> 
+>
 > —— bliki: InversionOfControl Martin Fowler
 
 其实，在 Martin 老爷爷另一篇文章里，就是那篇著名地介绍了 Dependency Injection 的文章里，他也很巧妙地避免了混淆，那里他用了 IoC Container 和 DI 放在一起讨论，而不是 IoC 本身。IoC Container 和 IoC 不是一个概念，就算没有“雷锋”和“雷锋塔”区别那么大，其实也差不多了。
@@ -106,11 +110,11 @@ Martin 老爷爷给举了一个例子，是这样的：
 
 后续文章：
 
-1.  《[为什么需要 Inversion of Control (IoC) ？](https://blog.charlestang.org/why-need-inversion-of-control-ioc.htm)》
-2.  《[怎么实现 Inversion of Control (IoC) ？](https://blog.charlestang.org/ioc-implementation.htm)》
+1.  《[为什么需要 Inversion of Control (IoC) ？](https://blog.charlestang.org/why-need-inversion-of-control-ioc/)》
+2.  《[怎么实现 Inversion of Control (IoC) ？](https://blog.charlestang.org/ioc-implementation/)》
 
 ## 参见：
 
-1.  [《Yii 2.0 框架学习笔记-基础抽象》](https://blog.charlestang.org/yii2-abstraction.htm)
-2.  《[bliki: InversionOfControl](bliki: InversionOfControl)》— Martin Fowler
+1.  [《Yii 2.0 框架学习笔记-基础抽象》](https://blog.charlestang.org/yii2-abstraction/)
+2.  《[bliki: InversionOfControl](https://martinfowler.com/bliki/InversionOfControl.html)》— Martin Fowler
 3.  《[Inversion of Control Containers and Dependency Injection Pattern](https://www.martinfowler.com/articles/injection.html)》— Martin Fowler

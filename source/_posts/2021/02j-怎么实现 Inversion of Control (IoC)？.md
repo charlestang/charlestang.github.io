@@ -6,27 +6,29 @@ tags:
 id: '1006'
 categories:
   - 工作相关
-date: 2021-02-28 11:24:34
 permalink: ioc-implementation/
+date: 2021-02-28 11:24:34
+updated: 2025-06-29 13:49:39
 ---
-
 前面花了很多篇幅去讲了 IoC 这个概念的问题，最后，还是要落实到实现上。通过分析和推理，我们了解到 IoC 的本质还是为了解耦和复用，而这个核心，最后落实到而组件和对象的创建和组装上面。
 
-《[什么是 Inversion of Control？](https://blog.charlestang.org/inversion-of-control-ioc.htm)》
+《[什么是 Inversion of Control？](https://blog.charlestang.org/inversion-of-control-ioc/)》
 
-《[为什么需要 Inversion of Control？](https://blog.charlestang.org/why-need-inversion-of-control-ioc.htm)》
+《[为什么需要 Inversion of Control？](https://blog.charlestang.org/why-need-inversion-of-control-ioc/)》
 
 了解了这些，就不会“乱花渐欲迷人眼”，无论是 Spring 强调的 IoC Container 也好，还是 Martin 老爷说的 Service Locator，Dependency Injection，其背后，目的是统一的。无非是手段是多样的。那么，我们只要逐一去了解这些手段即可。
+
 <!-- more -->
+
 ## Dependency Injection (DI)
 
 说到 DI，这就是一个真正的设计模式了，其核心思想是，在一个对象内部，使用依赖的时候，不是去创建它，而是从对象的外部注入进来这个依赖。对被依赖对象的使用，完全由协议决定，一般来说是接口。
 
 把一个依赖对象注入进去的方法大概有三种：
 
-*   从构造函数注入
-*   使用属性注入
-*   使用接口注入
+- 从构造函数注入
+- 使用属性注入
+- 使用接口注入
 
 ### 从构造函数注入
 
