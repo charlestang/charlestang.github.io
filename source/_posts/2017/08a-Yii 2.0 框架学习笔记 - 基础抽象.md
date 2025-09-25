@@ -6,10 +6,10 @@ tags:
   - yii
 id: '773'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, Yii]
-date: 2017-08-12 18:02:32
+  - - 后端开发技术
 permalink: yii2-abstraction/
+date: 2017-08-12 18:02:32
+updated: 2025-09-25 23:24:52
 ---
 
 [![](http://blog.charlestang.org/wp-content/uploads/2017/08/yii2-abstraction@2x-1024x607.png)](http://blog.charlestang.org/wp-content/uploads/2017/08/yii2-abstraction@2x.png)

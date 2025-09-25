@@ -4,10 +4,10 @@ tags:
   - Architecture
 id: '600'
 categories:
-  - - 工作相关
-    - Yii
+  - - 后端开发技术
 permalink: why-not-yii/
 date: 2018-03-08 16:32:14
+updated: 2025-09-25 23:24:30
 ---
 以前，我也注意到，不在现有项目中引入框架是有原因的，而且，尤其不能选用 Yii 框架。
 
