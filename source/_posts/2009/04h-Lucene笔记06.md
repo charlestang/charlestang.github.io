@@ -4,10 +4,9 @@ tags:
   - lucene
   - note
 id: '340'
-categories:
-  - 工作相关
-date: 2009-04-14 19:36:41
+categories: 历史归档
 permalink: lucene-note-06/
+date: 2009-04-14 19:36:41
 ---
 
 

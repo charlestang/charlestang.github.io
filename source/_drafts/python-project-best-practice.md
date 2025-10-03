@@ -5,8 +5,9 @@ tags:
   - python
 id: '1057'
 categories:
-  - [工作相关, Python]
-  - [ 小窍门]
+  - - 工作相关
+    - Python
+  - - 小窍门
 date: 2021-05-25 13:08:15
 ---
 

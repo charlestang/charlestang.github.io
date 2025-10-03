@@ -1,7 +1,8 @@
 ---
 title: 如何通过做 App 赚钱
 permalink: ''
-categories: []
+categories:
+  - - 日　　记
 tags: []
 date: 2025-01-09 10:09:38
 updated: 2025-01-09 11:37:39
