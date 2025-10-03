@@ -6,9 +6,10 @@ tags:
   - usage
 id: '87'
 categories:
-  - 日　　记
-date: 2008-06-06 00:35:16
+  - - 生活
+    - 日记
 permalink: the-difference-between-trackback-and-pingback/
+date: 2008-06-06 00:35:16
 ---
 
 > TrackBack最早是MovableType上的一个小功能。可以说就是这个小功能在blog界却掀起了一场革命。

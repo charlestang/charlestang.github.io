@@ -5,10 +5,10 @@ tags:
   - usage
 id: '685'
 categories:
-  - [小窍门]
-  - [工作相关]
-date: 2015-06-25 15:44:56
+  - - 技术
+    - 工具
 permalink: how-to-bulk-delete-tags-local-and-remote/
+date: 2015-06-25 15:44:56
 ---
 
 在我最新任职的团队里，我们采用Git正式作为我们团队开发管理的工具。我们使用Git来做版本控制，研发管理，和线上部署。我们将Git的版本库直接作为代码目录，来存放线上代码，发布的方法，就简化成了，将线上环境的代码目录，checkout 到指定的 tag，简单，快捷。

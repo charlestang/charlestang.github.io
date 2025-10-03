@@ -5,9 +5,10 @@ tags:
   - opinion
 id: '77'
 categories:
-  - 日　　记
-date: 2008-04-26 16:53:45
+  - - 生活
+    - 日记
 permalink: gmail-updated/
+date: 2008-04-26 16:53:45
 ---
 
 今天登录gmail的时候，发现Gmail有了变化，竟然升级了！  

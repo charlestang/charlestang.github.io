@@ -3,9 +3,10 @@ title: 【How to】【PHP】怎么把一个Key-Value加入到数组的最前面�
 tags: []
 id: '628'
 categories:
-  - [工作相关, PHP]
-date: 2014-06-06 02:44:45
+  - - 技术
+    - 后端
 permalink: how-to-add-a-key-value-pair-to-the-front-of-array/
+date: 2014-06-06 02:44:45
 ---
 
 我自己想了想，貌似只有很傻的办法呢：

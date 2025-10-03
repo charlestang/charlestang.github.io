@@ -4,9 +4,10 @@ tags:
   - notice
 id: '290'
 categories:
-  - 日　　记
-date: 2009-01-27 14:27:16
+  - - 生活
+    - 日记
 permalink: change-domain/
+date: 2009-01-27 14:27:16
 ---
 
 哈哈~~大家千万别少打一个y啊，我提醒过了啊~~ o(>﹏<)o不要啊

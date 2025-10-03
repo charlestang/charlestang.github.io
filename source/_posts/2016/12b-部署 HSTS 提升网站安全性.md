@@ -4,9 +4,10 @@ tags:
   - HTTPS
 id: '753'
 categories:
-  - 工作相关
-date: 2016-12-22 12:04:01
+  - - 技术
+    - 前端
 permalink: deploy-hsts-import-security/
+date: 2016-12-22 12:04:01
 ---
 
 ## 什么是 HSTS？

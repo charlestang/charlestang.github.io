@@ -4,9 +4,10 @@ tags:
   - HTTPS
 id: '729'
 categories:
-  - [工作相关, 心得体会]
-date: 2016-07-03 23:14:03
+  - - 技术
+    - 前端
 permalink: why-ssl-certificate-so-expensive-and-why-free/
+date: 2016-07-03 23:14:03
 ---
 
 所谓的 HTTPS 其实，指的是 HTTP over TLS/SSL，SSL 的意思是，Secure Sockets Layer，也即安全套接字层，是网景公司发明的一种传输层安全协议。因为对于网络信息基础架构太过重要，这个协议最后被国际标准化组织，标准化为 TLS，也即 Transport Layer Security，传输层安全协议，是 SSL 的后继者，从SSL 2.0 开始，后面一般不再称为 SSL 3.0，而称为 TLS 1.0，而 2016 年的互联网，主流都将往 TLS 1.2 以上发展。

@@ -5,7 +5,8 @@ tags:
   - jQuery
 id: '463'
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: jquery-wrappers/
 date: 2011-10-23 01:45:43
 updated: 2024-05-06 14:12:17

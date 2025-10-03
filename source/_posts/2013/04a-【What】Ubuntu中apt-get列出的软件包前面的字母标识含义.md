@@ -7,9 +7,10 @@ tags:
   - ubuntu
 id: '546'
 categories:
-  - [工作相关, Linux]
-date: 2013-04-02 00:33:01
+  - - 技术
+    - 运维
 permalink: the-meaning-of-character-sing-in-front-of-apt-list/
+date: 2013-04-02 00:33:01
 ---
 
 在Ubuntu服务器上，执行apt-get或者aptitude，可以列出软件包的名字，每行一个，最前面有个表明状态的字母标识：

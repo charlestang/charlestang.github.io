@@ -4,9 +4,10 @@ tags:
   - html
 id: '561'
 categories:
-  - [工作相关, 心得体会]
-date: 2013-06-13 01:29:47
+  - - 技术
+    - 前端
 permalink: confused-about-the-html-checkbox/
+date: 2013-06-13 01:29:47
 ---
 
 其实以前我遇到过Html表单里面的这个checkbox的问题，这个被定义成一个feature也可以，一个bug也未尝不可，至少我这么认为。

@@ -5,10 +5,9 @@ tags:
   - MyEclipse
   - version
 id: '277'
-categories:
-  - 工作相关
-date: 2008-12-12 18:58:18
+categories: 历史归档
 permalink: myeclipse-version-difference/
+date: 2008-12-12 18:58:18
 ---
 
 想装个MyEclipse，听说是傻瓜用的IDE，那么正好适合我啊……

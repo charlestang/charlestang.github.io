@@ -3,9 +3,8 @@ title: VS Code 笔记
 tags:
   - VSCode
 categories:
-  - - 工作相关
-  - - 工作相关
-    - 心得体会
+  - - 技术
+    - 工具
 permalink: 2023/vscode-notes/
 date: 2023-08-12 13:57:00
 ---

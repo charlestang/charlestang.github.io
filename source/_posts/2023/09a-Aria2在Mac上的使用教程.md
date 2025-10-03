@@ -4,7 +4,8 @@ tags:
   - aria2
   - usage
 categories:
-  - - Mac
+  - - 技术
+    - 工具
 permalink: 2023/aria2-missing-manual/
 date: 2023-09-17 23:50:00
 updated: 2024-09-08 17:41:16

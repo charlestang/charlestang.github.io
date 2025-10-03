@@ -6,9 +6,10 @@ tags:
   - word
 id: '314'
 categories:
-  - 工作相关
-date: 2009-03-01 15:23:13
+  - - 管理
+    - 知识
 permalink: word2007-doesnot-show-pics/
+date: 2009-03-01 15:23:13
 ---
 
 ![Word 2007 Options](http://lh5.ggpht.com/_QYicOeu89Bk/SakSD6X0HRI/AAAAAAAABKI/bqA1qGZBmk0/s400/word2007.png)

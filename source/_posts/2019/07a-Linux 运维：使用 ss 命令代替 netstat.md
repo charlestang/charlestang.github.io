@@ -6,9 +6,10 @@ tags:
   - maintain
 id: '842'
 categories:
-  - [工作相关, Linux]
-date: 2019-07-11 17:49:42
+  - - 技术
+    - 运维
 permalink: linux-use-ss-replace-netstat/
+date: 2019-07-11 17:49:42
 ---
 
 在运维和管理 Linux 服务器的时候，我们最常用的一个命令就是 netstat，我常用这个命令来查看当前服务器上有哪些进程正在侦听端口，主要用来诊断网络服务的工作状态。

@@ -5,9 +5,10 @@ tags:
   - source code
 id: '554'
 categories:
-  - [工作相关, PHP]
-date: 2013-05-08 14:41:53
+  - - 技术
+    - 后端
 permalink: php-header/
+date: 2013-05-08 14:41:53
 ---
 
 PHP的header函数用来发送Http头信息，我在使用中，有个场景，就是代理请求的场景。

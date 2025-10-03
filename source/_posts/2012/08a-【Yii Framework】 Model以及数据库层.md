@@ -3,11 +3,10 @@ title: 【Yii Framework】 Model以及数据库层
 tags: []
 id: '497'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, PHP]
-  - [工作相关, Yii]
-date: 2012-08-12 23:07:28
+  - - 技术
+    - 后端
 permalink: yii-framework-query-db-use-model/
+date: 2012-08-12 23:07:28
 ---
 
 应用Yii框架已经有一段时间了，之前也分享了一些Yii框架的入门视频，撰写了一些源代码分析文章。随着使用的深入，越发被Yii框架折服，感叹原作者Qiang Xue对于面向对象编程，Web开发，以及PHP的深厚功力和应用能力。众所周知，像一切Web开发框架那样，Yii框架提供ORM功能，中文叫对象关系映射，能将关系型数据库的数据，映射成对象，从而提供了便捷的数据操作能力。

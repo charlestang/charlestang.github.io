@@ -4,9 +4,10 @@ tags:
   - Linux
 id: '821'
 categories:
-  - [工作相关, Linux]
-date: 2019-06-11 00:20:50
+  - - 技术
+    - 运维
 permalink: whats-cgroups/
+date: 2019-06-11 00:20:50
 ---
 
 ## 综述

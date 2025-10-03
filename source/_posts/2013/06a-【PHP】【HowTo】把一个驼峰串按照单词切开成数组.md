@@ -5,10 +5,10 @@ tags:
   - PHP
 id: '559'
 categories:
-  - [工作相关, PHP]
-  - [小窍门]
-date: 2013-06-06 13:08:15
+  - - 技术
+    - 后端
 permalink: how-to-split-a-camel-style-string-to-words-array/
+date: 2013-06-06 13:08:15
 ---
 
 在Google搜索这个问题的答案的关键字 How to split a camel style string 或者更直接 split a string by capital letter

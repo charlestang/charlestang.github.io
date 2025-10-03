@@ -5,9 +5,10 @@ tags:
   - Web Server
 id: '427'
 categories:
-  - 工作相关
-date: 2011-05-01 08:31:57
+  - - 技术
+    - 后端
 permalink: litespeed-web-server/
+date: 2011-05-01 08:31:57
 ---
 
 LiteSpeed Web Server is the leading high-performance, high-scalability web server. It is completely Apache interchangeable so LiteSpeed Web Server can quickly replace a major bottleneck in your existing web delivery platform. With its comprehensive range of features and easy-to-use web administration console, LiteSpeed Web Server can help you conquer the challenges of deploying an effective web serving architecture. 

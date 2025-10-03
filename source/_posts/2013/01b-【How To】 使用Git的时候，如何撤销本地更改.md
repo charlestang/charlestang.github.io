@@ -5,9 +5,10 @@ tags:
   - usage
 id: '534'
 categories:
-  - 工作相关
-date: 2013-01-27 20:11:33
+  - - 技术
+    - 工具
 permalink: how-to-use-git-to-revert-local-changes/
+date: 2013-01-27 20:11:33
 ---
 
 在使用Git作为版本控制工具的时候，如何撤销某个文件的本地更改？

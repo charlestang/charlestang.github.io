@@ -5,9 +5,10 @@ tags:
   - usage
 id: '1147'
 categories:
-  - 工作相关
-date: 2022-09-27 12:21:34
+  - - 技术
+    - 工具
 permalink: docker-memo/
+date: 2022-09-27 12:21:34
 ---
 
 ![docker](../images/2022/09/dockerlabs.jpeg)

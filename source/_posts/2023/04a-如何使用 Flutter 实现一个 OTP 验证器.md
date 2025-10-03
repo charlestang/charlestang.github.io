@@ -5,7 +5,8 @@ tags:
   - OTP
 id: '1213'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: howto-implement-otp-authenticator-with-flutter/
 date: 2023-04-21 12:32:09
 updated: 2024-05-06 14:14:51

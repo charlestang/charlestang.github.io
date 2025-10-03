@@ -4,9 +4,10 @@ tags:
   - algorithm
 id: '822'
 categories:
-  - 日　　记
-date: 2019-03-08 16:32:51
+  - - 生活
+    - 日记
 permalink: arts-no-3/
+date: 2019-03-08 16:32:51
 ---
 
 ## Algorithm

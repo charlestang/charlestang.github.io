@@ -3,7 +3,8 @@ title: Metabase 入门
 tags:
   - Metabase
 categories:
-  - - 工作相关
+  - - 技术
+    - 工具
 permalink: 2023/metabase-basics/
 date: 2023-08-03 12:27:08
 updated: 2024-05-26 23:48:37

@@ -5,9 +5,10 @@ tags:
   - python
 id: '461'
 categories:
-  - 工作相关
-date: 2011-10-04 00:49:09
+  - - 生活
+    - 日记
 permalink: why-python-code-mess/
+date: 2011-10-04 00:49:09
 ---
 
 开始学习写Python，写了一两个小脚本后，就产生了非常奇怪的感觉，我怎么觉得Python看着这么混乱呢？

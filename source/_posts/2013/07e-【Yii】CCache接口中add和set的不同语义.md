@@ -3,9 +3,10 @@ title: 【Yii】CCache接口中add和set的不同语义
 tags: []
 id: '580'
 categories:
-  - [工作相关, PHP]
-date: 2013-07-20 18:33:46
+  - - 技术
+    - 后端
 permalink: the-difference-of-the-add-and-set-in-cache-interface/
+date: 2013-07-20 18:33:46
 ---
 
 昨天晚上，我打算自己实现一个使用Redis作为对象存储的模型，并且提供一个类似CActiveRecord的接口，做事情之前，我非常小心的搜索了一遍，基本确定没有人已经实现过我的理念，所以放心大胆开始写了。在开始真正的对象存储模型编写之前，我还是忍不住自己创造轮子，就是用CCache接口封装Redis，开始我没搞懂addValue和setValue有什么区别，就按照我一般使用的经验去实现了，然后今天早上，我在别人的项目YiiRedis里看到了一个RedisCache的实现，发现跟我写得很不一样，主要是一上来没看懂，就觉得人家写错了，还跑twitter上骂了一句，哈哈，太傻逼了。

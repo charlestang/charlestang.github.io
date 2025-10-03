@@ -6,10 +6,10 @@ tags:
   - yii
 id: '418'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, Yii]
-date: 2011-03-31 01:00:21
+  - - 技术
+    - 后端
 permalink: how-to-use-log-in-yii-framework/
+date: 2011-03-31 01:00:21
 ---
 
 昨天阅读了Yii框架中log部分的源代码，框架提供了灵活、强大的log功能，如果不是非常特殊的需求，框架中自带的类就已经能够满足一般的应用的需求了。实现log功能的源代码被存放在 framework/logging 目录下，这个目录下的代码都包含在包system.logging中。本文简要介绍一下我昨天阅读代码的所得。

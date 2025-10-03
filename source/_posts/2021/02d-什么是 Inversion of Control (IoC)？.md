@@ -5,10 +5,8 @@ tags:
   - object oriented
 id: '1003'
 categories:
-  - - 工作相关
-    - 心得体会
-  - - 工作相关
-    - PHP
+  - - 技术
+    - 后端
 permalink: inversion-of-control-ioc/
 date: 2021-02-25 13:12:47
 updated: 2025-06-29 15:50:30

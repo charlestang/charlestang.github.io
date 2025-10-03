@@ -2,7 +2,8 @@
 title: 从 0 开始在项目中引入 Element Plus
 permalink: 2024/howto-introduce-element-plus-to-project/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - Element Plus
   - usage

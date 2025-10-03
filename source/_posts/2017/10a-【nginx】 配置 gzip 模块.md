@@ -6,10 +6,10 @@ tags:
   - usage
 id: '789'
 categories:
-  - [小窍门]
-  - [工作相关]
-date: 2017-10-26 01:16:01
+  - - 技术
+    - 前端
 permalink: nginx-config-gzip-module/
+date: 2017-10-26 01:16:01
 ---
 
 在使用 nginx 的时候，配置 gzip 模块，可以让服务器的伺服更加高效，对于文本类型的数据，传输量可以压缩一半左右。

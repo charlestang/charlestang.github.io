@@ -4,9 +4,10 @@ tags:
   - docker
 id: '738'
 categories:
-  - 工作相关
-date: 2016-08-21 14:27:14
+  - - 技术
+    - 工具
 permalink: docker-installation/
+date: 2016-08-21 14:27:14
 ---
 
 其实很早就听说了 Docker 了，这正是现在世界上最炙手可热的容器技术。直到去年 2015 年，我们公司才有小伙，尝试使用 Docker，当时，我们公司是全 Mac 办公，而 Docker 只支持 Linux，于是各种非官方爱好者，做出了各种方案，比如当时，如果要在 Mac 上用 Docker，就必须安装一个 boot2docker 的组件，是一个在 Mac 上使用 Docker 的封装，同时还要依托 VirtualBox 才行，当然也有 VmWare 的版本，但是又是收费的。

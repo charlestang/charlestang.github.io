@@ -2,7 +2,8 @@
 title: 图解 Electron 的进程模型
 permalink: 2024/image-explain-electron-process-model/
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 tags:
   - electron
   - vue

@@ -8,8 +8,8 @@ tags:
   - usage
 id: '360'
 categories:
-  - - 工作相关
-    - Linux
+  - - 技术
+    - 运维
 permalink: show-colorful-manpages/
 date: 2010-02-06 22:35:16
 updated: 2024-02-26 23:30:21

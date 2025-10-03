@@ -6,7 +6,8 @@ tags:
   - usage
 id: '535'
 categories:
-  - - 工作相关
+  - - 技术
+    - 后端
 permalink: python-arguments-type/
 date: 2013-01-28 20:46:37
 updated: 2024-05-07 21:03:03

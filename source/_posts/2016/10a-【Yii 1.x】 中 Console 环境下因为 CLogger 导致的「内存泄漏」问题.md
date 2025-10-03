@@ -5,11 +5,10 @@ tags:
   - yii
 id: '747'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, PHP]
-  - [工作相关, Yii]
-date: 2016-10-16 21:24:59
+  - - 技术
+    - 后端
 permalink: yii-1-x-console-clogger-cause-memory-exceed-limit/
+date: 2016-10-16 21:24:59
 ---
 
 今天下午，我在 Yii 框架 1.x 下，写一个数据处理脚本，脚本的功能主要是把一个超过百万行的表中的两个字段，同步到一个新表中。按照一般的想法，我写了如下的代码。

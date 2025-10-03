@@ -3,7 +3,8 @@ title: 写给程序员的真正 0 基础 Vue 入门
 tags:
   - Vue
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: 2023/vue-notes/
 date: 2023-08-13 20:57:00
 updated: 2025-09-25 23:27:07

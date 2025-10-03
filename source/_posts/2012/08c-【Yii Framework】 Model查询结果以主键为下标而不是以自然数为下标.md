@@ -3,11 +3,8 @@ title: 【Yii Framework】 Model查询结果以主键为下标而不是以自然
 tags: []
 id: '498'
 categories:
-  - - 工作相关
-    - PHP
-  - - 工作相关
-    - Yii
-  - - 小窍门
+  - - 技术
+    - 后端
 permalink: yii-query-result-custom-indexed-array/
 date: 2012-08-12 23:32:59
 updated: 2024-09-08 17:40:30

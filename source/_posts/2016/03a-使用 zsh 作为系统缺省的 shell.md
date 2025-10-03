@@ -5,9 +5,10 @@ tags:
   - zsh
 id: '717'
 categories:
-  - 小窍门
-date: 2016-03-17 01:18:11
+  - - 技术
+    - 工具
 permalink: use-zsh-as-my-default-shell/
+date: 2016-03-17 01:18:11
 ---
 
 以前一直没有使用 zsh，理由是，这不是一个默认安装的 shell，我所工作的环境一般都是 Linux 服务器环境，一般系统默认不会安装这个 shell 的。另外，bash 我也没有使用得多熟练，为了逼自己熟练掌握 bash，不用 zsh。

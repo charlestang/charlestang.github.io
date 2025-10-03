@@ -3,9 +3,10 @@ title: 在 CendOS 6.5 上编译 PHP 5/PHP 7
 tags: []
 id: '714'
 categories:
-  - [工作相关, PHP]
-date: 2016-01-08 15:08:26
+  - - 技术
+    - 后端
 permalink: compile-php7-on-centos-6-5/
+date: 2016-01-08 15:08:26
 ---
 
 

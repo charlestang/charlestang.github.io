@@ -6,9 +6,10 @@ tags:
   - TLS
 id: '763'
 categories:
-  - [工作相关, Linux]
-date: 2017-02-01 00:25:55
+  - - 技术
+    - 运维
 permalink: use-certbot-apply-letsencrypt-certificate/
+date: 2017-02-01 00:25:55
 ---
 
 2016 年 4 月 12 日，Let's Encrypt 宣布，免费为广大网站提供 SSL 证书，从此，再也没有必要使用自签名证书了。本站也很早就用上了 Let's Encrypt 提供的免费证书，那时候，还是使用的网友实现的 Python 脚本来进行的申请，后来，官方推出了官方客户端，也是 Python 实现的，我也懒得更换了。

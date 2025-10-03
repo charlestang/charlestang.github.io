@@ -5,9 +5,10 @@ tags:
   - code examples
 id: '577'
 categories:
-  - 工作相关
-date: 2013-07-15 19:37:18
+  - - 技术
+    - 运维
 permalink: bash-how-to-get-the-basepath-of-current-running-script/
+date: 2013-07-15 19:37:18
 ---
 
 如题，一般我们写Shell脚本的时候，都倾向使用绝对路径，这样无论脚本在什么目录执行，都应该起到相同的效果，但是有些时候，我们设计一个软件包中的工具脚本，可能使用相对路径更加灵活一点，因为你不知道用户会在哪个目录执行你的程序，就有了本文的题目。

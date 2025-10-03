@@ -6,9 +6,10 @@ tags:
   - MySQL
 id: '764'
 categories:
-  - 工作相关
-date: 2017-02-04 12:24:30
+  - - 技术
+    - 运维
 permalink: update-mysql-server-5-7-with-apt/
+date: 2017-02-04 12:24:30
 ---
 
 我的博客是使用 [Linode](https://www.linode.com/?r=f268347f24b5221e45c9a1048cb8b8db0f0c241a) 搭建的，算算已经快有八年多历史了。从一开始，我就使用 Debian 发行版作为我的服务器版本。当时，最流行的服务器是 RedHat 和 Ubuntu，那时候我还没听说过 CentOS，哈哈，不想用盗版，又觉得 Debian 比较稳定，而且有无敌的 apt-get，就一直用 Debian 了。

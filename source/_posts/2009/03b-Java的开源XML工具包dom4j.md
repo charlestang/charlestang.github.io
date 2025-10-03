@@ -7,9 +7,10 @@ tags:
   - tools
 id: '310'
 categories:
-  - 工作相关
-date: 2009-03-31 00:12:59
+  - - 技术
+    - 后端
 permalink: dom4j-xml-toolkit-java/
+date: 2009-03-31 00:12:59
 ---
 
 ![The hierarchy of the interfaces in dom4j libaray](http://lh6.ggpht.com/_QYicOeu89Bk/SafPc8W7V6I/AAAAAAAABJo/pe3JBdV_QJg/s400/dom4j-interface-hierarchy.png)

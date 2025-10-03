@@ -2,12 +2,13 @@
 title: Sass：强大的 CSS 预处理器
 permalink: 2025/sass-css-preprocessor/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - Sass
   - CSS
 date: 2025-06-02 17:03:23
-updated: 2025-06-04 23:22:15
+updated: 2025-10-03 02:16:27
 ---
 我认识很多 Web 后端开发程序员，他们多多少少会写一些前端的代码，但是很少例外，大都 **不擅长写 CSS** 样式，我自己也不例外。
 

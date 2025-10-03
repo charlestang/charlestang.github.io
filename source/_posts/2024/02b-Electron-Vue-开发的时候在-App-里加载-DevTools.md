@@ -2,8 +2,10 @@
 title: Electron + Vue 开发的时候，在 App 里加载 DevTools
 permalink: 2024/electron-vue-load-devtools/
 categories:
-  - - 前端开发技术
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
+  - - 技术
+    - 前端
 tags:
   - electron
   - usage

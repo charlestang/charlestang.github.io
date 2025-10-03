@@ -7,9 +7,10 @@ tags:
   - PHP
 id: '922'
 categories:
-  - [工作相关, PHP]
-date: 2020-07-03 18:52:35
+  - - 技术
+    - 后端
 permalink: compile-php74-on-centos78/
+date: 2020-07-03 18:52:35
 ---
 
 昨天，我在一台 CentOS 6.10 上面编译 PHP 7.4.7 和编译前几个版本有很大的区别，PHP 7.4 开始使用了一个叫 pkg-config 的东西，有点先进，但是在老旧的系统上，真是无比痛苦的一个体验。

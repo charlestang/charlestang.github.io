@@ -5,9 +5,10 @@ tags:
   - oauth
 id: '617'
 categories:
-  - 工作相关
-date: 2014-05-13 21:11:34
+  - - 技术
+    - 后端
 permalink: oauth-history/
+date: 2014-05-13 21:11:34
 ---
 
 [![OAuth-cartoon](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth-cartoon-300x267.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth-cartoon.png)

@@ -6,7 +6,8 @@ tags:
   - usage
 id: '359'
 categories:
-  - 工作相关
+  - - 技术
+    - 工具
 permalink: the-first-expierence-of-latex-2/
 date: 2010-01-20 08:41:26
 updated: 2024-02-26 23:28:00

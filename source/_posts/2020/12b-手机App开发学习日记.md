@@ -3,7 +3,8 @@ title: 手机 App 开发学习日记
 tags:
   - App
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: 2020/mobile-app-learning/
 date: 2020-12-15 18:21:00
 updated: 2024-05-06 14:16:20

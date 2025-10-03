@@ -3,9 +3,10 @@ title: 【HowTo】怎样判定一个字符串是一个合法正则表达式？
 tags: []
 id: '582'
 categories:
-  - [工作相关, PHP]
-date: 2013-07-24 09:42:33
+  - - 技术
+    - 后端
 permalink: howto-detect-a-valid-reqular-expression/
+date: 2013-07-24 09:42:33
 ---
 
 http://stackoverflow.com/questions/172303/is-there-a-regular-expression-to-detect-a-valid-regular-expression

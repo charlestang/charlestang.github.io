@@ -7,8 +7,8 @@ tags:
   - vim
 id: '440'
 categories:
-  - - 工作相关
-    - 心得体会
+  - - 技术
+    - 工具
 permalink: vim-tricks-collections/
 date: 2011-06-14 22:31:30
 updated: 2025-09-25 23:07:30

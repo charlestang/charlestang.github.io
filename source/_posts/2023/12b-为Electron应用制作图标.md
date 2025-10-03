@@ -2,7 +2,8 @@
 title: 为 Electron 应用制作图标
 permalink: 2023/howto-change-app-icon-for-electron-app/
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 tags:
   - electron
 date: 2023-12-07 10:26:21

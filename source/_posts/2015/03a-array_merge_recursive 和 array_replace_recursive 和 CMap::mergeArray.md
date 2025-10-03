@@ -5,9 +5,10 @@ tags:
   - usage
 id: '668'
 categories:
-  - [工作相关, PHP]
-date: 2015-03-04 01:21:42
+  - - 技术
+    - 后端
 permalink: array-merge-recursive-和-array-replace-recursive-和-cmapmergearray/
+date: 2015-03-04 01:21:42
 ---
 
 学习使用PHP怎么也有7年的时间了，竟然也没有注意到有个函数是array_replace_recursive，之前只知道array_merge_recursive，而且，这两个函数的返回结果，都非常地出人意料，不怎么符合直觉，而使用了Yii框架若干年，竟然也不知道有个CMap::mergeArray()方法，这个方法，如果跟前面两个函数混同起来看，竟然也显得有点离奇。

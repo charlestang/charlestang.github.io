@@ -5,9 +5,10 @@ tags:
   - usage
 id: '1154'
 categories:
-  - Mac
-date: 2022-09-29 11:16:16
+  - - 技术
+    - 工具
 permalink: popclip-not-coming-back-after-unchecking-show-in-menu-bar/
+date: 2022-09-29 11:16:16
 ---
 
 ![popclip](../images/2022/09/PopClipRainbow@2x.jpeg)

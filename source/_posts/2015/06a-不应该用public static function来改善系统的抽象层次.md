@@ -3,9 +3,10 @@ title: 不应该用public static function来改善系统的抽象层次
 tags: []
 id: '686'
 categories:
-  - [工作相关, PHP]
-date: 2015-06-29 17:56:56
+  - - 技术
+    - 后端
 permalink: dont-use-public-static-function/
+date: 2015-06-29 17:56:56
 ---
 
 无论是在以前的团队，还是在现在的团队，都有人主张抽象出所谓的Service层，他们认为Model只负责跟数据库沟通，不应该混杂过多的东西，而同样也不赞成在Controller的Action里面，做太多事情，那样不利于复用。而他们赞成的方案，就是『抽象』出一层所谓的Service层，从而实现代码的复用。

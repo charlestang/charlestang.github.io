@@ -4,9 +4,10 @@ tags:
   - vim
 id: '356'
 categories:
-  - 工作相关
-date: 2009-11-10 22:54:56
+  - - 技术
+    - 工具
 permalink: the-absolute-bare-minimum-vimrc/
+date: 2009-11-10 22:54:56
 ---
 
 初次安装vim编辑器时，我们必须要配置~/·vimrc文件才能让vim变得更加好用。最少最少，你要配置下面一些内容：

@@ -7,9 +7,10 @@ tags:
   - thread
 id: '302'
 categories:
-  - 工作相关
-date: 2009-02-23 23:13:59
+  - - 技术
+    - 后端
 permalink: how-to-make-java-task-scheduled-excecute/
+date: 2009-02-23 23:13:59
 ---
 
 ![Timer and TimerTask class diagram](http://lh6.ggpht.com/_QYicOeu89Bk/SaK8o7J0S2I/AAAAAAAABHw/wvBb9HFkEcw/s400/Timer.png)

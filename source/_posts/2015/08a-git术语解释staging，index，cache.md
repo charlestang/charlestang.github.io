@@ -5,10 +5,10 @@ tags:
   - usage
 id: '701'
 categories:
-  - [小窍门]
-  - [工作相关]
-date: 2015-08-30 00:58:55
+  - - 技术
+    - 工具
 permalink: git-staging-area-index-cache/
+date: 2015-08-30 00:58:55
 ---
 
 当我在使用git的时候，有三个东西的出现，一度让我非常困扰，就如题所述，staging，index，和cache。

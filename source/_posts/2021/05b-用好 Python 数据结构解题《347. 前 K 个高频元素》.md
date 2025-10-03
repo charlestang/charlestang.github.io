@@ -5,9 +5,10 @@ tags:
   - python
 id: '1062'
 categories:
-  - 算　　法
-date: 2021-05-18 18:07:00
+  - - 技术
+    - 算法
 permalink: python-347-most-frequent-k/
+date: 2021-05-18 18:07:00
 ---
 
 这道题目意思很简单，给你一个整数数组 `nums` 和一个整数 `k` ，请你返回其中出现频率前 `k` 高的元素。本质上就是求，出现频次最高的数组元素，这在日常工作中也很常见。题目见[传送门](https://leetcode-cn.com/problems/top-k-frequent-elements/)。

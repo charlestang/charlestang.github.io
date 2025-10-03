@@ -3,9 +3,10 @@ title: 在Linode上安装Debian 7+Nginx+MySQL+PHP FastCGI
 tags: []
 id: '572'
 categories:
-  - [工作相关, 心得体会]
-date: 2013-07-11 01:39:53
+  - - 技术
+    - 运维
 permalink: linode-initialize/
+date: 2013-07-11 01:39:53
 ---
 
 在我印象里，我大概做了许多次这个事情了，拿到一台新的Linode，或者将某个Linode实例彻底清空而变成新的Linode，然后从0开始装成一个Web Server。本文，我就记录一下这个过程吧，省得以后用到了，又去各个服务器上拷贝。

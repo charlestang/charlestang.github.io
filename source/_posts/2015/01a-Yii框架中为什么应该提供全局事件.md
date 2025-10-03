@@ -5,8 +5,8 @@ tags:
   - yii
 id: '666'
 categories:
-  - - 工作相关
-    - Yii
+  - - 技术
+    - 后端
 permalink: why-yii-need-global-events/
 date: 2015-01-30 18:24:09
 ---

@@ -5,9 +5,10 @@ tags:
   - vpn
 id: '639'
 categories:
-  - [工作相关, Linux]
-date: 2014-08-03 01:21:01
+  - - 技术
+    - 运维
 permalink: linode-l2tp-over-ipsec-fail/
+date: 2014-08-03 01:21:01
 ---
 
 购买了Linode的同学，一般都会在Linode上安装部署各类技术解决方案，解决程序员的信息查找和咨询访问问题。这类方案里，本人首推使用shadowsocks，简单、轻量、稳定易用。但是在某些特殊的场合，非VPN不能解决问题。在各式各类的VPN方案里，我首推L2TP over IPSec，协议加密，内容加密，给未来还是要留个出路的，不然都被扫出来封掉，那太悲催了，我不忍细想。

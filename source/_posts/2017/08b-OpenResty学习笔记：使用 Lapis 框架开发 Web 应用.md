@@ -6,9 +6,10 @@ tags:
   - web
 id: '775'
 categories:
-  - [工作相关, 心得体会]
-date: 2017-08-18 04:36:03
+  - - 技术
+    - 后端
 permalink: openresty-notes-lapis/
+date: 2017-08-18 04:36:03
 ---
 
 不知道从哪一届开始，老罗开锤子手机发布会的时候，会当场捐赠一款开源软件，第一次是捐赠给 OpenSSL，第二次是 OpenResty。那次发布会开完，OpenResty 在程序员圈子里火了一把，成为一种热门技术了。其实，OpenResty 在后端程序员世界里，早就享有盛名。当你不得不去面对高并发的场景的时候，你一定会发现 Nginx 的巧妙和强大，然后你会想到用 Nginx 解决问题，然后你一定会发现 OpenResty。

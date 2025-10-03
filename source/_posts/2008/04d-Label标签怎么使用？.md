@@ -4,10 +4,9 @@ tags:
   - dotNet
   - programming
 id: '76'
-categories:
-  - 工作相关
-date: 2008-04-26 16:50:41
+categories: 历史归档
 permalink: a-problem-with-label/
+date: 2008-04-26 16:50:41
 ---
 
 我在写一个类似电视墙一样的软件，就是视频监控管理软件。  

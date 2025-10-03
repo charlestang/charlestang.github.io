@@ -3,10 +3,10 @@ title: 【WordPress】【插件开发】插件头信息、注释格式
 tags: []
 id: '499'
 categories:
-  - [工作相关, 心得体会]
-  - [WordPress, Plugins Develop]
-date: 2012-08-15 01:41:58
+  - - WordPress
+    - Plugins Develop
 permalink: wordpress-plugin-develop-header-info/
+date: 2012-08-15 01:41:58
 ---
 
 WordPress后台可以看到已安装插件的列表，其中会显示插件的名称（Plugin Name），简要描述（Dsecription），版本（Version），作者（Author），作者主页（Author URI），插件主页（Plugin URI），这些信息并非是存在数据库里的，而是写在了插件入口文件的头部，以注释的形式写在了插件页面中。这种形式，可以将WP系统和插件软件同步元数据信息的成本和复杂度降到最低。

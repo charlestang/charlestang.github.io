@@ -5,10 +5,12 @@ tags:
   - mac
 id: '915'
 categories:
-  - [工作相关, Linux]
-  - [Mac]
-date: 2020-06-09 14:04:04
+  - - 技术
+    - 运维
+  - - 技术
+    - 工具
 permalink: how-to-reinstall-macos/
+date: 2020-06-09 14:04:04
 ---
 
 话说，不作死就不会死。

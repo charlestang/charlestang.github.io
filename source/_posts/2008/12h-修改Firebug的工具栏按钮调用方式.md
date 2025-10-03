@@ -5,7 +5,8 @@ tags:
   - DIY
 id: '269'
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: modify-the-firebug-call-way/
 date: 2008-12-02 14:22:30
 updated: 2024-04-01 15:38:22

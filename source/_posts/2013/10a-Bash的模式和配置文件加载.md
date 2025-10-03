@@ -3,9 +3,10 @@ title: Bash的模式和配置文件加载
 tags: []
 id: '593'
 categories:
-  - [工作相关, Linux]
-date: 2013-10-29 01:23:54
+  - - 技术
+    - 运维
 permalink: bash-running-mode-and-config-files/
+date: 2013-10-29 01:23:54
 ---
 
 有些很基础的东西，一直以来也就没有搞懂，其实，究其原因，还是不求甚解。关于Bash的种种，便是如是。接下来，我来过一点man里面有的东西，经常看man的人，就请自动飘过吧。

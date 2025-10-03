@@ -3,7 +3,8 @@ title: Electron 学习笔记
 tags:
   - electron
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: 2023/electron-notes/
 date: 2023-10-10 10:36:00
 updated: 2025-06-17 18:29:38

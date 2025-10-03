@@ -2,8 +2,8 @@
 title: AI 时代，程序员如何自处？
 permalink: 2025/where-to-go-in-ai-era/
 categories:
-  - - 工作相关
-    - 心得体会
+  - - 生活
+    - 日记
 tags:
   - thinking
   - ai

@@ -6,10 +6,9 @@ tags:
   - programming
   - science
 id: '45'
-categories:
-  - 工作相关
-date: 2008-04-08 20:49:46
+categories: 历史归档
 permalink: the-timer-is-not-accurate/
+date: 2008-04-08 20:49:46
 ---
 
 真是无比惭愧啊，过了这么久，连这么基础的知识都不知道，特意记录在此。

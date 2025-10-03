@@ -4,9 +4,10 @@ tags:
   - oauth
 id: '619'
 categories:
-  - 工作相关
-date: 2014-05-14 20:42:38
+  - - 技术
+    - 后端
 permalink: oauth-1-intro/
+date: 2014-05-14 20:42:38
 ---
 
 [![OAuth1.0Core](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth1.0Core.png)](http://blog.charlestang.org/wp-content/uploads/2014/05/OAuth1.0Core.png)

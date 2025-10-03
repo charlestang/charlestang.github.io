@@ -2,11 +2,12 @@
 title: 适配 Flutter 的 PopScope
 permalink: 2024/adapt-to-the-new-api-popscope/
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 tags:
   - flutter
 date: 2024-08-11 16:52:51
-updated: 2024-09-08 16:57:13
+updated: 2025-10-03 01:40:55
 ---
 此前，我写过一篇文章，抱怨 Flutter 的 WillPopScope 的一些问题《[Flutter 在 iOS 下 WillPopScope 导致右滑返回（Swipe Back）失效](/in-ios-willpopscope-disable-swipe-back/)》，当时，我就提出过，在 iOS 上，Swipe Back 这个手势，要播放个动画的，这个交互动作的观感是，像翻书一样的，好像翻起了一页纸，你会看到纸下面是什么内容的。而 Android 系统，完全不是这个交互动画效果，是直接返回的。而 WillPopScope 就是拦截在 Android 上的返回动作，所以出现了一个问题，就是如果你用 WillPopScope，你发现，在 iOS 上牺牲了 Swipe Back 的交互手势。
 

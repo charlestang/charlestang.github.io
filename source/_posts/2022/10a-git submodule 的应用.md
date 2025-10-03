@@ -3,11 +3,12 @@ title: git submodule 的应用
 tags:
   - git
   - submodule
-id: "1145"
+id: '1145'
 categories:
-  - 工作相关
-date: 2022-10-13 10:31:28
+  - - 技术
+    - 工具
 permalink: 2022/git-submodule-application/
+date: 2022-10-13 10:31:28
 ---
 
 大家有没有发现，有些技术点，我们每次想用的时候，都不会用，然后学会了，用一次，又很久不用，然后到了要用的时候，又开始新一轮的循环。比如 git 的 submodule，对我来说就是这样一个技术点。

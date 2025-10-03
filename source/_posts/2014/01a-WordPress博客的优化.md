@@ -3,7 +3,8 @@ title: WordPress博客的优化
 tags: []
 id: '609'
 categories:
-  - 日　　记
+  - - 生活
+    - 日记
 permalink: wordpress-optimize/
 date: 2014-01-28 01:25:33
 updated: 2024-05-06 14:16:46

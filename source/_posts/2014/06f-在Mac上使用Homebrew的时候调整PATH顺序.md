@@ -3,9 +3,10 @@ title: 在Mac上使用Homebrew的时候调整PATH顺序
 tags: []
 id: '635'
 categories:
-  - 小窍门
-date: 2014-06-27 10:36:34
+  - - 技术
+    - 工具
 permalink: change-the-path-order-on-mac-to-use-brew/
+date: 2014-06-27 10:36:34
 ---
 
 在Mac上，管理命令行软件包，使用Homebrew，它的原理主要就是将软件安装在一个固定的目录，然后将二进制文件的路径，加入到系统的PATH中，

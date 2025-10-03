@@ -2,7 +2,8 @@
 title: Nginx 跨域配置和 Chrome 的 CORS 错误
 permalink: 2023/nginx-cors-config/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - nginx
   - CORS

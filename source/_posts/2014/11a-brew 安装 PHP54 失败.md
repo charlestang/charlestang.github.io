@@ -6,11 +6,10 @@ tags:
   - PHP
 id: '655'
 categories:
-  - - 小窍门
-  - - 工作相关
+  - - 历史归档
 permalink: brew-install-php54-failed/
 date: 2014-11-17 15:34:37
-updated: 2025-05-15 00:38:26
+updated: 2025-10-03 11:38:50
 ---
 今天使用brew安装PHP54，结果发现出现如下错误：
 

@@ -3,9 +3,10 @@ title: 打造舒适的 Obsidian 环境
 tags:
   - Obsidian
 categories:
-  - [工作相关]
-date: 2023-08-10 23:20:00
+  - - 技术
+    - 工具
 permalink: 2023/config-your-obsidian-comfertable/
+date: 2023-08-10 23:20:00
 ---
 
 事情都是环环相扣的，决定了要用网站生成器来管理个人博客，就要使用 Markdown 来撰写内容，发现可以使用 Obsidian 作为 Markdown 编辑器和内容管理器，于是更高频率的使用 Obsidian。

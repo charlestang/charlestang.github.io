@@ -6,9 +6,9 @@ tags:
   - svn
 id: '439'
 categories:
-  - - 工作相关
-    - 心得体会
-  - - 小窍门
+  - - 历史归档
+  - - 技术
+    - 工具
 permalink: use-proxy-in-ur-svn-client/
 date: 2011-06-13 21:39:47
 updated: 2025-05-15 00:34:34

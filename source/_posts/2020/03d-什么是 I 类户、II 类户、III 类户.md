@@ -4,7 +4,8 @@ tags:
   - Payment
 id: '906'
 categories:
-  - - 工作相关
+  - - 金融
+  - - 金融
     - 支付
 permalink: type-i-ii-iii-account/
 date: 2020-03-30 14:31:30

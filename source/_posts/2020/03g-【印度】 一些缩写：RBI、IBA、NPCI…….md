@@ -5,7 +5,8 @@ tags:
   - Payment
 id: '901'
 categories:
-  - - 工作相关
+  - - 金融
+  - - 金融
     - 支付
 permalink: abbreviation-in-india-payment/
 date: 2020-03-17 11:39:34

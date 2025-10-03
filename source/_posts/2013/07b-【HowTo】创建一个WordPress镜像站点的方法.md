@@ -6,11 +6,9 @@ tags:
   - replication
   - WordPress
 id: '583'
-categories:
-  - [工作相关, 心得体会]
-  - [WordPress]
-date: 2013-07-29 00:25:45
+categories: WordPress
 permalink: howto-build-a-mirror-site-of-wordpress/
+date: 2013-07-29 00:25:45
 ---
 
 应朋友的要求，帮他做了一个WordPress的镜像站点。一般的个人博客是用不着做镜像站点了，就我的观点来看，如果不是追求极致的访问速度，一般都没有必要做镜像站点。但是如果为了服务的稳定性，做镜像站点还是有必要的。比如，创业团队用廉价云服务器来提供Web服务的情况下，受到国内云服务质量的影响，会经常停服，如果对稳定性有极致要求，就需要多点、多机房去部署。也就有了镜像的需求。

@@ -4,9 +4,10 @@ tags:
   - Mac terminal shortcut
 id: '473'
 categories:
-  - Mac
-date: 2012-02-12 14:15:33
+  - - 技术
+    - 工具
 permalink: mac-os-x-lion-terminal-shortcut/
+date: 2012-02-12 14:15:33
 ---
 
 虽然Mac OS 提供了令人目眩神驰的界面效果，但是，我觉得我的最爱始终是终端，这到不是因为我有什么geek的癖好，而是因为到了*NIX系统上后，使用终端得心应手，就好像使用Windows，你喜欢点开开始菜单，或者习惯性打开资源管理器，是一个道理。

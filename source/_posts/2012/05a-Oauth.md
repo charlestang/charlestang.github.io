@@ -5,9 +5,12 @@ tags:
   - open source
 id: '483'
 categories:
-  - [工作相关, 心得体会]
-date: 2012-05-24 00:10:14
+  - - 技术
+    - 前端
+  - - 管理
+    - 知识
 permalink: oauth/
+date: 2012-05-24 00:10:14
 ---
 
 ## 什么是OAuth？

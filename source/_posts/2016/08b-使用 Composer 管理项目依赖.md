@@ -5,10 +5,10 @@ tags:
   - PHP
 id: '740'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, PHP]
-date: 2016-08-31 16:04:57
+  - - 技术
+    - 后端
 permalink: use-composer-to-resolve-dependency/
+date: 2016-08-31 16:04:57
 ---
 
 我个人入行以来，最早接触软件包的概念，是从 Java 开始的，Java 所有的代码，都必须属于一个软件包。如果要调用某个现成的类库，就要 import 一个软件包，就可以使用那个软件包里的所有代码了。

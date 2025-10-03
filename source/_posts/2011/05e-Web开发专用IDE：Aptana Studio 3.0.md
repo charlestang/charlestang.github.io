@@ -8,9 +8,10 @@ tags:
   - web
 id: '429'
 categories:
-  - [工作相关, PHP]
-date: 2011-05-03 09:37:02
+  - - 技术
+    - 后端
 permalink: web-apps-ide-aptana-studio3/
+date: 2011-05-03 09:37:02
 ---
 
 Aptana Studio是一款专业的、开源的开发环境，主要用于Web应用开发。该开发环境支持最新的浏览器技术HTML5，CSS3，Javascript，除此之外，对服务器端语言Ruby（对RoR貌似有很好的支持），PHP，Python也有很好的支持。

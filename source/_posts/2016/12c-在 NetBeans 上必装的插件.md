@@ -5,9 +5,10 @@ tags:
   - plugins
 id: '756'
 categories:
-  - 工作相关
-date: 2016-12-26 16:19:41
+  - - 技术
+    - 工具
 permalink: useful-netbeans-plugins/
+date: 2016-12-26 16:19:41
 ---
 
 我想，我使用 NetBeans 已经有很多年的历史了，但是比较遗憾的是，这些年来，也没有把 NetBeans 的功能用到极致。这点挺令人遗憾的，但是我还是坚持使用 NetBeans，主要我信奉一点，就是用什么 IDE 不重要，重要的是你能把它用到多高的效率。

@@ -5,9 +5,11 @@ tags:
   - configuration
 id: '380'
 categories:
-  - 工作相关
-date: 2010-08-01 20:55:51
+  - - 技术
+    - 前端
 permalink: apache-virtual-host-1/
+date: 2010-08-01 20:55:51
+updated: 2025-10-03 11:36:58
 ---
 
 Apache的虚拟主机是一种允许在同一台机器上，运行超过一个网站的解决方案。虚拟主机有两种，一种叫基于IP的（IP-based），另一种叫基于名字的（name-based）。虚拟主机的存在，对用户来说是透明的。

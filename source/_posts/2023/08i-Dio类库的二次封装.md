@@ -4,7 +4,8 @@ tags:
   - Flutter
   - Dio
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: 2023/dio-encapsulate/
 date: 2023-08-28 14:07:00
 updated: 2024-05-06 14:14:31

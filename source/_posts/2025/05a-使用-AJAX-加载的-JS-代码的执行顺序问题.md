@@ -2,7 +2,8 @@
 title: 使用 AJAX 加载的 JS 代码的执行顺序问题
 permalink: 2025/the-load-order-of-ajax-scripts/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - ajax
 date: 2025-05-06 15:26:15

@@ -5,10 +5,9 @@ tags:
   - tips
   - usage
 id: '346'
-categories:
-  - 工作相关
-date: 2009-04-29 23:31:29
+categories: 历史归档
 permalink: netbeans-plugins-i-used/
+date: 2009-04-29 23:31:29
 ---
 
 习惯了Firefox或者WordPress的方式？其实NetBeans也是一个类似的系统啊，可以选用的插件好多啊~~

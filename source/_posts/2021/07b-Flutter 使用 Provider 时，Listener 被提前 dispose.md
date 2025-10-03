@@ -5,7 +5,8 @@ tags:
   - flutter
 id: '1075'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: flutter-provider-listener-dispose/
 date: 2021-07-23 22:52:40
 updated: 2024-05-06 14:15:31

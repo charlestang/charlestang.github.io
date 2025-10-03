@@ -5,7 +5,8 @@ tags:
   - tricks
 id: '1072'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: flutter-disable-landscape-mode/
 date: 2021-07-08 16:40:58
 updated: 2024-05-06 14:15:22

@@ -2,7 +2,8 @@
 title: Markdown 语法
 permalink: 2024/markdown-syntax/
 categories:
-  - - 工作相关
+  - - 技术
+    - 工具
 tags:
   - markdown
   - syntax

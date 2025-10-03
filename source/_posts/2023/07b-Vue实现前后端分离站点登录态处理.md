@@ -3,7 +3,8 @@ title: Vue 实现前后端分离站点登录态处理
 tags:
   - Vue
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: vue-site-authentication/
 date: 2023-07-07 15:15:08
 updated: 2024-05-06 14:14:08

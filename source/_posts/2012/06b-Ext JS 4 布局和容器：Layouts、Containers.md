@@ -7,7 +7,8 @@ tags:
   - layout
 id: '488'
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: ext-js-4-layouts-and-containers/
 date: 2012-06-15 14:08:16
 updated: 2024-04-22 13:48:13

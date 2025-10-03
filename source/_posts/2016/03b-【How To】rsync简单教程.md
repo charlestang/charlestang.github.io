@@ -3,9 +3,10 @@ title: 【How To】rsync简单教程
 tags: []
 id: '510'
 categories:
-  - 日　　记
-date: 2016-03-08 16:27:28
+  - - 生活
+    - 日记
 permalink: how-to-rsync-tutorials/
+date: 2016-03-08 16:27:28
 ---
 
 ## 简介

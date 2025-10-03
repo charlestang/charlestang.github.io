@@ -7,9 +7,10 @@ tags:
   - WordPress
 id: '248'
 categories:
-  - 日　　记
-date: 2008-10-10 00:37:19
+  - - 生活
+    - 日记
 permalink: wp-structure-and-best-practice/
+date: 2008-10-10 00:37:19
 ---
 
 想必很多朋友都已经发现了我的主题更换了，貌似我一直也没有写什么文章来介绍我现在的主题。

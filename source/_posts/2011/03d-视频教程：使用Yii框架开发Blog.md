@@ -8,10 +8,10 @@ tags:
   - yii
 id: '417'
 categories:
-  - [工作相关, PHP]
-  - [工作相关, Yii]
-date: 2011-03-20 14:59:18
+  - - 技术
+    - 后端
 permalink: video-guide-to-use-yii-framework/
+date: 2011-03-20 14:59:18
 ---
 
 Yii框架的官方网站上，有一个教学用demo，就是使用Yii框架开发一个blog。有非常详尽的文字描述，步骤基本也比较清楚。一遍走下来，基本上就差不多都学懂了。

@@ -3,9 +3,10 @@ title: PHP on Java
 tags: []
 id: '631'
 categories:
-  - [工作相关, PHP]
-date: 2014-06-09 11:12:08
+  - - 技术
+    - 后端
 permalink: php-on-java/
+date: 2014-06-09 11:12:08
 ---
 
 http://quercus.caucho.com/

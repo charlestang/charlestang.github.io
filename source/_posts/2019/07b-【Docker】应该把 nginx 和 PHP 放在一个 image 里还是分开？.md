@@ -6,11 +6,12 @@ tags:
   - PHP
 id: '846'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, Linux]
-  - [工作相关, PHP]
-date: 2019-07-30 20:53:16
+  - - 技术
+    - 后端
+  - - 技术
+    - 运维
 permalink: should-nginx-and-php-put-together-or-seperate/
+date: 2019-07-30 20:53:16
 ---
 
 因为老板想搞 K8S，但是我连 Docker 都不懂，就觉得还是要学一点点 Docker 的，之前还是看了一点点的，甚至折腾过一个开发环境的方案，但是，很长时间不弄了以后，就全都还回去了。

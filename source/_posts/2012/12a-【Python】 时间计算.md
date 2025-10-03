@@ -5,9 +5,10 @@ tags:
   - python
 id: '525'
 categories:
-  - 工作相关
-date: 2012-12-08 15:31:28
+  - - 技术
+    - 后端
 permalink: python-date-time/
+date: 2012-12-08 15:31:28
 ---
 
 说实在的不喜欢Python，这主要是相对于PHP而言的，Python在Web相关领域里面，缺少了PHP的丰厚家学和积淀，但是有时候没有办法，还是得学一点的。在PHP里，用惯了strtotime这种神奇函数，在Python里面，到底该如何处理时间呢？

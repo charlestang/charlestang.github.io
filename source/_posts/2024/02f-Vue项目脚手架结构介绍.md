@@ -2,14 +2,15 @@
 title: Vue 项目脚手架结构介绍
 permalink: 2024/the-structure-of-vue-scaffold/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - vue
   - learning
   - usage
   - notes
 date: 2024-02-22 10:58:29
-updated: 2024-04-21 19:20:05
+updated: 2025-10-03 02:18:40
 ---
 
 昨天，撰写了一篇文章，介绍[如何 0 基础入门 Vue](https://blog.charlestang.org/2024/howto-learn-vue-from-zero/)，算是讲清楚了学习 Vue 的路线图，今天，继续来介绍一些具体的东西。

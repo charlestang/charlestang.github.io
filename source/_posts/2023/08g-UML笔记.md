@@ -3,7 +3,8 @@ title: UML 学习笔记
 tags:
   - UML
 categories:
-  - - 工作相关
+  - - 技术
+    - 工具
 permalink: 2023/uml-notes/
 date: 2023-08-14 14:20:00
 updated: 2025-06-04 17:41:04

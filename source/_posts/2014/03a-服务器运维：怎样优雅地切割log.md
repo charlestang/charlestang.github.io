@@ -5,10 +5,10 @@ tags:
   - server
 id: '613'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, PHP]
-date: 2014-03-29 00:53:01
+  - - 技术
+    - 后端
 permalink: how-to-rotate-the-server-log-without-cpu-warning/
+date: 2014-03-29 00:53:01
 ---
 
 好吧，我必须要承认，我是一个标题党来的。本文英文名称意思比较准确。什么？你没看到英文名称在哪？不是写给你看的，你当然看不到。

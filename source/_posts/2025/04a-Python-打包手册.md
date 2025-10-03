@@ -2,7 +2,8 @@
 title: Python 打包手册
 permalink: 2025/python-howto-packaging/
 categories:
-  - - 后端开发技术
+  - - 技术
+    - 后端
 tags:
   - python
 date: 2025-04-09 14:07:04

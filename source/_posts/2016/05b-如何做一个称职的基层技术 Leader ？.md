@@ -3,7 +3,8 @@ title: 如何做一个称职的基层技术 Leader ？
 tags: []
 id: '725'
 categories:
-  - - 团队和研发管理
+  - - 管理
+    - 团队
 permalink: how-to-be-a-leader/
 date: 2016-05-11 02:10:19
 updated: 2025-09-25 23:28:13

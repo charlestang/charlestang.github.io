@@ -2,10 +2,9 @@
 title: 【随笔】WordPress之于我～
 tags: []
 id: '562'
-categories:
-  - [工作相关, 心得体会]
-date: 2013-06-16 22:57:50
+categories: WordPress
 permalink: wordpress-and-me/
+date: 2013-06-16 22:57:50
 ---
 
 回想起第一次接触到WordPress，是什么时候呢？应该是大二的时候。事情的起因大概是这样的，那时候有个很火的产品，叫Space，是微软出品的，现如今，那个产品已经烟消云散了。当年Space火的时候，很短的时间，就有一伙人，将Space打理得有声有色，定制得完全不似是Space了，简直绚丽夺目，因为Space允许注入CSS和JS，你想那不就相当于万能么，而我那时候不知道有一伙人，叫Web工程师。

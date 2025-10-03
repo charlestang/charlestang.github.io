@@ -2,7 +2,8 @@
 title: '为什么用 npm/yarn 时会发生 Error: certificate has expired'
 permalink: 2024/why-certificate-error-using-npm/
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 tags:
   - usage
   - develop

@@ -5,10 +5,10 @@ tags:
   - PHP
 id: '760'
 categories:
-  - [工作相关, PHP]
-  - [小窍门]
-date: 2017-01-11 14:04:22
+  - - 技术
+    - 后端
 permalink: mamp-pro-php-cli-very-slow/
+date: 2017-01-11 14:04:22
 ---
 
 在 Mac 系统下开发 PHP 的话，使用 MAMP Pro 来搭建环境是一个不错的选择，主要还是因为方便，一口气就可以拥有 PHP + MySQL + Nginx + Apache + PostgreSQL + Memcached + Ruby + Python + Perl，可以说 Web 开发的全部组件基本都涉及到了。

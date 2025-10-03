@@ -2,9 +2,11 @@
 title: ICP 备案相关资料
 tags:
   - App
-categories: 工作相关
-date: 2023-10-26 12:09:00
+categories:
+  - - 技术
+    - 工具
 permalink: 2023/icp/
+date: 2023-10-26 12:09:00
 ---
 2023年9月30日消息，苹果 App Store 迎来重大调整，**即日起中国大陆上架的 App 必须具备有效的互联网信息服务提供者（ICP）备案号。**
 

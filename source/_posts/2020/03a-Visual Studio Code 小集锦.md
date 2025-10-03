@@ -6,8 +6,8 @@ tags:
   - 开发环境
 id: '888'
 categories:
-  - - 小窍门
-  - - 工作相关
+  - - 技术
+    - 工具
 permalink: 2020/visual-studio-code-tricks/
 date: 2020-03-03 15:57:31
 updated: 2025-05-15 00:26:32

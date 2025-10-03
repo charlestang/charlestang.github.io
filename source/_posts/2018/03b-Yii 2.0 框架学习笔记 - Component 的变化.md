@@ -5,9 +5,10 @@ tags:
   - yii
 id: '735'
 categories:
-  - [工作相关, Yii]
-date: 2018-03-08 16:31:43
+  - - 技术
+    - 后端
 permalink: yii-2-x-the-change-of-component/
+date: 2018-03-08 16:31:43
 ---
 
 Yii 2.x 最底层的抽象是 Object，但是，窃以为，最重要的基础抽象，仍然是 Component。这点与 Yii 1.x 相比，并没有本质的变化，就是，我仍然没有参透，为什么要多出来一个 Object 的抽象，表面上看，这个 Object 比 Component 少了不少东西，如果没有必要的话，显然继承 Object 会更加合算一点，但是这么一点好处的话，简直微不足道。

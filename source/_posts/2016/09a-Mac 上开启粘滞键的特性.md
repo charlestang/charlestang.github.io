@@ -4,7 +4,8 @@ tags:
   - mac
 id: '742'
 categories:
-  - 小窍门
+  - - 技术
+    - 工具
 permalink: mac-press-and-hold/
 date: 2016-09-20 15:37:36
 updated: 2025-05-15 00:28:42

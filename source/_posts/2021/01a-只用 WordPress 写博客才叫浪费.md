@@ -3,11 +3,9 @@ title: 只用 WordPress 写博客才叫浪费
 tags:
   - WordPress
 id: '986'
-categories:
-  - [工作相关, 心得体会]
-  - [WordPress]
-date: 2021-01-22 11:27:13
+categories: WordPress
 permalink: 2021/wordpress-more-than-blog/
+date: 2021-01-22 11:27:13
 ---
 
 ![wordpress](../images/2021/01/how-to-get-started-with-wordpress.jpg)

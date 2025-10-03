@@ -7,10 +7,10 @@ tags:
   - usage
 id: '419'
 categories:
-  - [工作相关, 心得体会]
-  - [工作相关, Linux]
-date: 2011-04-12 20:37:33
+  - - 技术
+    - 运维
 permalink: linux-commands-used-when-working/
+date: 2011-04-12 20:37:33
 ---
 
 ### tcpdump —— 打印出通过网口流入流出的数据内容，用于网络协议调试

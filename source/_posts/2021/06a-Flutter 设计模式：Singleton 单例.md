@@ -7,7 +7,8 @@ tags:
   - object oriented
 id: '1070'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: flutter-singleton/
 date: 2021-06-30 13:08:34
 updated: 2024-05-06 14:15:05

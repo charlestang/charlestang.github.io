@@ -6,7 +6,8 @@ tags:
   - TLS
 id: '1219'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: flutter-howto-implement-client-cert-verify-mtls/
 date: 2023-04-27 16:00:18
 updated: 2024-05-06 14:14:42

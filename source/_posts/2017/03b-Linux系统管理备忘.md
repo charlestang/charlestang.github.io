@@ -4,9 +4,10 @@ tags:
   - Linux
 id: '451'
 categories:
-  - [工作相关, Linux]
-date: 2017-03-08 16:26:41
+  - - 技术
+    - 运维
 permalink: linux-system-management/
+date: 2017-03-08 16:26:41
 ---
 
 如何知道自己用的是Linux还是Unix？

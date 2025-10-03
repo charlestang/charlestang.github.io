@@ -3,9 +3,10 @@ title: 【Linode】VPS服务器的安全问题
 tags: []
 id: '586'
 categories:
-  - [工作相关, 心得体会]
-date: 2013-08-14 23:21:57
+  - - 技术
+    - 运维
 permalink: linode-vps-security/
+date: 2013-08-14 23:21:57
 ---
 
 因为放在VPS上的博客一直Nginx 502和500，我去看了一下access.log，不看不要紧，一看下一跳。我的博客是个没多少访问量的博客，竟然每秒也能产生数十条的log，而最糟糕的是，这些log，都指向了同一个文件，xmlrpc.php。

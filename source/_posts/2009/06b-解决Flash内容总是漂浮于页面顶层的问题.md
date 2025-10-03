@@ -4,10 +4,9 @@ tags:
   - development
   - web design
 id: '348'
-categories:
-  - 工作相关
-date: 2009-06-03 21:54:27
+categories: 历史归档
 permalink: flash-float-on-topest-layer/
+date: 2009-06-03 21:54:27
 ---
 
 已经有两个网友向我反应了Flash MP3 Player无法和lightbox之类插件兼容的问题，其症状为，当打开lightbox效果的图片时，flash movie会漂浮在整个页面的最顶层，破坏了lightbox的效果。

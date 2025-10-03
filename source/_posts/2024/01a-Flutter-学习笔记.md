@@ -5,7 +5,8 @@ tags:
   - usage
 id: '1065'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: 2023/flutter-learning-notes/
 date: 2024-01-01 00:00:00
 updated: 2024-05-06 14:11:14

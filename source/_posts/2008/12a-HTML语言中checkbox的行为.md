@@ -5,9 +5,10 @@ tags:
   - html
 id: '271'
 categories:
-  - 工作相关
-date: 2008-12-09 23:46:50
+  - - 技术
+    - 前端
 permalink: the-behavior-of-checkbox-in-html/
+date: 2008-12-09 23:46:50
 ---
 
 为了从用户处取得一个yes or no的答案，一般在html表单中，使用checkbox，中文叫做复选框。

@@ -1,9 +1,7 @@
 ---
 title: Confluence v8.5.9  安装和问题
 permalink: 2024/11a-how-to-install-confluence-859-and-solve-problems/
-categories:
-  - - 工作相关
-    - 心得体会
+categories: 历史归档
 tags:
   - Confluence
 date: 2024-11-28 13:55:18

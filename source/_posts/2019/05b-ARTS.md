@@ -4,9 +4,10 @@ tags:
   - arts
 id: '808'
 categories:
-  - 日　　记
-date: 2019-05-29 19:48:48
+  - - 生活
+    - 日记
 permalink: arts-no-1/
+date: 2019-05-29 19:48:48
 ---
 
 ![unpreview](https://static001.geekbang.org/resource/image/53/75/53aa23a64b38291433ab59431bd61075.jpg)

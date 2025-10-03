@@ -4,7 +4,8 @@ tags:
   - Vue
   - i18n
 categories:
-  - - 前端开发技术
+  - - 技术
+    - 前端
 permalink: 2023/vue-i18n-solution/
 date: 2023-10-30 15:03:00
 updated: 2024-04-21 19:22:47

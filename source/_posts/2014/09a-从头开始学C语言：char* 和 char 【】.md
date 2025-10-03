@@ -3,9 +3,10 @@ title: 从头开始学C语言：char* 和 char 【】
 tags: []
 id: '643'
 categories:
-  - [工作相关, Linux]
-date: 2014-09-04 23:49:49
+  - - 技术
+    - 运维
 permalink: learn-c-from-beginning-1/
+date: 2014-09-04 23:49:49
 ---
 
 想要把丢掉的东西捡起来，还是很辛苦啊，今天我就发现，我连char* 和 char []的区别都不知道。

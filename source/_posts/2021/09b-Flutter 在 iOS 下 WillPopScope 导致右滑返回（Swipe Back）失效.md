@@ -5,7 +5,8 @@ tags:
   - iOS
 id: '1080'
 categories:
-  - - 客户端开发技术
+  - - 技术
+    - 移动端
 permalink: in-ios-willpopscope-disable-swipe-back/
 date: 2021-09-06 12:00:33
 updated: 2024-08-11 16:52:20

@@ -5,9 +5,10 @@ tags:
   - tips
 id: '388'
 categories:
-  - Mac
-date: 2010-11-01 23:50:41
+  - - 技术
+    - 工具
 permalink: no-home-and-end-key-on-mbp/
+date: 2010-11-01 23:50:41
 ---
 
 用了Macbook Pro已经有一周多了，很是惊叹于苹果的工业设计。另外，也对Mac OS X的设计理念深感敬佩。我想，如果我不是一个被Win荼毒了十几年的Win-er，基本上应该是非常习惯并且能轻松上手Mac的。

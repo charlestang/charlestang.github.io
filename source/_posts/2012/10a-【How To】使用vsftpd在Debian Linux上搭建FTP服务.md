@@ -7,9 +7,10 @@ tags:
   - Linux
 id: '514'
 categories:
-  - [工作相关, Linux]
-date: 2012-10-09 00:55:34
+  - - 技术
+    - 运维
 permalink: how-to-config-a-ftp-service-on-debian-with-vsftpd/
+date: 2012-10-09 00:55:34
 ---
 
 vsftpd 是Very Secure FTPd的缩写，是一款小巧简单的ftp服务器软件，一般如果不需要对ftp帐号的流量做限制，不需要根据不同目录配置不同的属性的情况下，使用此款小巧的ftp软件，就再好不过了。vsftpd支持anonymous帐号登录和本地实体帐号登录，通过简单的配置，即可以运行。
