@@ -2,12 +2,12 @@
 title: 理解 IoC：框架背后的思想
 permalink: 2025/ioc-design-thinking/
 categories:
-  - - 技术
-    - 后端
+  - - 管理
+    - 架构
 tags:
   - design pattern
 date: 2025-06-29 15:50:34
-updated: 2025-10-03 01:24:26
+updated: 2025-10-03 22:26:40
 ---
 ## 缘起
 
