@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '261'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: wp-plugins-cformsii-intro/
 date: 2008-11-20 17:28:50
 updated: 2025-05-10 14:03:00

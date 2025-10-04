@@ -3,8 +3,7 @@ title: 给WordPress增加苹果中的Dock菜单效果
 tags:
   - WordPress
 id: '398'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: add-dock-menu-to-ur-wordpress/
 date: 2010-11-09 14:19:21
 updated: 2025-05-10 14:08:05

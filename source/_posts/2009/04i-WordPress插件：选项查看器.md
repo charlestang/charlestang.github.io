@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '335'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: plugin-options-inspector/
 date: 2009-04-08 16:20:47
 updated: 2025-05-10 14:03:53

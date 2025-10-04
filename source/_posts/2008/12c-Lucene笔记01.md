@@ -5,9 +5,7 @@ tags:
   - lucene
   - note
 id: '272'
-categories:
-  - - 生活
-    - 日记
+categories: 历史归档
 permalink: lucene-note-01/
 date: 2008-12-10 16:24:30
 ---

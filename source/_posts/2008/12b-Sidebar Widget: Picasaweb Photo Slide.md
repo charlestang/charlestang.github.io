@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '270'
-categories:
-  - - 历史归档
+categories: WordPress
 comments: false
 permalink: picasaweb-photo-slide/
 date: 2008-12-08 23:09:20

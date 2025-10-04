@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '158'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: chinese-wordcount/
 date: 2008-07-25 23:12:41
 updated: 2025-05-10 14:02:13

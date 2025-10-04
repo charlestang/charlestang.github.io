@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '357'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: plugin-csdn-shared-items/
 date: 2009-11-24 22:27:40
 updated: 2025-05-10 14:05:26

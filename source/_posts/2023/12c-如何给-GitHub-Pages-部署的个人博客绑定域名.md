@@ -2,8 +2,8 @@
 title: 如何给 GitHub Pages 部署的个人博客绑定域名
 permalink: 2023/how-to-bind-custom-domain-on-gp/
 categories:
-  - - 生活
-    - 日记
+  - - 技术
+    - 前端
 tags:
   - GitHub
   - HTTPS

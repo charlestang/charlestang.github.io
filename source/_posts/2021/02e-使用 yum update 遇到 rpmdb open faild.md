@@ -6,8 +6,8 @@ tags:
   - maintain
 id: '1004'
 categories:
-  - - 生活
-    - 日记
+  - - 技术
+    - 运维
 permalink: yum-update-rpmdb-open-faild/
 date: 2021-02-22 21:22:50
 ---

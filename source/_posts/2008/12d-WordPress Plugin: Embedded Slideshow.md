@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '291'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: embedded-slideshow/
 date: 2008-12-07 23:43:21
 updated: 2025-05-10 14:03:19

@@ -4,8 +4,7 @@ tags:
   - plugins
   - WordPress
 id: '230'
-categories:
-  - - 历史归档
+categories: WordPress
 permalink: share-this-jquery/
 date: 2008-09-02 20:15:49
 updated: 2025-05-10 14:02:37

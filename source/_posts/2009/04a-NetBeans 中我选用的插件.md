@@ -5,7 +5,9 @@ tags:
   - tips
   - usage
 id: '346'
-categories: 历史归档
+categories:
+  - - 技术
+    - 工具
 permalink: netbeans-plugins-i-used/
 date: 2009-04-29 23:31:29
 ---

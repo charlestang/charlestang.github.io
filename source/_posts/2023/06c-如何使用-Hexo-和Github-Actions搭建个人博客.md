@@ -4,8 +4,8 @@ tags:
   - Hexo
   - Github
 categories:
-  - - 生活
-    - 日记
+  - - 技术
+    - 前端
 id: '1239'
 permalink: 2023/how-to-use-hexo-and-github-actions-to-build-a-personal-blog/
 date: 2023-06-05 17:02:08

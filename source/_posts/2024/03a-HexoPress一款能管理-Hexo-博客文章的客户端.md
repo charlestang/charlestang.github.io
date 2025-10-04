@@ -2,7 +2,8 @@
 title: HexoPress：一款能管理 Hexo 博客文章的客户端
 permalink: 2024/hexopress-blog-client/
 categories:
-  - - 开源项目
+  - - 展示
+    - 项目
 tags:
   - Hexo
   - open source
