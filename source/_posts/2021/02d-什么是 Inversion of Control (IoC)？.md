@@ -1,15 +1,16 @@
 ---
 title: 什么是 Inversion of Control (IoC)？
+permalink: inversion-of-control-ioc/
 tags:
   - design pattern
   - object oriented
+excerpt: ''
 id: '1003'
 categories:
-  - - 技术
-    - 后端
-permalink: inversion-of-control-ioc/
+  - 管理
+  - 架构
 date: 2021-02-25 13:12:47
-updated: 2025-06-29 15:50:30
+updated: 2025-10-05 01:18:55
 ---
 局限于英文水平和对软件工程“学术界”了解的浅薄，我对 Inverstion of Control —— 中文或许可以翻译成“反向控制” —— 的理解，总是停滞在一种似是而非的程度。我尝试通过搜索来学习，发现我能搜到的中文文章，都不能给我很大的帮助，有的在大谈特谈 Spring 框架如何如何；有的又说，想搞清楚 IoC，你先要理解 DIP …… ；也有的，干脆就说，所谓的 IoC 根本就是 DI。一时间，各种术语满天飞，越发让我觉得糊涂了。
 

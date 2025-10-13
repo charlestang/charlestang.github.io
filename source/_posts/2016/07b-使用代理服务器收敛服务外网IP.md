@@ -1,13 +1,15 @@
 ---
 title: 使用代理服务器收敛服务外网IP
+permalink: use-proxy-to-make-service-ip-consistent/
 tags:
   - Architecture
 id: '731'
 categories:
   - - 技术
-    - 后端
-permalink: use-proxy-to-make-service-ip-consistent/
+  - - 技术
+    - 网络
 date: 2016-07-14 15:26:50
+updated: 2025-10-05 02:01:21
 ---
 
 在产品研发过程中，免不了遇到要接入外部服务的业务场景，例如：第三方支付、短信发送服务、邮件发送服务等等。这里面，不乏一些至关重要的服务，对安全要求性很高，为了便利，服务提供商，往往提出使用 IP 白名单的形式来进行辅助鉴权。若在过去，非常小的企业里，使用托管服务器作为企业的服务器的时代，这一般不在成为问题，一个是服务器本身数量很小，而且很稳定，另一方面，服务器是物理机器，其 IP 地址也相对稳定得多。
@@ -20,7 +22,7 @@ date: 2016-07-14 15:26:50
 
 然而微服务的实施，并不是每个企业都有能力去实践的，涉及到服务划分、治理、发现、运维等一系列的问题。对架构能力有很大的挑战。所以，我们在这个问题上，使用了非常简单轻巧的方式来收敛企业对外访问的 IP 地址。
 
-[![proxy-cluster](http://blog.charlestang.org/wp-content/uploads/2016/07/proxy-cluster.png)](http://blog.charlestang.org/wp-content/uploads/2016/07/proxy-cluster.png)
+![proxy-cluster](../images/2016/07/proxy-cluster.png)
 
 如图所示，我们使用云服务器，搭建了一个代理服务器的集群，这个集群的主要功能，就是对外提供一组比较稳定的 IP 地址，供第三方服务去做基于 IP 白名单的鉴权。对内部来说，各种产品，无论处于研发的哪个阶段，在第三方服务需要提供 IP 白名单的时候，只要提供 Proxy 的 IP 地址就可以了。因为功能的单纯，两台机器也不会有太高的负载，还是选用两台，主要是为了避免单点故障。
 
