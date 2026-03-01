@@ -3,13 +3,13 @@ title: 【WordPress】【插件开发】【插件】简易下载链接计数器
 tags:
   - develop
   - plugins
-  - source code
   - WordPress
 id: '550'
-categories:
-  - [WordPress, Plugins Develop]
-date: 2013-05-01 23:57:57
 permalink: wordpress-plugins-download-link-count/
+categories:
+  - WordPress
+  - Plugins Develop
+date: 2013-05-01 23:57:57
 ---
 
 写PHP是我工作的主要内容之一，我尤其喜欢使用的IDE是Netbeans，所以，之前心血来潮，做了一个Netbeans的皮肤站点（[http://netbeanstheme.com](http://netbeansthemes.com/ "Netbeans Themes")）供大家交流Netbeans配色方案用。

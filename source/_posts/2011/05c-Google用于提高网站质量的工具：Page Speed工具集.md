@@ -2,17 +2,16 @@
 title: Google用于提高网站质量的工具：Page Speed工具集
 tags:
   - add-ons
-  - chrome
   - development
   - google
   - tools
   - web
 id: '428'
-categories:
-  - - 技术
-    - 前端
 permalink: page-speed-family/
-date: 2011-05-02 09:17:01
+categories:
+  - 技术
+  - 前端
+date: 2011-05-02 17:17:01
 ---
 
 应该就是离现在不太远的时候，Google推出了用于提高网页质量的工具集，Page Speed。我最早听说是在若干月前的PHP Classes的news letter上。最近才有时间来仔细看看这个东西。

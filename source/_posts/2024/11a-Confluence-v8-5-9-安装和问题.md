@@ -2,10 +2,8 @@
 title: Confluence v8.5.9  安装和问题
 permalink: 2024/11a-how-to-install-confluence-859-and-solve-problems/
 categories: 历史归档
-tags:
-  - Confluence
-date: 2024-11-28 13:55:18
-updated: 2024-11-28 14:34:45
+date: 2024-11-28 21:55:18
+updated: 2024-11-28 22:34:45
 ---
 老板了解到，我们同行的很多公司，都使用 Confluence 作为公司级的知识库，于是，要求也为我们公司部署一个。尝试在公司使用和推广。
 

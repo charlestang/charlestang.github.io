@@ -3,12 +3,11 @@ title: 【Tips】Word2007中看不到图片
 tags:
   - office
   - tips
-  - word
 id: '314'
-categories:
-  - - 管理
-    - 知识
 permalink: word2007-doesnot-show-pics/
+categories:
+  - 管理
+  - 知识
 date: 2009-03-01 15:23:13
 ---
 

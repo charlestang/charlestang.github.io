@@ -1,15 +1,13 @@
 ---
 title: SandBox 何去何从？
 tags:
-  - dairy
   - opinion
   - SandBox
   - themes
 id: '294'
-categories:
-  - WordPress
-date: 2009-02-07 02:51:22
 permalink: something-about-sandbox/
+categories: WordPress
+date: 2009-02-07 10:51:22
 ---
 
 我开始我的WordPress之旅，是2006年，那时候，我根本不懂PHP，只知道一般用用就可以了，那个时候，用得最久的主题是K2，因为强大，选项多。然后，就一直用着了。
